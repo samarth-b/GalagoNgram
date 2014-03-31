@@ -1,0 +1,365 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Class</TITLE>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-8">
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style"></HEAD>
+<BODY BGCOLOR="white">
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+<HR>
+<H2>
+<FONT SIZE="-1">org::galagosearch::core::parse</FONT>
+<BR>
+Class FileParser</H2>
+<PRE>
+<B>org::galagosearch::core::parse::FileParser</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE6AC2B938C373E2BB11E30F5F2BA9B331.html" title="interface in org::galagosearch::core::parse">DocumentStreamParser</A></DD>
+</DL>
+<DL>
+<DT><B>All Dependency Suppliers:</B><DD><IMG SRC="../../../../../images/implementation.png" ALT="(Implementation) ">&nbsp;Implementation&nbsp;<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE6AC2B938C373E2BB11E30F5F2BA9B331.html" title="dependency in org::galagosearch::core::parse">DocumentStreamParser</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>package class <B>FileParser</B></DT><DT>implements <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE6AC2B938C373E2BB11E30F5F2BA9B331.html" title="interface in org::galagosearch::core::parse">DocumentStreamParser</A></DL>
+</PRE>
+
+<P>
+Reads data from a single text file of type HTML, XML or txt.
+ 
+ @author trevor</P><HR>
+<!-- =========== PROPERTY SUMMARY =========== -->
+<A NAME="property_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Properties</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Alias</B></TD>
+<TD>FileParser</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Visibility</B></TD>
+<TD>package</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Final</B></TD>
+<TD><IMG src="../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Transient</B></TD>
+<TD><IMG src="../../../../../images/checked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Abstract</B></TD>
+<TD><IMG src="../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Leaf</B></TD>
+<TD><IMG src="../../../../../images/unchecked.png" border=n></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== ATTRIBUTE SUMMARY =========== -->
+<A NAME="attribute_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Attribute Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/java/io/DCE7308473906F1CE6D41B3E4E638A9C530.html">BufferedReader</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#reader">reader</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#identifier">identifier</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== CONSTRUCTOR SUMMARY =========== -->
+
+<A NAME="constructor_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="#FileParser">FileParser</A></B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A>&nbsp;parameters,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;fileName,&nbsp;<A HREF="../../../../../galagosearch-core-Model/java/io/DCE7308473906F1CE6D41B3E4E638A9C530.html">BufferedReader</A>&nbsp;bufferedReader)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== OPERATION SUMMARY =========== -->
+<A NAME="operation_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Operation Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getIdentifier">getIdentifier</A></B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A>&nbsp;parameters,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;fileName)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#stripExtension">stripExtension</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;name,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;extension)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#stripExtensions">stripExtensions</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;name)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getTitle">getTitle</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;text)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getQuestion">getQuestion</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;text)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getAnswers">getAnswers</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;text)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getAnswer">getAnswer</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;text)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getComments">getComments</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;text)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getComment">getComment</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;text)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE4B81FF6A45AC8B71B55F5D69CF90B628.html">Document</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#nextDocument">nextDocument</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#covtoString">covtoString</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;arr[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== ATTRIBUTE DETAIL =========== -->
+<A NAME="attribute_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Attribute Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="reader"></A><H3>reader</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/java/io/DCE7308473906F1CE6D41B3E4E638A9C530.html">BufferedReader</A> <B>reader</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="identifier"></A><H3>identifier</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>identifier</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+
+<!-- =========== CONSTRUCTOR DETAIL =========== -->
+
+<A NAME="constructor_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="FileParser"></A><H3>FileParser</H3>
+<PRE>
+public <B>FileParser</B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A>&nbsp;parameters,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;fileName,&nbsp;<A HREF="../../../../../galagosearch-core-Model/java/io/DCE7308473906F1CE6D41B3E4E638A9C530.html">BufferedReader</A>&nbsp;bufferedReader)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+
+<!-- =========== OPERATION DETAIL =========== -->
+
+<A NAME="operationr_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Operation Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="getIdentifier"></A><H3>getIdentifier</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>getIdentifier</B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A>&nbsp;parameters,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;fileName)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="stripExtension"></A><H3>stripExtension</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>stripExtension</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;name,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;extension)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="stripExtensions"></A><H3>stripExtensions</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>stripExtensions</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;name)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getTitle"></A><H3>getTitle</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>getTitle</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;text)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getQuestion"></A><H3>getQuestion</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>getQuestion</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;text)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getAnswers"></A><H3>getAnswers</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>getAnswers</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;text)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getAnswer"></A><H3>getAnswer</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>[0..*] <B>getAnswer</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;text)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getComments"></A><H3>getComments</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>getComments</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;text)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getComment"></A><H3>getComment</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>[0..*] <B>getComment</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;text)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="nextDocument"></A><H3>nextDocument</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE4B81FF6A45AC8B71B55F5D69CF90B628.html">Document</A> <B>nextDocument</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="covtoString"></A><H3>covtoString</H3>
+<PRE>
+private <A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>covtoString</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;arr[0..*])</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+
+<HR>
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+</BODY>
+</HTML>

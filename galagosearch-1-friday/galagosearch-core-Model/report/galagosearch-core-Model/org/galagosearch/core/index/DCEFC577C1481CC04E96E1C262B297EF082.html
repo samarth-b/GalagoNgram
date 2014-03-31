@@ -1,0 +1,400 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Class</TITLE>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-8">
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style"></HEAD>
+<BODY BGCOLOR="white">
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+<HR>
+<H2>
+<FONT SIZE="-1">org::galagosearch::core::index</FONT>
+<BR>
+Class BackedCompressedByteBuffer</H2>
+<PRE>
+<B>org::galagosearch::core::index::BackedCompressedByteBuffer</B>
+</PRE>
+<DL>
+<DT><B>All Known Associations: </B><DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCEA3DE6ADE26852159330D7043468987E5.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCEF41A4CD95FA09E60547ED0968A2F4A14.html" title="association in org::galagosearch::core::index">PositionsList</A></DD>
+<DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCEADFB9F6873C15F09EEF35305F2CF9FC2.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCEF41A4CD95FA09E60547ED0968A2F4A14.html" title="association in org::galagosearch::core::index">PositionsList</A></DD>
+<DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE71B788527709FF14F9E3F938871BED28.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCEF41A4CD95FA09E60547ED0968A2F4A14.html" title="association in org::galagosearch::core::index">PositionsList</A></DD>
+<DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE5698A4237E11CBC778E2574716578D42.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCEF41A4CD95FA09E60547ED0968A2F4A14.html" title="association in org::galagosearch::core::index">PositionsList</A></DD>
+<DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE208E6FC8658312A15FBBEA2B39BF2A00.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE044D3C5732D8D45BDC9E58E5D25F299E.html" title="association in org::galagosearch::core::index">CompressedByteBuffer</A></DD>
+<DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE5F980DABAF3F24379BECF07A0DA7D75E.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCEEC0035D6BB5CB02D0C1A98B6913AA1D7.html" title="association in org::galagosearch::core::index">BackedCompressedByteBufferTest</A></DD>
+<DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE27AAFD4672A995EE9222BC2A4AB3D12A.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCEF833B515F3F6B0BE022484143885AEEC.html" title="association in org::galagosearch::core::index">DoubleInvertedList</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>BackedCompressedByteBuffer</B></DT></DL>
+</PRE>
+
+<P>
+A BackedCompressedByteBuffer is like a CompressedByteBuffer,
+ but it can overflow into disk storage if necessary.  Unlike a 
+ CompressedByteBuffer, there's no getBytes() method since that 
+ wouldn't makes sense if all the data is on disk.
+  @author trevor</P><HR>
+<!-- =========== PROPERTY SUMMARY =========== -->
+<A NAME="property_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Properties</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Alias</B></TD>
+<TD>BackedCompressedByteBuffer</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Visibility</B></TD>
+<TD>public</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Final</B></TD>
+<TD><IMG src="../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Transient</B></TD>
+<TD><IMG src="../../../../../images/checked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Abstract</B></TD>
+<TD><IMG src="../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Leaf</B></TD>
+<TD><IMG src="../../../../../images/unchecked.png" border=n></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== NESTED CLASS SUMMARY =========== -->
+<A NAME="nested_class_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>public class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE91ECEC5994FD7427155C4B1E131F895B.html">BufferInputStream</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+
+</TABLE>
+&nbsp;
+<!-- =========== ATTRIBUTE SUMMARY =========== -->
+<A NAME="attribute_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Attribute Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/java/io/DCE4B0E3C26695D30435F91F0F3AAA44FE5.html">File</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#segments">segments</A></B>[0..*]</CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#diskLength">diskLength</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#threshold">threshold</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== CONSTRUCTOR SUMMARY =========== -->
+
+<A NAME="constructor_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="#BackedCompressedByteBuffer">BackedCompressedByteBuffer</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;threshold)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new instance of BackedCompressedByteBuffer </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="#BackedCompressedByteBuffer">BackedCompressedByteBuffer</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== OPERATION SUMMARY =========== -->
+<A NAME="operation_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Operation Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#add">add</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;value)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#add">add</A></B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE044D3C5732D8D45BDC9E58E5D25F299E.html">CompressedByteBuffer</A>&nbsp;other)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#addFloat">addFloat</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;f)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#addRaw">addRaw</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;b)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#write">write</A></B>(<A HREF="../../../../../galagosearch-core-Model/java/io/DCEBB766EB3E609FB7E68FFBECEE3EF8EA9.html">OutputStream</A>&nbsp;stream)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#flush">flush</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#flushBuffer">flushBuffer</A></B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE044D3C5732D8D45BDC9E58E5D25F299E.html">CompressedByteBuffer</A>&nbsp;other)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#length">length</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#clear">clear</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE91ECEC5994FD7427155C4B1E131F895B.html">BufferInputStream</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getInputStream">getInputStream</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== ATTRIBUTE DETAIL =========== -->
+<A NAME="attribute_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Attribute Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="segments"></A><H3>segments</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/java/io/DCE4B0E3C26695D30435F91F0F3AAA44FE5.html">File</A> <B>segments</B>[0..*]</PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="diskLength"></A><H3>diskLength</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A> <B>diskLength</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="threshold"></A><H3>threshold</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A> <B>threshold</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+
+<!-- =========== CONSTRUCTOR DETAIL =========== -->
+
+<A NAME="constructor_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="BackedCompressedByteBuffer"></A><H3>BackedCompressedByteBuffer</H3>
+<PRE>
+public <B>BackedCompressedByteBuffer</B>(<A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;threshold)</PRE>
+<DL>
+<DD>Creates a new instance of BackedCompressedByteBuffer 
+<P>
+</DD></DL>
+<HR>
+<A NAME="BackedCompressedByteBuffer"></A><H3>BackedCompressedByteBuffer</H3>
+<PRE>
+public <B>BackedCompressedByteBuffer</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+
+<!-- =========== OPERATION DETAIL =========== -->
+
+<A NAME="operationr_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Operation Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="add"></A><H3>add</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>add</B>(<A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;value)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="add"></A><H3>add</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>add</B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE044D3C5732D8D45BDC9E58E5D25F299E.html">CompressedByteBuffer</A>&nbsp;other)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="addFloat"></A><H3>addFloat</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>addFloat</B>(<A HREF="../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;f)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="addRaw"></A><H3>addRaw</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>addRaw</B>(<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;b)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="write"></A><H3>write</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>write</B>(<A HREF="../../../../../galagosearch-core-Model/java/io/DCEBB766EB3E609FB7E68FFBECEE3EF8EA9.html">OutputStream</A>&nbsp;stream)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="flush"></A><H3>flush</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>flush</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="flushBuffer"></A><H3>flushBuffer</H3>
+<PRE>
+package <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>flushBuffer</B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE044D3C5732D8D45BDC9E58E5D25F299E.html">CompressedByteBuffer</A>&nbsp;other)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="length"></A><H3>length</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A> <B>length</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="clear"></A><H3>clear</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>clear</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getInputStream"></A><H3>getInputStream</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE91ECEC5994FD7427155C4B1E131F895B.html">BufferInputStream</A> <B>getInputStream</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+
+<HR>
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+</BODY>
+</HTML>

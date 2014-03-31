@@ -1,0 +1,667 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Class</TITLE>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-8">
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../stylesheet.css" TITLE="Style"></HEAD>
+<BODY BGCOLOR="white">
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+<HR>
+<H2>
+<FONT SIZE="-1">org::tartarus::snowball</FONT>
+<BR>
+Class SnowballProgram</H2>
+<PRE>
+<B>org::tartarus::snowball::SnowballProgram</B>
+</PRE>
+<DL>
+<DT><B>All Known Subclasses:</B> <DD><A HREF="../../../../galagosearch-core-Model/org/tartarus/snowball/DCEF575ECB255E555FFC259D7E1049965F2.html" title="subclass in org::tartarus::snowball">SnowballStemmer</A></DD>
+</DL>
+<DL>
+<DT><B>All Known Associations: </B><DD><IMG SRC="../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../galagosearch-core-Model/org/tartarus/snowball/DCEED4300FD182A2D6435E68D4CE5E344B9.html">Navigable_Aggregation</A>: <A HREF="../../../../galagosearch-core-Model/org/tartarus/snowball/DCE7DB99F2F49A2CEB777557291BCC2120D.html" title="association in org::tartarus::snowball">Among</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>SnowballProgram</B></DT></DL>
+</PRE>
+
+<!-- =========== PROPERTY SUMMARY =========== -->
+<A NAME="property_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Properties</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Alias</B></TD>
+<TD>SnowballProgram</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Visibility</B></TD>
+<TD>public</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Final</B></TD>
+<TD><IMG src="../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Transient</B></TD>
+<TD><IMG src="../../../../images/checked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Abstract</B></TD>
+<TD><IMG src="../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Leaf</B></TD>
+<TD><IMG src="../../../../images/unchecked.png" border=n></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== ATTRIBUTE SUMMARY =========== -->
+<A NAME="attribute_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Attribute Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE84ED43857CC17457976F33F693D133AC.html">StringBuffer</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#current">current</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;current string
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#cursor">cursor</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#limit">limit</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#limit_backward">limit_backward</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#bra">bra</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#ket">ket</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== CONSTRUCTOR SUMMARY =========== -->
+
+<A NAME="constructor_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="#SnowballProgram">SnowballProgram</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== OPERATION SUMMARY =========== -->
+<A NAME="operation_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Operation Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setCurrent">setCurrent</A></B>(<A HREF="../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;value)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Set the current string.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getCurrent">getCurrent</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Get the current string.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#copy_from">copy_from</A></B>(<A HREF="../../../../galagosearch-core-Model/org/tartarus/snowball/DCE4A2A9AEE7FDE474FD19DDA4EBD6EEE1C.html">SnowballProgram</A>&nbsp;other)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#in_grouping">in_grouping</A></B>(<A HREF="../../../../galagosearch-core-Model/DCE2FCEB57AE0466D6FAC82B5696119D3E8.html">char</A>&nbsp;s[0..*],&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;min,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;max)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#in_grouping_b">in_grouping_b</A></B>(<A HREF="../../../../galagosearch-core-Model/DCE2FCEB57AE0466D6FAC82B5696119D3E8.html">char</A>&nbsp;s[0..*],&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;min,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;max)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#out_grouping">out_grouping</A></B>(<A HREF="../../../../galagosearch-core-Model/DCE2FCEB57AE0466D6FAC82B5696119D3E8.html">char</A>&nbsp;s[0..*],&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;min,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;max)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#out_grouping_b">out_grouping_b</A></B>(<A HREF="../../../../galagosearch-core-Model/DCE2FCEB57AE0466D6FAC82B5696119D3E8.html">char</A>&nbsp;s[0..*],&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;min,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;max)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#in_range">in_range</A></B>(<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;min,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;max)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#in_range_b">in_range_b</A></B>(<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;min,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;max)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#out_range">out_range</A></B>(<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;min,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;max)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#out_range_b">out_range_b</A></B>(<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;min,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;max)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#eq_s">eq_s</A></B>(<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;s_size,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;s)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#eq_s_b">eq_s_b</A></B>(<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;s_size,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;s)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#eq_v">eq_v</A></B>(<A HREF="../../../../galagosearch-core-Model/DCEFB6E6E3D47DC53DA28B1577A5306D102.html">CharSequence</A>&nbsp;s)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#eq_v_b">eq_v_b</A></B>(<A HREF="../../../../galagosearch-core-Model/DCEFB6E6E3D47DC53DA28B1577A5306D102.html">CharSequence</A>&nbsp;s)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#find_among">find_among</A></B>(<A HREF="../../../../galagosearch-core-Model/org/tartarus/snowball/DCE7DB99F2F49A2CEB777557291BCC2120D.html">Among</A>&nbsp;v[0..*],&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;v_size)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#find_among_b">find_among_b</A></B>(<A HREF="../../../../galagosearch-core-Model/org/tartarus/snowball/DCE7DB99F2F49A2CEB777557291BCC2120D.html">Among</A>&nbsp;v[0..*],&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;v_size)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;find_among_b is for backwards processing.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#replace_s">replace_s</A></B>(<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;c_bra,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;c_ket,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;s)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to replace chars between c_bra and c_ket in current by the
+     chars in s.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#slice_check">slice_check</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#slice_from">slice_from</A></B>(<A HREF="../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;s)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#slice_from">slice_from</A></B>(<A HREF="../../../../galagosearch-core-Model/DCEFB6E6E3D47DC53DA28B1577A5306D102.html">CharSequence</A>&nbsp;s)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#slice_del">slice_del</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#insert">insert</A></B>(<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;c_bra,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;c_ket,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;s)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#insert">insert</A></B>(<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;c_bra,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;c_ket,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCEFB6E6E3D47DC53DA28B1577A5306D102.html">CharSequence</A>&nbsp;s)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE84ED43857CC17457976F33F693D133AC.html">StringBuffer</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#slice_to">slice_to</A></B>(<A HREF="../../../../galagosearch-core-Model/DCE84ED43857CC17457976F33F693D133AC.html">StringBuffer</A>&nbsp;s)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy the slice into the supplied StringBuffer </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCEFAB113A5CBD1DBCD63986FB4C6648A46.html">StringBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#slice_to">slice_to</A></B>(<A HREF="../../../../galagosearch-core-Model/DCEFAB113A5CBD1DBCD63986FB4C6648A46.html">StringBuilder</A>&nbsp;s)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy the slice into the supplied StringBuilder </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCE84ED43857CC17457976F33F693D133AC.html">StringBuffer</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#assign_to">assign_to</A></B>(<A HREF="../../../../galagosearch-core-Model/DCE84ED43857CC17457976F33F693D133AC.html">StringBuffer</A>&nbsp;s)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../galagosearch-core-Model/DCEFAB113A5CBD1DBCD63986FB4C6648A46.html">StringBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#assign_to">assign_to</A></B>(<A HREF="../../../../galagosearch-core-Model/DCEFAB113A5CBD1DBCD63986FB4C6648A46.html">StringBuilder</A>&nbsp;s)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== ATTRIBUTE DETAIL =========== -->
+<A NAME="attribute_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Attribute Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="current"></A><H3>current</H3>
+<PRE>protected <A HREF="../../../../galagosearch-core-Model/DCE84ED43857CC17457976F33F693D133AC.html">StringBuffer</A> <B>current</B></PRE><DL>
+<DD>current string
+
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="cursor"></A><H3>cursor</H3>
+<PRE>protected <A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>cursor</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="limit"></A><H3>limit</H3>
+<PRE>protected <A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>limit</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="limit_backward"></A><H3>limit_backward</H3>
+<PRE>protected <A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>limit_backward</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="bra"></A><H3>bra</H3>
+<PRE>protected <A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>bra</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="ket"></A><H3>ket</H3>
+<PRE>protected <A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>ket</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+
+<!-- =========== CONSTRUCTOR DETAIL =========== -->
+
+<A NAME="constructor_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="SnowballProgram"></A><H3>SnowballProgram</H3>
+<PRE>
+protected <B>SnowballProgram</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+
+<!-- =========== OPERATION DETAIL =========== -->
+
+<A NAME="operationr_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Operation Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="setCurrent"></A><H3>setCurrent</H3>
+<PRE>
+public <A HREF="../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>setCurrent</B>(<A HREF="../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>     Set the current string.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="getCurrent"></A><H3>getCurrent</H3>
+<PRE>
+public <A HREF="../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>getCurrent</B>()</PRE>
+<DL>
+<DD>     Get the current string.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="copy_from"></A><H3>copy_from</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>copy_from</B>(<A HREF="../../../../galagosearch-core-Model/org/tartarus/snowball/DCE4A2A9AEE7FDE474FD19DDA4EBD6EEE1C.html">SnowballProgram</A>&nbsp;other)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="in_grouping"></A><H3>in_grouping</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A> <B>in_grouping</B>(<A HREF="../../../../galagosearch-core-Model/DCE2FCEB57AE0466D6FAC82B5696119D3E8.html">char</A>&nbsp;s[0..*],&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;min,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;max)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="in_grouping_b"></A><H3>in_grouping_b</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A> <B>in_grouping_b</B>(<A HREF="../../../../galagosearch-core-Model/DCE2FCEB57AE0466D6FAC82B5696119D3E8.html">char</A>&nbsp;s[0..*],&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;min,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;max)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="out_grouping"></A><H3>out_grouping</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A> <B>out_grouping</B>(<A HREF="../../../../galagosearch-core-Model/DCE2FCEB57AE0466D6FAC82B5696119D3E8.html">char</A>&nbsp;s[0..*],&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;min,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;max)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="out_grouping_b"></A><H3>out_grouping_b</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A> <B>out_grouping_b</B>(<A HREF="../../../../galagosearch-core-Model/DCE2FCEB57AE0466D6FAC82B5696119D3E8.html">char</A>&nbsp;s[0..*],&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;min,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;max)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="in_range"></A><H3>in_range</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A> <B>in_range</B>(<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;min,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;max)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="in_range_b"></A><H3>in_range_b</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A> <B>in_range_b</B>(<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;min,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;max)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="out_range"></A><H3>out_range</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A> <B>out_range</B>(<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;min,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;max)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="out_range_b"></A><H3>out_range_b</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A> <B>out_range_b</B>(<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;min,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;max)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="eq_s"></A><H3>eq_s</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A> <B>eq_s</B>(<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;s_size,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;s)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="eq_s_b"></A><H3>eq_s_b</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A> <B>eq_s_b</B>(<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;s_size,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;s)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="eq_v"></A><H3>eq_v</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A> <B>eq_v</B>(<A HREF="../../../../galagosearch-core-Model/DCEFB6E6E3D47DC53DA28B1577A5306D102.html">CharSequence</A>&nbsp;s)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="eq_v_b"></A><H3>eq_v_b</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A> <B>eq_v_b</B>(<A HREF="../../../../galagosearch-core-Model/DCEFB6E6E3D47DC53DA28B1577A5306D102.html">CharSequence</A>&nbsp;s)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="find_among"></A><H3>find_among</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>find_among</B>(<A HREF="../../../../galagosearch-core-Model/org/tartarus/snowball/DCE7DB99F2F49A2CEB777557291BCC2120D.html">Among</A>&nbsp;v[0..*],&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;v_size)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="find_among_b"></A><H3>find_among_b</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>find_among_b</B>(<A HREF="../../../../galagosearch-core-Model/org/tartarus/snowball/DCE7DB99F2F49A2CEB777557291BCC2120D.html">Among</A>&nbsp;v[0..*],&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;v_size)</PRE>
+<DL>
+<DD>find_among_b is for backwards processing. Same comments apply
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="replace_s"></A><H3>replace_s</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>replace_s</B>(<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;c_bra,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;c_ket,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;s)</PRE>
+<DL>
+<DD>to replace chars between c_bra and c_ket in current by the
+     chars in s.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="slice_check"></A><H3>slice_check</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>slice_check</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="slice_from"></A><H3>slice_from</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>slice_from</B>(<A HREF="../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;s)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="slice_from"></A><H3>slice_from</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>slice_from</B>(<A HREF="../../../../galagosearch-core-Model/DCEFB6E6E3D47DC53DA28B1577A5306D102.html">CharSequence</A>&nbsp;s)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="slice_del"></A><H3>slice_del</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>slice_del</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="insert"></A><H3>insert</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>insert</B>(<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;c_bra,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;c_ket,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;s)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="insert"></A><H3>insert</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>insert</B>(<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;c_bra,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;c_ket,&nbsp;<A HREF="../../../../galagosearch-core-Model/DCEFB6E6E3D47DC53DA28B1577A5306D102.html">CharSequence</A>&nbsp;s)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="slice_to"></A><H3>slice_to</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE84ED43857CC17457976F33F693D133AC.html">StringBuffer</A> <B>slice_to</B>(<A HREF="../../../../galagosearch-core-Model/DCE84ED43857CC17457976F33F693D133AC.html">StringBuffer</A>&nbsp;s)</PRE>
+<DL>
+<DD>Copy the slice into the supplied StringBuffer 
+<P>
+</DD></DL>
+<HR>
+<A NAME="slice_to"></A><H3>slice_to</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCEFAB113A5CBD1DBCD63986FB4C6648A46.html">StringBuilder</A> <B>slice_to</B>(<A HREF="../../../../galagosearch-core-Model/DCEFAB113A5CBD1DBCD63986FB4C6648A46.html">StringBuilder</A>&nbsp;s)</PRE>
+<DL>
+<DD>Copy the slice into the supplied StringBuilder 
+<P>
+</DD></DL>
+<HR>
+<A NAME="assign_to"></A><H3>assign_to</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCE84ED43857CC17457976F33F693D133AC.html">StringBuffer</A> <B>assign_to</B>(<A HREF="../../../../galagosearch-core-Model/DCE84ED43857CC17457976F33F693D133AC.html">StringBuffer</A>&nbsp;s)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="assign_to"></A><H3>assign_to</H3>
+<PRE>
+protected <A HREF="../../../../galagosearch-core-Model/DCEFAB113A5CBD1DBCD63986FB4C6648A46.html">StringBuilder</A> <B>assign_to</B>(<A HREF="../../../../galagosearch-core-Model/DCEFAB113A5CBD1DBCD63986FB4C6648A46.html">StringBuilder</A>&nbsp;s)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+
+<HR>
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+</BODY>
+</HTML>

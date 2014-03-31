@@ -1,0 +1,827 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Class</TITLE>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-8">
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style"></HEAD>
+<BODY BGCOLOR="white">
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+<HR>
+<H2>
+<FONT SIZE="-1">org::galagosearch::core::parse</FONT>
+<BR>
+Class TagTokenizer</H2>
+<PRE>
+<B>org::galagosearch::core::parse::TagTokenizer</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCEF7E2A761541D5FD923294AE427B35387.html" title="interface in org::galagosearch::tupleflow">Source&lt;Document&gt;</A>, <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCEABD70B50C74AD8E43AE91CF1D7146CC5.html" title="interface in org::galagosearch::tupleflow">Processor&lt;Document&gt;</A></DD>
+</DL>
+<DL>
+<DT><B>All Dependency Suppliers:</B><DD><IMG SRC="../../../../../images/implementation.png" ALT="(Implementation) ">&nbsp;Implementation&nbsp;<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCEF7E2A761541D5FD923294AE427B35387.html" title="dependency in org::galagosearch::tupleflow">Source<Document></A></DD>
+<DD><IMG SRC="../../../../../images/implementation.png" ALT="(Implementation) ">&nbsp;Implementation&nbsp;<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCEABD70B50C74AD8E43AE91CF1D7146CC5.html" title="dependency in org::galagosearch::tupleflow">Processor<Document></A></DD>
+</DL>
+<DL>
+<DT><B>All Known Associations: </B><DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCEFBEE7648E799FAB3BF0FAC4B2D0F7CA6.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCEABD70B50C74AD8E43AE91CF1D7146CC5.html" title="association in org::galagosearch::tupleflow">Processor&lt;Document&gt;</A></DD>
+<DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCED605689D8C6B21DFE2C0AB9AC217C380.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE378933C728F56656F025083B7D0C2340.html" title="association in org::galagosearch::core::parse">StringPooler</A></DD>
+<DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE1C0A4AD12D9F8AB5BE970A339CA6185D.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/java/util/DCE5E658F473494E896308B4608E5DB9FA1.html" title="association in java::util">HashMap&lt;String, ArrayList&lt;BeginTag&gt;&gt;</A></DD>
+<DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE495D85D6DA35FB0E6C2C03BE0377147C.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE55180B7B034217EBB1BFE3EDA32647AA.html" title="association in org::galagosearch::core::parse">ClosedTag</A></DD>
+<DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE50B747BBF573816CFF7D9F72C4DEF1D2.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCEE2C954E68B90A64A9979FFC559F01692.html" title="association in org::galagosearch::core::parse">Pair</A></DD>
+<DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCEAAB8AE3F415C8E07BDE8B3F4F14C6A95.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCEBDE27A55C77D03B507AE5BCB78A17436.html" title="association in org::galagosearch::core::parse">AnchorTextDocumentCreator</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>TagTokenizer</B></DT><DT>implements <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCEF7E2A761541D5FD923294AE427B35387.html" title="interface in org::galagosearch::tupleflow">Source&lt;Document&gt;</A>, <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCEABD70B50C74AD8E43AE91CF1D7146CC5.html" title="interface in org::galagosearch::tupleflow">Processor&lt;Document&gt;</A></DL>
+</PRE>
+
+<!-- =========== PROPERTY SUMMARY =========== -->
+<A NAME="property_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Properties</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Alias</B></TD>
+<TD>TagTokenizer</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Visibility</B></TD>
+<TD>public</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Final</B></TD>
+<TD><IMG src="../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Transient</B></TD>
+<TD><IMG src="../../../../../images/checked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Abstract</B></TD>
+<TD><IMG src="../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Leaf</B></TD>
+<TD><IMG src="../../../../../images/unchecked.png" border=n></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== NESTED CLASS SUMMARY =========== -->
+<A NAME="nested_class_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>public class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCEE2C954E68B90A64A9979FFC559F01692.html">Pair</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCECE441253AD39EB0756451D1936FECEAE.html">StringStatus</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>package class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE55180B7B034217EBB1BFE3EDA32647AA.html">ClosedTag</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>package class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE5C96000D24F7C6FD56817C715FAD7AB2.html">BeginTag</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+
+</TABLE>
+&nbsp;
+<!-- =========== ATTRIBUTE SUMMARY =========== -->
+<A NAME="attribute_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Attribute Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#splits">splits</A></B>[0..*]</CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#ignoredTags">ignoredTags</A></B>[0..*]</CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#ngram">ngram</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#ignoreUntil">ignoreUntil</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#text">text</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#position">position</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#lastSplit">lastSplit</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#tokens">tokens</A></B>[0..*]</CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== CONSTRUCTOR SUMMARY =========== -->
+
+<A NAME="constructor_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="#TagTokenizer">TagTokenizer</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== OPERATION SUMMARY =========== -->
+<A NAME="operation_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Operation Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#buildSplits">buildSplits</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#buildIgnoredTags">buildIgnoredTags</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#reset">reset</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Resets parsing in preparation for the next document.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#skipComment">skipComment</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#skipProcessingInstruction">skipProcessingInstruction</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#parseEndTag">parseEndTag</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#closeTag">closeTag</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;tagName)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#indexOfNonSpace">indexOfNonSpace</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;start)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#indexOfEndAttribute">indexOfEndAttribute</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;start,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;tagEnd)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#indexOfSpace">indexOfSpace</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;start)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#indexOfEquals">indexOfEquals</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;start,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;end)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#parseBeginTag">parseBeginTag</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#endParsing">endParsing</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#onSplit">onSplit</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#addToken">addToken</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;token,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;start,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;end)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Adds a token to the document object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#tokenComplexFix">tokenComplexFix</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;token)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#tokenAcronymProcessing">tokenAcronymProcessing</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;token,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;start,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;end)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     This method does three kinds of processing:
+     <ul>
+      <li>If the token contains periods at the beginning or the end,
+          they are removed.</ul></li></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#tokenSimpleFix">tokenSimpleFix</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;token)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Scans through the token, removing apostrophes and converting
+     uppercase to lowercase letters.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCECE441253AD39EB0756451D1936FECEAE.html">StringStatus</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#checkTokenStatus">checkTokenStatus</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;token)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     This method scans the token, looking for uppercase characters and
+     special characters.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#onStartBracket">onStartBracket</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE13A02513A10C5A39CC352BB32BDAFEC1.html">Tag</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#coalesceTags">coalesceTags</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Translates tags from the internal ClosedTag format to the
+     Tag type.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#onAmpersand">onAmpersand</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#process">process</A></B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE4B81FF6A45AC8B71B55F5D69CF90B628.html">Document</A>&nbsp;document)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Parses the text in the document.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#tokenize">tokenize</A></B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE4B81FF6A45AC8B71B55F5D69CF90B628.html">Document</A>&nbsp;document)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Parses the text in the document.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE4B81FF6A45AC8B71B55F5D69CF90B628.html">Document</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#tokenize">tokenize</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;text)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Parses the text in the input string and returns a document object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCEE2C954E68B90A64A9979FFC559F01692.html">Pair</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getTokenPositions">getTokenPositions</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setProcessor">setProcessor</A></B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE58D0EB325939FFE12F2E5844072C3530.html">Step</A>&nbsp;processor)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#close">close</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE490D3301689BD251647005F8F729587B.html">Class&lt;Document&gt;</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getInputClass">getInputClass</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE490D3301689BD251647005F8F729587B.html">Class&lt;Document&gt;</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getOutputClass">getOutputClass</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== ATTRIBUTE DETAIL =========== -->
+<A NAME="attribute_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Attribute Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="splits"></A><H3>splits</H3>
+<PRE>protected <A HREF="../../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A> <B>splits</B>[0..*]</PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="ignoredTags"></A><H3>ignoredTags</H3>
+<PRE>protected <A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>ignoredTags</B>[0..*]</PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="ngram"></A><H3>ngram</H3>
+<PRE>public <A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>ngram</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="ignoreUntil"></A><H3>ignoreUntil</H3>
+<PRE>protected <A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>ignoreUntil</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="text"></A><H3>text</H3>
+<PRE>protected <A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>text</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="position"></A><H3>position</H3>
+<PRE>protected <A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>position</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="lastSplit"></A><H3>lastSplit</H3>
+<PRE>protected <A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>lastSplit</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="tokens"></A><H3>tokens</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>tokens</B>[0..*]</PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+
+<!-- =========== CONSTRUCTOR DETAIL =========== -->
+
+<A NAME="constructor_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="TagTokenizer"></A><H3>TagTokenizer</H3>
+<PRE>
+public <B>TagTokenizer</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+
+<!-- =========== OPERATION DETAIL =========== -->
+
+<A NAME="operationr_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Operation Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="buildSplits"></A><H3>buildSplits</H3>
+<PRE>
+protected static <A HREF="../../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A>[0..*] <B>buildSplits</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="buildIgnoredTags"></A><H3>buildIgnoredTags</H3>
+<PRE>
+protected static <A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>[0..*] <B>buildIgnoredTags</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="reset"></A><H3>reset</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>reset</B>()</PRE>
+<DL>
+<DD>     Resets parsing in preparation for the next document.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="skipComment"></A><H3>skipComment</H3>
+<PRE>
+protected <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>skipComment</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="skipProcessingInstruction"></A><H3>skipProcessingInstruction</H3>
+<PRE>
+protected <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>skipProcessingInstruction</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="parseEndTag"></A><H3>parseEndTag</H3>
+<PRE>
+protected <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>parseEndTag</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="closeTag"></A><H3>closeTag</H3>
+<PRE>
+protected <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>closeTag</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;tagName)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="indexOfNonSpace"></A><H3>indexOfNonSpace</H3>
+<PRE>
+protected <A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>indexOfNonSpace</B>(<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;start)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="indexOfEndAttribute"></A><H3>indexOfEndAttribute</H3>
+<PRE>
+protected <A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>indexOfEndAttribute</B>(<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;start,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;tagEnd)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="indexOfSpace"></A><H3>indexOfSpace</H3>
+<PRE>
+protected <A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>indexOfSpace</B>(<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;start)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="indexOfEquals"></A><H3>indexOfEquals</H3>
+<PRE>
+protected <A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>indexOfEquals</B>(<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;start,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;end)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="parseBeginTag"></A><H3>parseBeginTag</H3>
+<PRE>
+protected <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>parseBeginTag</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="endParsing"></A><H3>endParsing</H3>
+<PRE>
+protected <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>endParsing</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="onSplit"></A><H3>onSplit</H3>
+<PRE>
+protected <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>onSplit</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="addToken"></A><H3>addToken</H3>
+<PRE>
+protected <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>addToken</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;token,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;start,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;end)</PRE>
+<DL>
+<DD>     Adds a token to the document object.  This method currently drops tokens 
+     longer than 100 bytes long right now.
+     
+     @param token  The token to add.
+     @param start  The starting byte offset of the token in the document text.
+     @param end    The ending byte offset of the token in the document text.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="tokenComplexFix"></A><H3>tokenComplexFix</H3>
+<PRE>
+protected <A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>tokenComplexFix</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;token)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="tokenAcronymProcessing"></A><H3>tokenAcronymProcessing</H3>
+<PRE>
+protected <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>tokenAcronymProcessing</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;token,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;start,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;end)</PRE>
+<DL>
+<DD>     This method does three kinds of processing:
+     <ul>
+      <li>If the token contains periods at the beginning or the end,
+          they are removed.</li>
+      <li>If the token contains single letters followed by periods, such
+          as I.B.M., C.I.A., or U.S.A., the periods are removed.</li>
+      <li>If, instead, the token contains longer strings of text with
+          periods in the middle, the token is split into 
+          smaller tokens ("umass.edu" becomes {"umass", "edu"}).  Notice
+          that this means ("ph.d." becomes {"ph", "d"}).</li>
+     </ul>
+     
+     @param token
+     @param start
+     @param end
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="tokenSimpleFix"></A><H3>tokenSimpleFix</H3>
+<PRE>
+protected <A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>tokenSimpleFix</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;token)</PRE>
+<DL>
+<DD>     Scans through the token, removing apostrophes and converting
+     uppercase to lowercase letters.
+     
+     @param token
+     @return
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="checkTokenStatus"></A><H3>checkTokenStatus</H3>
+<PRE>
+protected <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCECE441253AD39EB0756451D1936FECEAE.html">StringStatus</A> <B>checkTokenStatus</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;token)</PRE>
+<DL>
+<DD>     This method scans the token, looking for uppercase characters and
+     special characters.  If the token contains only numbers and lowercase
+     letters, it needs no further processing, and it returns Clean.
+     If it also contains uppercase letters or apostrophes, it returns 
+     NeedsSimpleFix.  If it contains special characters (especially Unicode
+     characters), it returns NeedsComplexFix.  Finally, if any periods are
+     present, this returns NeedsAcronymProcessing.
+     
+     @param token
+     @return
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="onStartBracket"></A><H3>onStartBracket</H3>
+<PRE>
+protected <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>onStartBracket</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="coalesceTags"></A><H3>coalesceTags</H3>
+<PRE>
+protected <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE13A02513A10C5A39CC352BB32BDAFEC1.html">Tag</A>[0..*] <B>coalesceTags</B>()</PRE>
+<DL>
+<DD>     Translates tags from the internal ClosedTag format to the
+     Tag type.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="onAmpersand"></A><H3>onAmpersand</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>onAmpersand</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="process"></A><H3>process</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>process</B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE4B81FF6A45AC8B71B55F5D69CF90B628.html">Document</A>&nbsp;document)</PRE>
+<DL>
+<DD>     Parses the text in the document.text attribute and fills in the 
+     document.terms and document.tags arrays, then passes that document
+     to the next processing stage.
+     
+     @param document
+     @throws java.io.IOException
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="tokenize"></A><H3>tokenize</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>tokenize</B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE4B81FF6A45AC8B71B55F5D69CF90B628.html">Document</A>&nbsp;document)</PRE>
+<DL>
+<DD>     Parses the text in the document.text attribute and fills in the 
+     document.terms and document.tags arrays.
+     
+     @param document
+     @throws java.io.IOException
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="tokenize"></A><H3>tokenize</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE4B81FF6A45AC8B71B55F5D69CF90B628.html">Document</A> <B>tokenize</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;text)</PRE>
+<DL>
+<DD>     Parses the text in the input string and returns a document object.
+     This method calls the {#link tokenize(Document) other variant}.
+     
+     @return A new document object containing the parsed text from the input string.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="getTokenPositions"></A><H3>getTokenPositions</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCEE2C954E68B90A64A9979FFC559F01692.html">Pair</A>[0..*] <B>getTokenPositions</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setProcessor"></A><H3>setProcessor</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>setProcessor</B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE58D0EB325939FFE12F2E5844072C3530.html">Step</A>&nbsp;processor)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="close"></A><H3>close</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>close</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getInputClass"></A><H3>getInputClass</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE490D3301689BD251647005F8F729587B.html">Class&lt;Document&gt;</A> <B>getInputClass</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getOutputClass"></A><H3>getOutputClass</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE490D3301689BD251647005F8F729587B.html">Class&lt;Document&gt;</A> <B>getOutputClass</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+
+<HR>
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+</BODY>
+</HTML>

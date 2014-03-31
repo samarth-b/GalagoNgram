@@ -1,0 +1,438 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Class</TITLE>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-8">
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style"></HEAD>
+<BODY BGCOLOR="white">
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+<HR>
+<H2>
+<FONT SIZE="-1">org::galagosearch::core::retrieval::structured</FONT>
+<BR>
+Class FeatureFactory</H2>
+<PRE>
+<B>org::galagosearch::core::retrieval::structured::FeatureFactory</B>
+</PRE>
+<DL>
+<DT><B>All Known Associations: </B><DD><IMG SRC="../../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/structured/DCEC30F81D256EA717709C066F8CF81F82E.html">Navigable_Aggregation</A>: <A HREF="../../../../../../galagosearch-core-Model/java/util/DCE187AFDCBCBF402570BE58F307BF2BC1D.html" title="association in java::util">HashMap&lt;String, OperatorSpec&gt;</A></DD>
+<DD><IMG SRC="../../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/structured/DCEE406A9DB94CD7896B7B80C3BC7DB0C16.html">Navigable_Aggregation</A>: <A HREF="../../../../../../galagosearch-core-Model/java/util/DCE187AFDCBCBF402570BE58F307BF2BC1D.html" title="association in java::util">HashMap&lt;String, OperatorSpec&gt;</A></DD>
+<DD><IMG SRC="../../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/structured/DCE573F77C5D8223162D2542A0C2631A8A5.html">Navigable_Aggregation</A>: <A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/structured/DCEA781C404553C754E80512DC343840DE6.html" title="association in org::galagosearch::core::retrieval::structured">TraversalSpec</A></DD>
+<DD><IMG SRC="../../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/structured/DCEA3EBA25CF3FBA5C088B75F5F34C6D95F.html">Navigable_Aggregation</A>: <A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/structured/DCE4204F1E29A276F9ACA8B90788BC367C3.html" title="association in org::galagosearch::core::retrieval::structured">StructuredRetrieval</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>FeatureFactory</B></DT></DL>
+</PRE>
+
+<P>
+<p>Uses user-provided information to build iterators for retrieval.</p>
+  <p>With no added parameters, this class constructs the basic set of operators
+ in the Galago query language; things like #combine, #inside, and #syn.  However,
+ if you build more operators or traversals, you'll want to provide some
+ parameters to FeatureFactory so it knows where to find your code.</p>
+  <p>If you want to add an operator, try this:</p>
+ <pre>
+    &gt;operators&lt;
+        &gt;operator&lt;
+            &gt;name&lt;myoperator&gt;/name&lt;
+            &gt;class&lt;org.myorganization.MyOperatorIterator&gt;/class&lt;
+            &gt;parameters&lt;
+                &gt;weight&lt;0.5&gt;/weight&lt;
+            &gt;/parameters&lt;
+        &gt;/operator&lt;
+    &gt;/operators&lt;
+ </pre>
+  <p>Once configured like this, you can access your operator in queries as
+ #myoperator().  Galago will instantiate your operator using the class
+ <tt>org.myorganization.MyOperatorIterator</tt>, and it will pass in the
+ argument <tt>weight=0.5</tt> to your operator's parameters object.  Note that
+ the constructor of your operator must start with a Parameters object, and
+ the remaining parameters must be StructuredIterators.  Look at the implementations
+ of the built-in operators for examples.</p>
+  <p>If you want to add some query traversals, try this:</p>
+  <pre>
+    &gt;traversals&lt;
+        &gt;traversal&lt;
+            &gt;class&lt;org.myorganization.MyTraversal&gt;/class&lt;
+            &gt;order&lt;after&gt;/order&lt;
+        &gt;/traversal&lt;
+    &gt;/traversals&lt;
+ </pre>
+  <p>The <tt>order</tt> tag specifies that this traversal should run after
+ all the default traversals.  You could also specify <tt>before</tt> or
+ <tt>instead</tt>.  Order matters in this list of traversals.  The top
+ traversal will be executed first, and the bottom traversal will be executed
+ last.</p>
+  @author trevor</P><HR>
+<!-- =========== PROPERTY SUMMARY =========== -->
+<A NAME="property_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Properties</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Alias</B></TD>
+<TD>FeatureFactory</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Visibility</B></TD>
+<TD>public</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Final</B></TD>
+<TD><IMG src="../../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Transient</B></TD>
+<TD><IMG src="../../../../../../images/checked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Abstract</B></TD>
+<TD><IMG src="../../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Leaf</B></TD>
+<TD><IMG src="../../../../../../images/unchecked.png" border=n></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== NESTED CLASS SUMMARY =========== -->
+<A NAME="nested_class_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>package class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/structured/DCE7E7494FC7B0AF54C66AF760D6CBF8FA3.html">OperatorSpec</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>package class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/structured/DCEA781C404553C754E80512DC343840DE6.html">TraversalSpec</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+
+</TABLE>
+&nbsp;
+<!-- =========== ATTRIBUTE SUMMARY =========== -->
+<A NAME="attribute_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Attribute Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#sOperatorLookup">sOperatorLookup</A></B>[0..*,0..*]</CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#sFeatureLookup">sFeatureLookup</A></B>[0..*,0..*]</CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#sTraversalList">sTraversalList</A></B>[0..*]</CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#parameters">parameters</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== CONSTRUCTOR SUMMARY =========== -->
+
+<A NAME="constructor_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="#FeatureFactory">FeatureFactory</A></B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A>&nbsp;parameters)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== OPERATION SUMMARY =========== -->
+<A NAME="operation_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Operation Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getClassName">getClassName</A></B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A>&nbsp;node)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getFeatureClassName">getFeatureClassName</A></B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A>&nbsp;parameters)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCEBB7E2F1BFC19164C2B65D7835DB18B02.html">Class&lt;StructuredIterator&gt;</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getClass">getClass</A></B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A>&nbsp;node)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCE523AD3BED7D721A5A80F734F9DC734F4.html">NodeType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getNodeType">getNodeType</A></B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A>&nbsp;node)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#isUsableConstructor">isUsableConstructor</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE2DCDD4F809A3A8CD491098E11A39FAE1.html">Class</A>&nbsp;types[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/structured/DCE62940DF0236FADB910E2403A9A886680.html">StructuredIterator</A>&nbsp;childIterators[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE9E5C0F27B120581AB0E0A5A307B77393.html">Object</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#argsForConstructor">argsForConstructor</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE2DCDD4F809A3A8CD491098E11A39FAE1.html">Class</A>&nbsp;types[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A>&nbsp;parameters,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/structured/DCE62940DF0236FADB910E2403A9A886680.html">StructuredIterator</A>&nbsp;childIterators[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/structured/DCE62940DF0236FADB910E2403A9A886680.html">StructuredIterator</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getIterator">getIterator</A></B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A>&nbsp;node,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/structured/DCE62940DF0236FADB910E2403A9A886680.html">StructuredIterator</A>&nbsp;childIterators[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Given a query node, generates the corresponding iterator object that can be used
+     for structured retrieval.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getTraversalNames">getTraversalNames</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCE73855CC847BBBCD93FD69E2A899633EB.html">Traversal</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getTraversals">getTraversals</A></B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/structured/DCE4204F1E29A276F9ACA8B90788BC367C3.html">StructuredRetrieval</A>&nbsp;retrieval)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== ATTRIBUTE DETAIL =========== -->
+<A NAME="attribute_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Attribute Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="sOperatorLookup"></A><H3>sOperatorLookup</H3>
+<PRE>package <A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>sOperatorLookup</B>[0..*,0..*]</PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sFeatureLookup"></A><H3>sFeatureLookup</H3>
+<PRE>package <A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>sFeatureLookup</B>[0..*,0..*]</PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sTraversalList"></A><H3>sTraversalList</H3>
+<PRE>package <A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>sTraversalList</B>[0..*]</PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="parameters"></A><H3>parameters</H3>
+<PRE>package <A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A> <B>parameters</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+
+<!-- =========== CONSTRUCTOR DETAIL =========== -->
+
+<A NAME="constructor_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="FeatureFactory"></A><H3>FeatureFactory</H3>
+<PRE>
+public <B>FeatureFactory</B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A>&nbsp;parameters)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+
+<!-- =========== OPERATION DETAIL =========== -->
+
+<A NAME="operationr_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Operation Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="getClassName"></A><H3>getClassName</H3>
+<PRE>
+public <A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>getClassName</B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A>&nbsp;node)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getFeatureClassName"></A><H3>getFeatureClassName</H3>
+<PRE>
+public <A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>getFeatureClassName</B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A>&nbsp;parameters)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getClass"></A><H3>getClass</H3>
+<PRE>
+public <A HREF="../../../../../../galagosearch-core-Model/DCEBB7E2F1BFC19164C2B65D7835DB18B02.html">Class&lt;StructuredIterator&gt;</A> <B>getClass</B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A>&nbsp;node)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getNodeType"></A><H3>getNodeType</H3>
+<PRE>
+public <A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCE523AD3BED7D721A5A80F734F9DC734F4.html">NodeType</A> <B>getNodeType</B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A>&nbsp;node)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="isUsableConstructor"></A><H3>isUsableConstructor</H3>
+<PRE>
+package <A HREF="../../../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A> <B>isUsableConstructor</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE2DCDD4F809A3A8CD491098E11A39FAE1.html">Class</A>&nbsp;types[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/structured/DCE62940DF0236FADB910E2403A9A886680.html">StructuredIterator</A>&nbsp;childIterators[0..*])</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="argsForConstructor"></A><H3>argsForConstructor</H3>
+<PRE>
+package <A HREF="../../../../../../galagosearch-core-Model/DCE9E5C0F27B120581AB0E0A5A307B77393.html">Object</A>[0..*] <B>argsForConstructor</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE2DCDD4F809A3A8CD491098E11A39FAE1.html">Class</A>&nbsp;types[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A>&nbsp;parameters,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/structured/DCE62940DF0236FADB910E2403A9A886680.html">StructuredIterator</A>&nbsp;childIterators[0..*])</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getIterator"></A><H3>getIterator</H3>
+<PRE>
+public <A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/structured/DCE62940DF0236FADB910E2403A9A886680.html">StructuredIterator</A> <B>getIterator</B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A>&nbsp;node,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/structured/DCE62940DF0236FADB910E2403A9A886680.html">StructuredIterator</A>&nbsp;childIterators[0..*])</PRE>
+<DL>
+<DD>     Given a query node, generates the corresponding iterator object that can be used
+     for structured retrieval.  This method just calls getClass() on the node,
+     then instantiates the resulting class.
+     
+     If the class returned by getClass() is a ScoringFunction, it must contain
+     a constructor that takes a single Parameters object.  If the class returned by 
+     getFeatureClass() is some kind of StructuredIterator (either a ScoreIterator,
+     ExtentIterator or CountIterator), it must take a Parameters object and an
+     ArrayList of DocumentDataIterators as parameters.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="getTraversalNames"></A><H3>getTraversalNames</H3>
+<PRE>
+public <A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>[0..*] <B>getTraversalNames</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getTraversals"></A><H3>getTraversals</H3>
+<PRE>
+public <A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCE73855CC847BBBCD93FD69E2A899633EB.html">Traversal</A>[0..*] <B>getTraversals</B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/structured/DCE4204F1E29A276F9ACA8B90788BC367C3.html">StructuredRetrieval</A>&nbsp;retrieval)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+
+<HR>
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+</BODY>
+</HTML>

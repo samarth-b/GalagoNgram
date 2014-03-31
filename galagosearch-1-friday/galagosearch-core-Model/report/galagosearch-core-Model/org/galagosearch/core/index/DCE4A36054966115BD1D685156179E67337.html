@@ -1,0 +1,433 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Class</TITLE>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-8">
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style"></HEAD>
+<BODY BGCOLOR="white">
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+<HR>
+<H2>
+<FONT SIZE="-1">org::galagosearch::core::index</FONT>
+<BR>
+Class VocabularyHeader</H2>
+<PRE>
+<B>org::galagosearch::core::index::IndexWriter::VocabularyHeader</B>
+</PRE>
+<DL>
+<DT><B>Enclosing class:</B><DD><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCEED140A2A979AB7133A49EFA735EB22A9.html" >IndexWriter</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>package class <B>VocabularyHeader</B></DT></DL>
+</PRE>
+
+<!-- =========== PROPERTY SUMMARY =========== -->
+<A NAME="property_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Properties</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Alias</B></TD>
+<TD>VocabularyHeader</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Visibility</B></TD>
+<TD>package</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Final</B></TD>
+<TD><IMG src="../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Transient</B></TD>
+<TD><IMG src="../../../../../images/checked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Abstract</B></TD>
+<TD><IMG src="../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Leaf</B></TD>
+<TD><IMG src="../../../../../images/unchecked.png" border=n></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== ATTRIBUTE SUMMARY =========== -->
+<A NAME="attribute_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Attribute Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE94F3A1D0FF82A424FF66E06DA0EB812F.html">byte[]</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#keys">keys</A></B>[0..*]</CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE861C784E6F483B0D8BB3BE7C62C2156A.html">short</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#ends">ends</A></B>[0..*]</CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/java/io/DCE213CCFF35528BC0D08BE764D71015B04.html">ByteArrayOutputStream</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#wordByteStream">wordByteStream</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/java/io/DCE37CA091B6FF88B8E5DFF67CE6E9B59CC.html">DataOutputStream</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#vocabOutput">vocabOutput</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#blockOverlap">blockOverlap</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#groupCount">groupCount</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#vocabGroupSize">vocabGroupSize</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== CONSTRUCTOR SUMMARY =========== -->
+
+<A NAME="constructor_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="#VocabularyHeader">VocabularyHeader</A></B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE1E42380670F4239015FF4302553942E6.html">IndexElement</A>&nbsp;blockLists[0..*],&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;vocabGroupSize)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== OPERATION SUMMARY =========== -->
+<A NAME="operation_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Operation Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#prefixOverlap">prefixOverlap</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEB1B28E42D812C2801BABAC419642F810.html">byte</A>&nbsp;firstTerm[0..*],&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCEB1B28E42D812C2801BABAC419642F810.html">byte</A>&nbsp;lastTerm[0..*],&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;start)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#prefixOverlap">prefixOverlap</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEB1B28E42D812C2801BABAC419642F810.html">byte</A>&nbsp;firstTerm[0..*],&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCEB1B28E42D812C2801BABAC419642F810.html">byte</A>&nbsp;secondTerm[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#calculateBlockPrefix">calculateBlockPrefix</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#build">build</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getBlockOverlap">getBlockOverlap</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getGroupCount">getGroupCount</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getKeyCount">getKeyCount</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getKeyDataLength">getKeyDataLength</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEB1B28E42D812C2801BABAC419642F810.html">byte</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getFirstWord">getFirstWord</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#writeKeyHeader">writeKeyHeader</A></B>(<A HREF="../../../../../galagosearch-core-Model/java/io/DCE37CA091B6FF88B8E5DFF67CE6E9B59CC.html">DataOutputStream</A>&nbsp;output)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#writeKeyData">writeKeyData</A></B>(<A HREF="../../../../../galagosearch-core-Model/java/io/DCE37CA091B6FF88B8E5DFF67CE6E9B59CC.html">DataOutputStream</A>&nbsp;output)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== ATTRIBUTE DETAIL =========== -->
+<A NAME="attribute_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Attribute Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="keys"></A><H3>keys</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/DCE94F3A1D0FF82A424FF66E06DA0EB812F.html">byte[]</A> <B>keys</B>[0..*]</PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="ends"></A><H3>ends</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/DCE861C784E6F483B0D8BB3BE7C62C2156A.html">short</A> <B>ends</B>[0..*]</PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="wordByteStream"></A><H3>wordByteStream</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/java/io/DCE213CCFF35528BC0D08BE764D71015B04.html">ByteArrayOutputStream</A> <B>wordByteStream</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="vocabOutput"></A><H3>vocabOutput</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/java/io/DCE37CA091B6FF88B8E5DFF67CE6E9B59CC.html">DataOutputStream</A> <B>vocabOutput</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="blockOverlap"></A><H3>blockOverlap</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>blockOverlap</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="groupCount"></A><H3>groupCount</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>groupCount</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="vocabGroupSize"></A><H3>vocabGroupSize</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>vocabGroupSize</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+
+<!-- =========== CONSTRUCTOR DETAIL =========== -->
+
+<A NAME="constructor_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="VocabularyHeader"></A><H3>VocabularyHeader</H3>
+<PRE>
+package <B>VocabularyHeader</B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE1E42380670F4239015FF4302553942E6.html">IndexElement</A>&nbsp;blockLists[0..*],&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;vocabGroupSize)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+
+<!-- =========== OPERATION DETAIL =========== -->
+
+<A NAME="operationr_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Operation Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="prefixOverlap"></A><H3>prefixOverlap</H3>
+<PRE>
+package <A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>prefixOverlap</B>(<A HREF="../../../../../galagosearch-core-Model/DCEB1B28E42D812C2801BABAC419642F810.html">byte</A>&nbsp;firstTerm[0..*],&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCEB1B28E42D812C2801BABAC419642F810.html">byte</A>&nbsp;lastTerm[0..*],&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;start)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="prefixOverlap"></A><H3>prefixOverlap</H3>
+<PRE>
+package <A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>prefixOverlap</B>(<A HREF="../../../../../galagosearch-core-Model/DCEB1B28E42D812C2801BABAC419642F810.html">byte</A>&nbsp;firstTerm[0..*],&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCEB1B28E42D812C2801BABAC419642F810.html">byte</A>&nbsp;secondTerm[0..*])</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="calculateBlockPrefix"></A><H3>calculateBlockPrefix</H3>
+<PRE>
+package <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>calculateBlockPrefix</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="build"></A><H3>build</H3>
+<PRE>
+package <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>build</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getBlockOverlap"></A><H3>getBlockOverlap</H3>
+<PRE>
+package <A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>getBlockOverlap</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getGroupCount"></A><H3>getGroupCount</H3>
+<PRE>
+package <A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>getGroupCount</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getKeyCount"></A><H3>getKeyCount</H3>
+<PRE>
+package <A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>getKeyCount</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getKeyDataLength"></A><H3>getKeyDataLength</H3>
+<PRE>
+package <A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>getKeyDataLength</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getFirstWord"></A><H3>getFirstWord</H3>
+<PRE>
+package <A HREF="../../../../../galagosearch-core-Model/DCEB1B28E42D812C2801BABAC419642F810.html">byte</A>[0..*] <B>getFirstWord</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="writeKeyHeader"></A><H3>writeKeyHeader</H3>
+<PRE>
+package <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>writeKeyHeader</B>(<A HREF="../../../../../galagosearch-core-Model/java/io/DCE37CA091B6FF88B8E5DFF67CE6E9B59CC.html">DataOutputStream</A>&nbsp;output)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="writeKeyData"></A><H3>writeKeyData</H3>
+<PRE>
+package <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>writeKeyData</B>(<A HREF="../../../../../galagosearch-core-Model/java/io/DCE37CA091B6FF88B8E5DFF67CE6E9B59CC.html">DataOutputStream</A>&nbsp;output)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+
+<HR>
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+</BODY>
+</HTML>

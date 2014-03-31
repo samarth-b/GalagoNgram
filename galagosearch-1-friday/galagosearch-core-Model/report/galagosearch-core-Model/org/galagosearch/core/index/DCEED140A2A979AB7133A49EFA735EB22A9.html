@@ -1,0 +1,596 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Class</TITLE>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-8">
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style"></HEAD>
+<BODY BGCOLOR="white">
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+<HR>
+<H2>
+<FONT SIZE="-1">org::galagosearch::core::index</FONT>
+<BR>
+Class IndexWriter</H2>
+<PRE>
+<B>org::galagosearch::core::index::IndexWriter</B>
+</PRE>
+<DL>
+<DT><B>All Known Associations: </B><DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE3335E72BA4326EDABE659AD91E09A094.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCEE653446EC7D9C64E593F210110CC7E71.html" title="association in org::galagosearch::core::parse">DocumentIndexWriter</A></DD>
+<DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE85507CE19560BC92F8CD0A4EAB7B595B.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE58FBDA8BDB330D19012C143DBAD3E978.html" title="association in org::galagosearch::core::index">PositionIndexWriter</A></DD>
+<DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCEEAB4E7C5079ADF4D90E3E70AF3C0D954.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE151DA892D7CC3A3D1352753A1F8DF1ED.html" title="association in org::galagosearch::core::index">SparseFloatListWriter</A></DD>
+<DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE046153C3E6881FD5FA8EB9AB253C6F71.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE20A787FD7D60A57E3E1591D376F32AFC.html" title="association in org::galagosearch::core::index">ExtentValueIndexWriter</A></DD>
+<DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE9384C4AD39B8E6AEB7BC6EF02A245B89.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE1133236E9A543CE0AAC1E23F3DA189AE.html" title="association in org::galagosearch::core::index">VocabularyWriter</A></DD>
+<DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE0896E8801CB0668AF2ADA651D6F6B8E7.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE1E42380670F4239015FF4302553942E6.html" title="association in org::galagosearch::core::index">IndexElement</A></DD>
+<DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE35E21E37568A6B3CB6D6ECBF859E61BC.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCEF57ED2C26F35652C6D279E1FF8923F3F.html" title="association in org::galagosearch::core::index">ExtentIndexWriter</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>IndexWriter</B></DT></DL>
+</PRE>
+
+<P>
+This class writes index files, which are used for most Galago indexes.
+ 
+ An index is a mapping between a key and a value, much like a TreeMap.  The keys are
+ sorted to allow iteration over the whole file.  Keys are stored using prefix
+ compression to save space.  The structure is designed for fast random access on disk.
+ 
+ For indexes, we assume that the data in each value is already compressed, so IndexWriter
+ does no additional compression.  However, if the isCompressed flag is set, IndexWriter
+ will compress the value data.  This is convenient for storing documents in an index.
+ 
+ Keys cannot be longer than 256 bytes, and they must be added in sorted order.
+ 
+ @author trevor</P><HR>
+<!-- =========== PROPERTY SUMMARY =========== -->
+<A NAME="property_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Properties</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Alias</B></TD>
+<TD>IndexWriter</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Visibility</B></TD>
+<TD>public</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Final</B></TD>
+<TD><IMG src="../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Transient</B></TD>
+<TD><IMG src="../../../../../images/checked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Abstract</B></TD>
+<TD><IMG src="../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Leaf</B></TD>
+<TD><IMG src="../../../../../images/unchecked.png" border=n></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== NESTED CLASS SUMMARY =========== -->
+<A NAME="nested_class_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>public class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCEA1F1A67D4F734DB72663AD7D8498D86A.html">ListData</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>package class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE5786C42F6F1582BD9AE304C5F116B17E.html">UncompressedListData</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>package class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE84D785C0E921792E77ABCC16958D314B.html">CompressedListData</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>package class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE4A36054966115BD1D685156179E67337.html">VocabularyHeader</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+
+</TABLE>
+&nbsp;
+<!-- =========== ATTRIBUTE SUMMARY =========== -->
+<A NAME="attribute_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Attribute Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#MAGIC_NUMBER">MAGIC_NUMBER</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/java/io/DCE37CA091B6FF88B8E5DFF67CE6E9B59CC.html">DataOutputStream</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#output">output</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#manifest">manifest</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#blockSize">blockSize</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#vocabGroup">vocabGroup</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#filePosition">filePosition</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#listBytes">listBytes</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#isCompressed">isCompressed</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compression isn't supported yet
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE519E10F640404D7C494630BA354AC11E.html">Counter</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#recordsWritten">recordsWritten</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE519E10F640404D7C494630BA354AC11E.html">Counter</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#blocksWritten">blocksWritten</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== CONSTRUCTOR SUMMARY =========== -->
+
+<A NAME="constructor_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="#IndexWriter">IndexWriter</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;outputFilename,&nbsp;<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A>&nbsp;parameters)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Creates a new instance of IndexWriter
+     </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="#IndexWriter">IndexWriter</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;outputFilename)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="#IndexWriter">IndexWriter</A></B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE31F361525B8719698162F8587333FED4.html">TupleFlowParameters</A>&nbsp;parameters)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== OPERATION SUMMARY =========== -->
+<A NAME="operation_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Operation Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getManifest">getManifest</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Returns the current copy of the manifest, which will be stored in
+     the completed index file.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#bufferedSize">bufferedSize</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     Gives a conservative estimate of the buffered size of the data,
+     excluding the most recent inverted list.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#updateBufferedSize">updateBufferedSize</A></B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE1E42380670F4239015FF4302553942E6.html">IndexElement</A>&nbsp;list)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#invertedListLength">invertedListLength</A></B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE1E42380670F4239015FF4302553942E6.html">IndexElement</A>&nbsp;list)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#flush">flush</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Flush all lists out to disk.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getBlockSize">getBlockSize</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#lessThanOrEqualTo">lessThanOrEqualTo</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEB1B28E42D812C2801BABAC419642F810.html">byte</A>&nbsp;one[0..*],&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCEB1B28E42D812C2801BABAC419642F810.html">byte</A>&nbsp;two[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#wordsInOrder">wordsInOrder</A></B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE1E42380670F4239015FF4302553942E6.html">IndexElement</A>&nbsp;blockLists[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Returns true if the lists are sorted in ascending order by
+     key.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#writeBlock">writeBlock</A></B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE1E42380670F4239015FF4302553942E6.html">IndexElement</A>&nbsp;blockLists[0..*],&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;length)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#needsFlush">needsFlush</A></B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE1E42380670F4239015FF4302553942E6.html">IndexElement</A>&nbsp;list)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#add">add</A></B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE1E42380670F4239015FF4302553942E6.html">IndexElement</A>&nbsp;list)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#close">close</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== ATTRIBUTE DETAIL =========== -->
+<A NAME="attribute_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Attribute Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="MAGIC_NUMBER"></A><H3>MAGIC_NUMBER</H3>
+<PRE>public <A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A> <B>MAGIC_NUMBER</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="output"></A><H3>output</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/java/io/DCE37CA091B6FF88B8E5DFF67CE6E9B59CC.html">DataOutputStream</A> <B>output</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="manifest"></A><H3>manifest</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A> <B>manifest</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="blockSize"></A><H3>blockSize</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>blockSize</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="vocabGroup"></A><H3>vocabGroup</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>vocabGroup</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="filePosition"></A><H3>filePosition</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A> <B>filePosition</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="listBytes"></A><H3>listBytes</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A> <B>listBytes</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isCompressed"></A><H3>isCompressed</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A> <B>isCompressed</B></PRE><DL>
+<DD>compression isn't supported yet
+
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="recordsWritten"></A><H3>recordsWritten</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE519E10F640404D7C494630BA354AC11E.html">Counter</A> <B>recordsWritten</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="blocksWritten"></A><H3>blocksWritten</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE519E10F640404D7C494630BA354AC11E.html">Counter</A> <B>blocksWritten</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+
+<!-- =========== CONSTRUCTOR DETAIL =========== -->
+
+<A NAME="constructor_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="IndexWriter"></A><H3>IndexWriter</H3>
+<PRE>
+public <B>IndexWriter</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;outputFilename,&nbsp;<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A>&nbsp;parameters)</PRE>
+<DL>
+<DD>     Creates a new instance of IndexWriter
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="IndexWriter"></A><H3>IndexWriter</H3>
+<PRE>
+public <B>IndexWriter</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;outputFilename)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="IndexWriter"></A><H3>IndexWriter</H3>
+<PRE>
+public <B>IndexWriter</B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE31F361525B8719698162F8587333FED4.html">TupleFlowParameters</A>&nbsp;parameters)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+
+<!-- =========== OPERATION DETAIL =========== -->
+
+<A NAME="operationr_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Operation Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="getManifest"></A><H3>getManifest</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A> <B>getManifest</B>()</PRE>
+<DL>
+<DD>     Returns the current copy of the manifest, which will be stored in
+     the completed index file.  This data is not written until close() is called.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="bufferedSize"></A><H3>bufferedSize</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A> <B>bufferedSize</B>()</PRE>
+<DL>
+<DD>
+     Gives a conservative estimate of the buffered size of the data,
+     excluding the most recent inverted list.
+     Does not include savings due to key overlap compression.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="updateBufferedSize"></A><H3>updateBufferedSize</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>updateBufferedSize</B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE1E42380670F4239015FF4302553942E6.html">IndexElement</A>&nbsp;list)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="invertedListLength"></A><H3>invertedListLength</H3>
+<PRE>
+private <A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A> <B>invertedListLength</B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE1E42380670F4239015FF4302553942E6.html">IndexElement</A>&nbsp;list)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="flush"></A><H3>flush</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>flush</B>()</PRE>
+<DL>
+<DD>     Flush all lists out to disk.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="getBlockSize"></A><H3>getBlockSize</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A> <B>getBlockSize</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="lessThanOrEqualTo"></A><H3>lessThanOrEqualTo</H3>
+<PRE>
+private <A HREF="../../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A> <B>lessThanOrEqualTo</B>(<A HREF="../../../../../galagosearch-core-Model/DCEB1B28E42D812C2801BABAC419642F810.html">byte</A>&nbsp;one[0..*],&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCEB1B28E42D812C2801BABAC419642F810.html">byte</A>&nbsp;two[0..*])</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="wordsInOrder"></A><H3>wordsInOrder</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A> <B>wordsInOrder</B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE1E42380670F4239015FF4302553942E6.html">IndexElement</A>&nbsp;blockLists[0..*])</PRE>
+<DL>
+<DD>     Returns true if the lists are sorted in ascending order by
+     key.
+     
+     @param blockLists
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="writeBlock"></A><H3>writeBlock</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>writeBlock</B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE1E42380670F4239015FF4302553942E6.html">IndexElement</A>&nbsp;blockLists[0..*],&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;length)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="needsFlush"></A><H3>needsFlush</H3>
+<PRE>
+private <A HREF="../../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A> <B>needsFlush</B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE1E42380670F4239015FF4302553942E6.html">IndexElement</A>&nbsp;list)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="add"></A><H3>add</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>add</B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE1E42380670F4239015FF4302553942E6.html">IndexElement</A>&nbsp;list)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="close"></A><H3>close</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>close</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+
+<HR>
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+</BODY>
+</HTML>

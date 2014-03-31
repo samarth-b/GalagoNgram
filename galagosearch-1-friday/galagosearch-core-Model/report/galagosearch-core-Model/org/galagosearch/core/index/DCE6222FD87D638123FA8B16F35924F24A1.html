@@ -1,0 +1,604 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Class</TITLE>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-8">
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style"></HEAD>
+<BODY BGCOLOR="white">
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+<HR>
+<H2>
+<FONT SIZE="-1">org::galagosearch::core::index</FONT>
+<BR>
+Class IndexReader</H2>
+<PRE>
+<B>org::galagosearch::core::index::IndexReader</B>
+</PRE>
+<DL>
+<DT><B>All Known Associations: </B><DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE19FCCC416DD6C037048A7551C11D040B.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCEF10AC1191EDF48C58B5D1D6F61C3E139.html" title="association in org::galagosearch::core::index">ExtentIndexReader</A></DD>
+<DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE507E4A92998C4AD47C421C2D8B3FB58B.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCED99E21ACA7188A9DAEA624E30D443214.html" title="association in org::galagosearch::core::index">SparseFloatListReader</A></DD>
+<DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCEC568496CB70A3FC4940F7CAF7C52C69A.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/parse/DCE317E2EF3FFABE156A03AFFDB1EE341A5.html" title="association in org::galagosearch::core::parse">DocumentIndexReader</A></DD>
+<DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE66F7BF84076C2393269692B77500320D.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCEC25E8BF0032F4C52DC0EB27E924F092F.html" title="association in org::galagosearch::core::index">PositionIndexReader</A></DD>
+<DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE614FD7B739BBF335528B3CD836424BC4.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE0652449DEE017C0746A1575D73352ED7.html" title="association in org::galagosearch::core::index">VocabularyReader</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>IndexReader</B></DT></DL>
+</PRE>
+
+<P>
+<p>This implements the core functionality for all inverted list readers.  It can
+ also be used as a read-only TreeMap for disk-based data structures.  In Galago,
+ it is used both to store index data and to store documents.</p>
+ 
+ <p>An index is a mapping from String to byte[].  If compression is turned on, the
+ value must be small enough that it fits in memory.  If compression is off, values
+ are streamed directly from disk so there is no size restriction.  Indexes support
+ iteration over all keys, or direct lookup of a single key.  The structure is optimized
+ to support fast random lookup on disks.</p>
+ 
+ <p>Data is stored in blocks, typically 32K each.  Each block has a prefix-compressed
+ set of keys at the beginning, followed by a block of value data.  IndexWriter/IndexReader
+ can GZip compress that value data, or it can be stored uncompressed.  For inverted list
+ data it's best to use your own compression, but for text data the GZip compression
+ is a good choice.</p>
+ 
+ <p>Typically this class is extended by composition instead of inheritance.</p>
+ 
+ @author trevor</P><HR>
+<!-- =========== PROPERTY SUMMARY =========== -->
+<A NAME="property_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Properties</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Alias</B></TD>
+<TD>IndexReader</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Visibility</B></TD>
+<TD>public</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Final</B></TD>
+<TD><IMG src="../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Transient</B></TD>
+<TD><IMG src="../../../../../images/checked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Abstract</B></TD>
+<TD><IMG src="../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Leaf</B></TD>
+<TD><IMG src="../../../../../images/unchecked.png" border=n></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== NESTED CLASS SUMMARY =========== -->
+<A NAME="nested_class_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>private class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCEC8A856022DE0DA23D5A6D9E8656295BF.html">VocabularyBlock</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>public class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE91FF10884DA46CE73BE3490DC051C46C.html">Iterator</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+
+</TABLE>
+&nbsp;
+<!-- =========== ATTRIBUTE SUMMARY =========== -->
+<A NAME="attribute_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Attribute Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/java/io/DCEC43C75E09715F880A7B82881D2D2518C.html">RandomAccessFile</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#input">input</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#manifest">manifest</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#blockSize">blockSize</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#vocabGroup">vocabGroup</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#vocabularyOffset">vocabularyOffset</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#manifestOffset">manifestOffset</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#footerOffset">footerOffset</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#isCompressed">isCompressed</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== CONSTRUCTOR SUMMARY =========== -->
+
+<A NAME="constructor_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="#IndexReader">IndexReader</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;pathname)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Opens an index found in the at pathname.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="#IndexReader">IndexReader</A></B>(<A HREF="../../../../../galagosearch-core-Model/java/io/DCE4B0E3C26695D30435F91F0F3AAA44FE5.html">File</A>&nbsp;pathname)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Identical to the {@link #IndexReader(String) other constructor}, except this
+     one takes a File object instead of a string as the parameter.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== OPERATION SUMMARY =========== -->
+<A NAME="operation_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Operation Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#isIndexFile">isIndexFile</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;pathname)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Returns true if the file specified by this pathname was probably written by IndexWriter.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE0652449DEE017C0746A1575D73352ED7.html">VocabularyReader</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getVocabulary">getVocabulary</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Returns the vocabulary structure for this IndexReader.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE91FF10884DA46CE73BE3490DC051C46C.html">Iterator</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getIterator">getIterator</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Returns an iterator pointing to the very first key in the index.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE91FF10884DA46CE73BE3490DC051C46C.html">Iterator</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getIterator">getIterator</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;key)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Returns an iterator pointing at a specific key.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getValueString">getValueString</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;key)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Gets the value stored in the index associated with this key.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCEC29BC69746FDBF758D9B08949870F23A.html">DataStream</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getValueStream">getValueStream</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;key)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Gets the value stored in the index associated with this key.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getManifest">getManifest</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Returns a Parameters object that contains metadata about
+     the contents of the index.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCEC29BC69746FDBF758D9B08949870F23A.html">DataStream</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#blockStream">blockStream</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;len)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Like the other blockStream variant, but this one uses
+     the current file location as the starting offset.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCEC29BC69746FDBF758D9B08949870F23A.html">DataStream</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#blockStream">blockStream</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;offset,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;length)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     This convenience method returns a DataStream for
+     a region of an inverted file.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCEC29BC69746FDBF758D9B08949870F23A.html">DataStream</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#blockStream">blockStream</A></B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE91FF10884DA46CE73BE3490DC051C46C.html">Iterator</A>&nbsp;iter)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     This convenience method returns a DataStream for
+     the region of the inverted file pointed to by the iterator.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/java/io/DCEC43C75E09715F880A7B82881D2D2518C.html">RandomAccessFile</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getInput">getInput</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Returns the file object for the inverted file.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#close">close</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Closes all files associated with the IndexReader.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCEC8A856022DE0DA23D5A6D9E8656295BF.html">VocabularyBlock</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#readVocabularyBlock">readVocabularyBlock</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;slotBegin)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Reads vocabulary data from a block of the inverted file.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== ATTRIBUTE DETAIL =========== -->
+<A NAME="attribute_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Attribute Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="input"></A><H3>input</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/java/io/DCEC43C75E09715F880A7B82881D2D2518C.html">RandomAccessFile</A> <B>input</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="manifest"></A><H3>manifest</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A> <B>manifest</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="blockSize"></A><H3>blockSize</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>blockSize</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="vocabGroup"></A><H3>vocabGroup</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>vocabGroup</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="vocabularyOffset"></A><H3>vocabularyOffset</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A> <B>vocabularyOffset</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="manifestOffset"></A><H3>manifestOffset</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A> <B>manifestOffset</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="footerOffset"></A><H3>footerOffset</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A> <B>footerOffset</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isCompressed"></A><H3>isCompressed</H3>
+<PRE>package <A HREF="../../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A> <B>isCompressed</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+
+<!-- =========== CONSTRUCTOR DETAIL =========== -->
+
+<A NAME="constructor_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="IndexReader"></A><H3>IndexReader</H3>
+<PRE>
+public <B>IndexReader</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;pathname)</PRE>
+<DL>
+<DD>     Opens an index found in the at pathname.
+     
+     @param pathname Filename of the index to open.
+     @throws FileNotFoundException
+     @throws IOException
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="IndexReader"></A><H3>IndexReader</H3>
+<PRE>
+public <B>IndexReader</B>(<A HREF="../../../../../galagosearch-core-Model/java/io/DCE4B0E3C26695D30435F91F0F3AAA44FE5.html">File</A>&nbsp;pathname)</PRE>
+<DL>
+<DD>     Identical to the {@link #IndexReader(String) other constructor}, except this
+     one takes a File object instead of a string as the parameter.
+     
+     @param pathname
+     @throws java.io.FileNotFoundException
+     @throws java.io.IOException
+     
+<P>
+</DD></DL>
+
+<!-- =========== OPERATION DETAIL =========== -->
+
+<A NAME="operationr_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Operation Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="isIndexFile"></A><H3>isIndexFile</H3>
+<PRE>
+public static <A HREF="../../../../../galagosearch-core-Model/DCE4EABB0E6389CC74E26CB44A08D0D4FD0.html">boolean</A> <B>isIndexFile</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;pathname)</PRE>
+<DL>
+<DD>     Returns true if the file specified by this pathname was probably written by IndexWriter.
+     If this method returns false, the file is definitely not readable by IndexReader.
+     
+     @param pathname
+     @return
+     @throws java.io.FileNotFoundException
+     @throws java.io.IOException
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="getVocabulary"></A><H3>getVocabulary</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE0652449DEE017C0746A1575D73352ED7.html">VocabularyReader</A> <B>getVocabulary</B>()</PRE>
+<DL>
+<DD>     Returns the vocabulary structure for this IndexReader.  Note that the vocabulary
+     contains only the first key in each block.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="getIterator"></A><H3>getIterator</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE91FF10884DA46CE73BE3490DC051C46C.html">Iterator</A> <B>getIterator</B>()</PRE>
+<DL>
+<DD>     Returns an iterator pointing to the very first key in the index.
+     This is typically used for iterating through the entire index,
+     which might be useful for testing and debugging tools, but probably
+     not for traditional document retrieval.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="getIterator"></A><H3>getIterator</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE91FF10884DA46CE73BE3490DC051C46C.html">Iterator</A> <B>getIterator</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;key)</PRE>
+<DL>
+<DD>     Returns an iterator pointing at a specific key.  Returns
+     null if the key is not found in the index.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="getValueString"></A><H3>getValueString</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>getValueString</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;key)</PRE>
+<DL>
+<DD>     Gets the value stored in the index associated with this key.
+     @param key
+     @return The index value for this key, or null if there is no such value.
+     @throws java.io.IOException
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="getValueStream"></A><H3>getValueStream</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCEC29BC69746FDBF758D9B08949870F23A.html">DataStream</A> <B>getValueStream</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;key)</PRE>
+<DL>
+<DD>     Gets the value stored in the index associated with this key.
+     
+     @param key
+     @return The index value for this key, or null if there is no such value.
+     @throws java.io.IOException
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="getManifest"></A><H3>getManifest</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCE8605E2A03BD86394D56EF2FEF0167B34.html">Parameters</A> <B>getManifest</B>()</PRE>
+<DL>
+<DD>     Returns a Parameters object that contains metadata about
+     the contents of the index.  This is the place to store important
+     data about the index contents, like what stemmer was used or the
+     total number of terms in the collection.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="blockStream"></A><H3>blockStream</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCEC29BC69746FDBF758D9B08949870F23A.html">DataStream</A> <B>blockStream</B>(<A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;len)</PRE>
+<DL>
+<DD>     Like the other blockStream variant, but this one uses
+     the current file location as the starting offset.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="blockStream"></A><H3>blockStream</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCEC29BC69746FDBF758D9B08949870F23A.html">DataStream</A> <B>blockStream</B>(<A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;offset,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;length)</PRE>
+<DL>
+<DD>     This convenience method returns a DataStream for
+     a region of an inverted file.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="blockStream"></A><H3>blockStream</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/tupleflow/DCEC29BC69746FDBF758D9B08949870F23A.html">DataStream</A> <B>blockStream</B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCE91FF10884DA46CE73BE3490DC051C46C.html">Iterator</A>&nbsp;iter)</PRE>
+<DL>
+<DD>     This convenience method returns a DataStream for
+     the region of the inverted file pointed to by the iterator.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="getInput"></A><H3>getInput</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/java/io/DCEC43C75E09715F880A7B82881D2D2518C.html">RandomAccessFile</A> <B>getInput</B>()</PRE>
+<DL>
+<DD>     Returns the file object for the inverted file.  This is useful for actually
+     reading the data from a byte range returned by the iterator.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="close"></A><H3>close</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>close</B>()</PRE>
+<DL>
+<DD>     Closes all files associated with the IndexReader.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="readVocabularyBlock"></A><H3>readVocabularyBlock</H3>
+<PRE>
+package <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/index/DCEC8A856022DE0DA23D5A6D9E8656295BF.html">VocabularyBlock</A> <B>readVocabularyBlock</B>(<A HREF="../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;slotBegin)</PRE>
+<DL>
+<DD>     Reads vocabulary data from a block of the inverted file.
+     
+     The inverted file is structured into blocks which contain a little
+     bit of compressed vocabulary information followed by inverted list
+     information.  The inverted list information is application specific,
+     and is not handled by this class.  This method reads in the vocabulary
+     information for a particular block and returns it in a VocabularyBlock
+     object, which allows for quick navigation to a particular key.
+     
+     The C++ version of this is much more efficient, because it makes no
+     attempt to decode the whole block of information.  However, for the 
+     Java version I thought that simplicity (and testability) was more
+     important than speed.  The VocabularyBlock structure helps make iteration
+     over the entire inverted file possible.
+     
+<P>
+</DD></DL>
+
+<HR>
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+</BODY>
+</HTML>

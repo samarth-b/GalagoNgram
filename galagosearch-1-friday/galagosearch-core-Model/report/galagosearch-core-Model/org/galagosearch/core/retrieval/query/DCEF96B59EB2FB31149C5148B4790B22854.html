@@ -1,0 +1,411 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Class</TITLE>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-8">
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style"></HEAD>
+<BODY BGCOLOR="white">
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+<HR>
+<H2>
+<FONT SIZE="-1">org::galagosearch::core::retrieval::query</FONT>
+<BR>
+Class StructuredQuery</H2>
+<PRE>
+<B>org::galagosearch::core::retrieval::query::StructuredQuery</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>StructuredQuery</B></DT></DL>
+</PRE>
+
+<P>
+Valid query language syntax:
+  #operator:argument(...)
+ term, or term.field, or term.field.field, etc.
+  @author trevor</P><HR>
+<!-- =========== PROPERTY SUMMARY =========== -->
+<A NAME="property_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Properties</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Alias</B></TD>
+<TD>StructuredQuery</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Visibility</B></TD>
+<TD>public</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Final</B></TD>
+<TD><IMG src="../../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Transient</B></TD>
+<TD><IMG src="../../../../../../images/checked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Abstract</B></TD>
+<TD><IMG src="../../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Leaf</B></TD>
+<TD><IMG src="../../../../../../images/unchecked.png" border=n></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== OPERATION SUMMARY =========== -->
+<A NAME="operation_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Operation Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#copy">copy</A></B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCE73855CC847BBBCD93FD69E2A899633EB.html">Traversal</A>&nbsp;traversal,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A>&nbsp;tree)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Copies a query tree using a traversal object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#walk">walk</A></B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCE73855CC847BBBCD93FD69E2A899633EB.html">Traversal</A>&nbsp;traversal,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A>&nbsp;tree)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Walks a query tree with a traversal object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#splitOn">splitOn</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;text,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE2FCEB57AE0466D6FAC82B5696119D3E8.html">char</A>&nbsp;delimiter)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Splits an input string, which may include escapes,
+     into chunks based on a delimiter character.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#parseOperator">parseOperator</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;operator,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;offset)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     <p>Parses an operator from the string query.</p></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#findEscapedEnd">findEscapedEnd</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;query,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;start)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Find the end of an escaped query region.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#findOperatorEnd">findOperatorEnd</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;query,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;start)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     <p>Find the end of an operator.</p></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#findTextEnd">findTextEnd</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;query,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;start)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#decodeEscapes">decodeEscapes</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;escapedString)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#splitStringRespectingEscapes">splitStringRespectingEscapes</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;query,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE2FCEB57AE0466D6FAC82B5696119D3E8.html">char</A>&nbsp;split)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#fieldOrNode">fieldOrNode</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;fieldNames[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;offset)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#parseTerm">parseTerm</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;query,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;offset)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#findOperatorExpressionEnd">findOperatorExpressionEnd</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;query,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;offset)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#parseArguments">parseArguments</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;query,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;offset)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Parses arguments to an operator.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#parse">parse</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;query)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#findQueryTerms">findQueryTerms</A></B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A>&nbsp;queryTree)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#parseFields">parseFields</A></B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A>&nbsp;result,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;chunks[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;offset)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#parseOperatorExpression">parseOperatorExpression</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;query,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;i,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;offset)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== OPERATION DETAIL =========== -->
+
+<A NAME="operationr_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Operation Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="copy"></A><H3>copy</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A> <B>copy</B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCE73855CC847BBBCD93FD69E2A899633EB.html">Traversal</A>&nbsp;traversal,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A>&nbsp;tree)</PRE>
+<DL>
+<DD>     Copies a query tree using a traversal object.
+          Both traversal.beforeNode and traversal.afterNode will be called
+     for every Node object in the query tree.
+     The traversal.beforeNode method will be called with a parent node
+     before any of its children (pre-order), while traversal.afterNode method
+     will be called on the parent after all of its children (post-order).
+          The afterNode method will be called with a new copy of the original
+     node, with the children replaced by new copies.  afterNode can either
+     return its parameter or a modified node.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="walk"></A><H3>walk</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>walk</B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCE73855CC847BBBCD93FD69E2A899633EB.html">Traversal</A>&nbsp;traversal,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A>&nbsp;tree)</PRE>
+<DL>
+<DD>     Walks a query tree with a traversal object.
+          Both traversal.beforeNode and traversal.afterNode will be called
+     for every Node object in the query tree.
+     The traversal.beforeNode method will be called with a parent node
+     before any of its children (pre-order), while traversal.afterNode method
+     will be called on the parent after all of its children (post-order).
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="splitOn"></A><H3>splitOn</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>[0..*] <B>splitOn</B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;text,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE2FCEB57AE0466D6FAC82B5696119D3E8.html">char</A>&nbsp;delimiter)</PRE>
+<DL>
+<DD>     Splits an input string, which may include escapes,
+     into chunks based on a delimiter character.  It does not split
+     on delimiters that appear in escaped regions.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="parseOperator"></A><H3>parseOperator</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A> <B>parseOperator</B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;operator,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;offset)</PRE>
+<DL>
+<DD>     <p>Parses an operator from the string query.  This method assumes that
+     operator is a pound sign ('#') followed by some text, followed by an open 
+     parentheses.  Parsing stops at the parenthesis.</p>
+          <p>Note that parsing starts at index 0, not at "offset".  The offset is used purely
+     for giving parse error information, and represents the offset of the operator string
+     in the larger query string.</p>
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="findEscapedEnd"></A><H3>findEscapedEnd</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>findEscapedEnd</B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;query,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;start)</PRE>
+<DL>
+<DD>     Find the end of an escaped query region.
+     We assume that query.charAt(start) == '@'.  The
+     next charater is the boundary symbol for the escaped text.
+     We move forward in the string until we see the boundary symbol again.
+     If the escaped region isn't well formed (that is, there is no 
+     initial boundary symbol, or we only see the boundary symbol once),
+     query.length() is returned.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="findOperatorEnd"></A><H3>findOperatorEnd</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>findOperatorEnd</B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;query,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;start)</PRE>
+<DL>
+<DD>     <p>Find the end of an operator.  We assume that query.charAt(start)
+     is a pound sign.  We skip forward in the query looking for
+     the end of the operator by looking at parentheses; we know we're
+     done when the parentheses are balanced and we've seen at least
+     one open parenthesis.  This method skips over escaped regions.</p>
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="findTextEnd"></A><H3>findTextEnd</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>findTextEnd</B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;query,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;start)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="decodeEscapes"></A><H3>decodeEscapes</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>decodeEscapes</B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;escapedString)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="splitStringRespectingEscapes"></A><H3>splitStringRespectingEscapes</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>[0..*] <B>splitStringRespectingEscapes</B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;query,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE2FCEB57AE0466D6FAC82B5696119D3E8.html">char</A>&nbsp;split)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="fieldOrNode"></A><H3>fieldOrNode</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A> <B>fieldOrNode</B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;fieldNames[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;offset)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="parseTerm"></A><H3>parseTerm</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A> <B>parseTerm</B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;query,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;offset)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="findOperatorExpressionEnd"></A><H3>findOperatorExpressionEnd</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>findOperatorExpressionEnd</B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;query,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;offset)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="parseArguments"></A><H3>parseArguments</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A>[0..*] <B>parseArguments</B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;query,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;offset)</PRE>
+<DL>
+<DD>     Parses arguments to an operator.  This method can also be used to parse
+     the elements of a query, since terms in a query are implicitly in a #combine
+     operator.
+     
+     @param query The query, or a substring of it, that contains argument text.
+     @param offset The offset into the full query string (offset == 0 if query is the full query).
+     @return a List of Nodes, which represent the query.
+     
+<P>
+</DD></DL>
+<HR>
+<A NAME="parse"></A><H3>parse</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A> <B>parse</B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;query)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="findQueryTerms"></A><H3>findQueryTerms</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>[0..*] <B>findQueryTerms</B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A>&nbsp;queryTree)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="parseFields"></A><H3>parseFields</H3>
+<PRE>
+private static <A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A> <B>parseFields</B>(<A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A>&nbsp;result,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;chunks[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;offset)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="parseOperatorExpression"></A><H3>parseOperatorExpression</H3>
+<PRE>
+private static <A HREF="../../../../../../galagosearch-core-Model/org/galagosearch/core/retrieval/query/DCEF5428383CA494CFF410F094E536DFA92.html">Node</A> <B>parseOperatorExpression</B>(<A HREF="../../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;query,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;i,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;offset)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+
+<HR>
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+</BODY>
+</HTML>

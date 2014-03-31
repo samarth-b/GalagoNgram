@@ -1,0 +1,2781 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Class</TITLE>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-8">
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style"></HEAD>
+<BODY BGCOLOR="white">
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+<HR>
+<H2>
+<FONT SIZE="-1">org::galagosearch::core::eval::stat</FONT>
+<BR>
+Class Stat</H2>
+<PRE>
+<B>org::galagosearch::core::eval::stat::Stat</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>Stat</B></DT></DL>
+</PRE>
+
+<!-- =========== PROPERTY SUMMARY =========== -->
+<A NAME="property_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Properties</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Alias</B></TD>
+<TD>Stat</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Visibility</B></TD>
+<TD>public</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Final</B></TD>
+<TD><IMG src="../../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Transient</B></TD>
+<TD><IMG src="../../../../../../images/checked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Abstract</B></TD>
+<TD><IMG src="../../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Leaf</B></TD>
+<TD><IMG src="../../../../../../images/unchecked.png" border=n></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== ATTRIBUTE SUMMARY =========== -->
+<A NAME="attribute_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Attribute Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#FPMIN">FPMIN</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A small number close to the smallest representable floating point number
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#lgfN">lgfN</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRIVATE MEMBERS FOR USE IN GAMMA FUNCTION METHODS AND HISTOGRAM CONSTRUCTION METHODS
+GAMMA FUNCTIONS
+ Lanczos Gamma Function approximation - N (number of coefficients -1)
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#lgfCoeff">lgfCoeff</A></B>[0..*]</CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lanczos Gamma Function approximation - Coefficients
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#lgfGamma">lgfGamma</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lanczos Gamma Function approximation - small gamma
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#igfiter">igfiter</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Maximum number of iterations allowed in Incomplete Gamma Function calculations
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#igfeps">igfeps</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tolerance used in terminating series in Incomplete Gamma Function calculations
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#histTol">histTol</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HISTOGRAM CONSTRUCTION
+ Tolerance used in including an upper point in last histogram bin when it is outside due to riunding erors
+</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== OPERATION SUMMARY =========== -->
+<A NAME="operation_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Operation Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#mean">mean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;METHODS
+Arithmetic mean of a 1D array of doubles, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#mean">mean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;ww[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weighted arithmetic mean of a 1D array of doubles, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#mean">mean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;ww[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weighted arithmetic mean of a 1D array of floats, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#geometricMean">geometricMean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Geometric mean of a 1D array of doubles, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#geometricMean">geometricMean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Geometric mean of a 1D array of floats, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#geometricMean">geometricMean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;ww[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weighted geometric mean of a 1D array of doubles, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#geometricMean">geometricMean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;ww[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weighted geometric mean of a 1D array of floats, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#harmonicMean">harmonicMean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Harmonic mean of a 1D array of doubles, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#harmonicMean">harmonicMean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Harmonic mean of a 1D array of floats, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#harmonicMean">harmonicMean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;ww[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weighted harmonic mean of a 1D array of doubles, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#harmonicMean">harmonicMean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;ww[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weighted harmonic mean of a 1D array of floats, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#generalisedMean">generalisedMean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;m)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generalised mean of a 1D array of doubles, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#generalisedMean">generalisedMean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;m)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generalised mean of a 1D array of floats, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#interQuartileMean">interQuartileMean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interquartile mean of a 1D array of doubles, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#interQuartileMean">interQuartileMean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interquartile mean of a 1D array of floats, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#rms">rms</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Root mean square (rms) of a 1D array of doubles, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#rms">rms</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Root mean square (rms) of a 1D array of floats, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#mean">mean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arithmetic mean of a 1D array of floats, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#mean">mean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arithmetic mean of a 1D array of int, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#mean">mean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arithmetic mean of a 1D array of long, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#median">median</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Median of a 1D array of doubles, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#median">median</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Median of a 1D array of floats, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#median">median</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Median of a 1D array of int, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#median">median</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Median of a 1D array of long, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#standardDeviation">standardDeviation</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Standard deviation of a 1D array of doubles, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#standardDeviation">standardDeviation</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Standard deviation of a 1D array of floats, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#standardDeviation">standardDeviation</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Standard deviation of a 1D array of int, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#standardDeviation">standardDeviation</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Standard deviation of a 1D array of long, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#standardDeviation">standardDeviation</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;ww[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weighted standard deviation of a 1D array of doubles, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#standardDeviation">standardDeviation</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;ww[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weighted standard deviation of a 1D array of floats, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#volatilityLogChange">volatilityLogChange</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;array[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;volatility   log  (doubles)
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#volatilityLogChange">volatilityLogChange</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;array[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;volatility   log  (floats)
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#volatilityPerCentChange">volatilityPerCentChange</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;array[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;volatility   percentage (double)
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#volatilityPerCentChange">volatilityPerCentChange</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;array[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;volatility   percentage (float)
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#coefficientOfVariation">coefficientOfVariation</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;array[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coefficient of variation of an array of doubles
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#coefficientOfVariation">coefficientOfVariation</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;array[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coefficient of variation of an array of float
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#subtractMean">subtractMean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;array[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtract mean of an array from data array elements
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#subtractMean">subtractMean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;array[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtract mean of an array from data array elements
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#variance">variance</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Variance of a 1D array of doubles, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#variance">variance</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Variance of a 1D array of floats, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#variance">variance</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Variance of a 1D array of int, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#variance">variance</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;aa[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Variance of a 1D array of ilong, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#variance">variance</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;ww[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weighted variance of a 1D array of doubles, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#variance">variance</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;ww[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weighted variance of a 1D array of floats, aa
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#covariance">covariance</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;xx[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;yy[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Covariance of two 1D arrays of doubles, xx and yy
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#covariance">covariance</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;xx[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;yy[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Covariance of two 1D arrays of floats, xx and yy
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#covariance">covariance</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;xx[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;yy[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Covariance of two 1D arrays of ints, xx and yy
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#covariance">covariance</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;xx[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;yy[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Covariance of two 1D arrays of ints, xx and yy
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#covariance">covariance</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;xx[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;yy[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;ww[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weighted covariance of two 1D arrays of doubles, xx and yy with weights ww
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#gamma">gamma</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gamma function
+Lanczos approximation (6 terms)
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getLanczosGamma">getLanczosGamma</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the Lanczos constant gamma
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getLanczosN">getLanczosN</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the Lanczos constant N (number of coeeficients + 1)
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getLanczosCoeff">getLanczosCoeff</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the Lanczos coeeficients
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getFpmin">getFpmin</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the nearest smallest representable floating point number to zero with mantissa rounded to 1.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#logGamma">logGamma</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;log to base e of the Gamma function
+Lanczos approximation (6 terms)
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#incompleteGamma">incompleteGamma</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;a,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Regularised Incomplete Gamma Function P(a,x) = integral from zero to x of (exp(-t)t^(a-1))dt
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#incompleteGammaComplementary">incompleteGammaComplementary</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;a,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Complementary Incomplete Gamma Function Q(a,x) = 1 - P(a,x) = 1 - integral from zero to x of (exp(-t)t^(a-1))dt
+Also known as the Incomplete Gamma Function
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#incompleteGammaSer">incompleteGammaSer</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;a,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Regularised Incomplete Gamma Function P(a,x) = integral from zero to x of (exp(-t)t^(a-1))dt
+Series representation of the function - valid for x < a + 1
+</></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#incompleteGammaFract">incompleteGammaFract</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;a,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Regularised Incomplete Gamma Function P(a,x) = integral from zero to x of (exp(-t)t^(a-1))dt
+Continued Fraction representation of the function - valid for x >= a + 1
+This method follows the general procedure used in Numerical Recipes for C,
+The Art of Scientific Computing
+by W H Press, S A Teukolsky, W T Vetterling & B P Flannery
+Cambridge University Press,   http://www.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setIncGammaMaxIter">setIncGammaMaxIter</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;igfiter)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reset the maximum number of iterations allowed in the calculation of the incomplete gamma functions
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getIncGammaMaxIter">getIncGammaMaxIter</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the maximum number of iterations allowed in the calculation of the incomplete gamma functions
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setIncGammaTol">setIncGammaTol</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;igfeps)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reset the tolerance used in the calculation of the incomplete gamma functions
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getIncGammaTol">getIncGammaTol</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the tolerance used in the calculation of the incomplete gamm functions
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#beta">beta</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;z,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;w)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beta function
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#incompleteBeta">incompleteBeta</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;z,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;w,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Regularised Incomplete Beta function
+Continued Fraction approximation (see Numerical recipies for details of method)
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#contFract">contFract</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;a,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;b,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Incomplete fraction summation used in the method incompleteBeta
+modified Lentz's method
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#erf">erf</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Error Function
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#erfc">erfc</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Complementary Error Function
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#normalProb">normalProb</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sd,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gaussian (normal) cumulative distribution function
+probability that a variate will assume a value less than the upperlimit
+mean  =  the mean, sd = standard deviation
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#gaussianProb">gaussianProb</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sd,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gaussian (normal) cumulative distribution function
+probability that a variate will assume a value less than the upperlimit
+mean  =  the mean, sd = standard deviation
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#normalProb">normalProb</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sd,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;lowerlimit,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gaussian (normal) cumulative distribution function
+probability that a variate will assume a value between the lower and  the upper limits
+mean  =  the mean, sd = standard deviation
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#gaussianProb">gaussianProb</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sd,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;lowerlimit,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gaussian (normal) cumulative distribution function
+probability that a variate will assume a value between the lower and  the upper limits
+mean  =  the mean, sd = standard deviation
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#normal">normal</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sd,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gaussian (normal) probability
+mean  =  the mean, sd = standard deviation
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#gaussian">gaussian</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sd,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gaussian (normal) probability
+mean  =  the mean, sd = standard deviation
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#normalRand">normalRand</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sd,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of Gaussian (normal) random deviates - clock seed
+mean  =  the mean, sd = standard deviation, length of array
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#gaussianRand">gaussianRand</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sd,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of Gaussian (normal) random deviates - clock seed
+mean  =  the mean, sd = standard deviation, length of array
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#normalRand">normalRand</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sd,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;seed)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of Gaussian (normal) random deviates - user provided seed
+mean  =  the mean, sd = standard deviation, length of array
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#gaussianRand">gaussianRand</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sd,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;seed)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of Gaussian (normal) random deviates - user provided seed
+mean  =  the mean, sd = standard deviation, length of array
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#logisticProb">logisticProb</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;beta,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logistic cumulative distribution function
+probability that a variate will assume a value less than the upperlimit
+mu  =  location parameter, beta = scale parameter
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#logisticProb">logisticProb</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;beta,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;lowerlimit,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logistic cumulative distribution function
+probability that a variate will assume a value between the lower and  the upper limits
+mu  =  location parameter, beta = scale parameter
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#logistic">logistic</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;beta,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logistic probability density function
+mu  =  location parameter, beta = scale parameter
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#logisticRand">logisticRand</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;beta,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of logistic distribution random deviates - clock seed
+mu  =  location parameter, beta = scale parameter
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#logisticRand">logisticRand</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;beta,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;seed)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of Gaussian (normal) random deviates - user provided seed
+mean  =  the mean, sd = standard deviation, length of array
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#logisticMean">logisticMean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logistic distribution mean
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#logisticStandDev">logisticStandDev</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;beta)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logistic distribution standard deviation
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#logisticMode">logisticMode</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logistic distribution mode
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#logisticMedian">logisticMedian</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logistic distribution median
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#lorentzianProb">lorentzianProb</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorentzian cumulative distribution function
+probability that a variate will assume a value less than the upperlimit
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#lorentzianProb">lorentzianProb</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;lowerlimit,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorentzian cumulative distribution function
+probability that a variate will assume a value between the lower and  the upper limits
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#poissonProb">poissonProb</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;k,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cumulative Poisson Probability Function
+probability that a number of Poisson random events will occur between 0 and k (inclusive)
+k is an integer greater than equal to 1
+mean  = mean of the Poisson distribution
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#poisson">poisson</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;k,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Poisson Probability Function
+k is an integer greater than or equal to zero
+mean  = mean of the Poisson distribution
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#poissonRand">poissonRand</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of Poisson random deviates - clock seed
+mean  =  the mean,  n = length of array
+follows the ideas of Numerical Recipes
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#poissonRand">poissonRand</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;seed)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of Poisson random deviates - user provided seed
+mean  =  the mean,  n = length of array
+follows the ideas of Numerical Recipes
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#poissonRandCalc">poissonRandCalc</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE100DA1290BC39D2C3D045B403DDA434A.html">Random</A>&nbsp;rr,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculates and returns an array of Poisson random deviates
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#chiSquareProb">chiSquareProb</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;chiSquare,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;nu)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chi-Square Probability Function
+probability that an observed chi-square value for a correct model should be less than chiSquare
+nu  =  the degrees of freedom
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#chiSquare">chiSquare</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;observed[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;expected[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;variance[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chi-Square Statistic for Poisson distribution
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#chiSquareFreq">chiSquareFreq</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;observedFreq[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;expectedFreq[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chi-Square Statistic for Poisson distribution for frequency data
+and Poisson distribution for each bin
+double arguments
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#chiSquareFreq">chiSquareFreq</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;observedFreq[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;expectedFreq[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chi-Square Statistic for Poisson distribution for frequency data
+and Poisson distribution for each bin
+int arguments
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#binomialProb">binomialProb</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;p,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;k)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the binomial cumulative probabilty
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#binomial">binomial</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;p,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;k)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a binomial mass probabilty function
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#binomialCoeff">binomialCoeff</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;k)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a binomial Coefficient as a double
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#binomialRand">binomialRand</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;prob,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;nTrials,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of n Binomial pseudorandom deviates from a binomial
+ distribution of nTrial trials each of probablity, prob,
+ after 	bndlev 	Numerical Recipes in C - W.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#fTestProb">fTestProb</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;fValue,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df1,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df2)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the F-distribution probabilty for degrees of freedom df1, df2
+F ratio provided
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#fTestProb">fTestProb</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;var1,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df1,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;var2,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df2)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the F-distribution probabilty for degrees of freedom df1, df2
+numerator and denominator variances provided
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#fTestValueGivenFprob">fTestValueGivenFprob</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;fProb,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df1,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df2)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the F-test value corresponding to a F-distribution probabilty, fProb,
+  for degrees of freedom df1, df2
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#fTestBisect">fTestBisect</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;fProb,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;fTestLow,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;fTestHigh,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df1,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df2,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;endTest)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bisection procedure for calculating and F-test value corresponding
+  to a given F-test probability
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#studentT">studentT</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;tValue,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the Student t probability density function
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#studentTProb">studentTProb</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;tValue,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the Student t cumulative distribution function probability
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#probAtn">probAtn</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;tValue,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the A(t|n) distribution probabilty
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*,0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#histogramBins">histogramBins</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;data[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;binWidth,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;binZero,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;binUpper)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Distribute data into bins to obtain histogram
+zero bin position and upper limit provided
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*,0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#histogramBins">histogramBins</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;data[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;binWidth,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;binZero)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Distribute data into bins to obtain histogram
+zero bin position provided
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*,0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#histogramBins">histogramBins</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;data[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;binWidth)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Distribute data into bins to obtain histogram
+zero bin position calculated
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#factorial">factorial</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;factorial of n
+argument and return are integer, therefore limited to 0<=n<=12
+see below for long and double arguments
+</=n<=12
+see></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#factorial">factorial</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;n)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;factorial of n
+argument and return are long, therefore limited to 0<=n<=20
+see below for double argument
+</=n<=20
+see></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#factorial">factorial</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;n)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;factorial of n
+Argument is of type double but must be, numerically, an integer
+factorial returned as double but is, numerically, should be an integer
+numerical rounding may makes this an approximation after n = 21
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#logFactorial">logFactorial</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;log to base e of the factorial of n
+log[e](factorial) returned as double
+numerical rounding may makes this an approximation
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#logFactorial">logFactorial</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;n)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;log to base e of the factorial of n
+Argument is of type double but must be, numerically, an integer
+log[e](factorial) returned as double
+numerical rounding may makes this an approximation
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#corrCoeff">corrCoeff</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;xx[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;yy[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculate correlation coefficient
+x y data as double
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#corrCoeff">corrCoeff</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;x[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;y[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculate correlation coefficient
+x y data as float
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#corrCoeff">corrCoeff</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;x[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;y[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculate correlation coefficient
+x y data as int
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#corrCoeff">corrCoeff</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;y[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;w[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculate weighted correlation coefficient
+x y data and weights w as double
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#corrCoeff">corrCoeff</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;element00,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;element01,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;element10,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;element11)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculate correlation coefficient
+Binary data x and y
+Input is the frequency matrix, F, elements, f(i,j)
+f(0,0) - element00 - frequency of x and y both = 1
+f(0,1) - element01 - frequency of x = 0 and y = 1
+f(1,0) - element10 - frequency of x = 1 and y = 0
+f(1,1) - element11 - frequency of x and y both = 0
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#corrCoeff">corrCoeff</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;freqMatrix[0..*,0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculate correlation coefficient
+Binary data x and y
+Input is the frequency matrix, F
+F(0,0) - frequency of x and y both = 1
+F(0,1) - frequency of x = 0 and y = 1
+F(1,0) - frequency of x = 1 and y = 0
+F(1,1) - frequency of x and y both = 0
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#linearCorrCoeff">linearCorrCoeff</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;rCoeff,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;nu)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Linear correlation coefficient single probablity
+old name calls renamed method
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#corrCoeffPdf">corrCoeffPdf</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;rCoeff,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;nu)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Linear correlation coefficient single probablity
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#weibullProb">weibullProb</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weibull cumulative distribution function
+probability that a variate will assume  a value less than the upperlimit
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#weibullProb">weibullProb</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;lowerlimit,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weibull cumulative distribution function
+probability that a variate will assume a value between the lower and  the upper limits
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#weibull">weibull</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weibull probability
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#weibullMean">weibullMean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weibull mean
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#weibullStandDev">weibullStandDev</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weibull standard deviation
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#weibullMode">weibullMode</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weibull mode
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#weibullMedian">weibullMedian</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weibull median
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#weibullRand">weibullRand</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of Weibull (Type III EVD) random deviates - clock seed
+mu  =  location parameter, sigma = cale parameter, gamma = shape parametern = length of array
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#weibullRand">weibullRand</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;seed)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of Weibull (Type III EVD) random deviates - user supplied seed
+mu  =  location parameter, sigma = cale parameter, gamma = shape parametern = length of array
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#frechetProb">frechetProb</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Frechet cumulative distribution function
+probability that a variate will assume  a value less than the upperlimit
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#frechetProb">frechetProb</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;lowerlimit,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Frechet cumulative distribution function
+probability that a variate will assume a value between the lower and  the upper limits
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#exponentialProb">exponentialProb</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exponential cumulative distribution function
+probability that a variate will assume  a value less than the upperlimit
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#exponentialProb">exponentialProb</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;lowerlimit,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exponential cumulative distribution function
+probability that a variate will assume a value between the lower and  the upper limits
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#exponential">exponential</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exponential probability
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#exponentialMean">exponentialMean</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exponential mean
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#exponentialStandDev">exponentialStandDev</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exponential standard deviation
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#exponentialMode">exponentialMode</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exponential mode
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#exponentialMedian">exponentialMedian</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exponential median
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#exponentialRand">exponentialRand</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of Exponential random deviates - clock seed
+mu  =  location parameter, sigma = cale parameter, gamma = shape parametern = length of array
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#exponentialRand">exponentialRand</A></B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;seed)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of Exponential random deviates - user supplied seed
+mu  =  location parameter, sigma = cale parameter, gamma = shape parametern = length of array
+</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== ATTRIBUTE DETAIL =========== -->
+<A NAME="attribute_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Attribute Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="FPMIN"></A><H3>FPMIN</H3>
+<PRE>public <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>FPMIN</B></PRE><DL>
+<DD>A small number close to the smallest representable floating point number
+
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="lgfN"></A><H3>lgfN</H3>
+<PRE>private <A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>lgfN</B></PRE><DL>
+<DD>PRIVATE MEMBERS FOR USE IN GAMMA FUNCTION METHODS AND HISTOGRAM CONSTRUCTION METHODS
+GAMMA FUNCTIONS
+ Lanczos Gamma Function approximation - N (number of coefficients -1)
+
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="lgfCoeff"></A><H3>lgfCoeff</H3>
+<PRE>private <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>lgfCoeff</B>[0..*]</PRE><DL>
+<DD> Lanczos Gamma Function approximation - Coefficients
+
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="lgfGamma"></A><H3>lgfGamma</H3>
+<PRE>private <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>lgfGamma</B></PRE><DL>
+<DD> Lanczos Gamma Function approximation - small gamma
+
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="igfiter"></A><H3>igfiter</H3>
+<PRE>private <A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>igfiter</B></PRE><DL>
+<DD> Maximum number of iterations allowed in Incomplete Gamma Function calculations
+
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="igfeps"></A><H3>igfeps</H3>
+<PRE>private <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>igfeps</B></PRE><DL>
+<DD> Tolerance used in terminating series in Incomplete Gamma Function calculations
+
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="histTol"></A><H3>histTol</H3>
+<PRE>private <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>histTol</B></PRE><DL>
+<DD>HISTOGRAM CONSTRUCTION
+ Tolerance used in including an upper point in last histogram bin when it is outside due to riunding erors
+
+<P>
+</DD>
+</DL>
+
+<!-- =========== OPERATION DETAIL =========== -->
+
+<A NAME="operationr_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Operation Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="mean"></A><H3>mean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>mean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>METHODS
+Arithmetic mean of a 1D array of doubles, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="mean"></A><H3>mean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>mean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;ww[0..*])</PRE>
+<DL>
+<DD>Weighted arithmetic mean of a 1D array of doubles, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="mean"></A><H3>mean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>mean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;ww[0..*])</PRE>
+<DL>
+<DD>Weighted arithmetic mean of a 1D array of floats, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="geometricMean"></A><H3>geometricMean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>geometricMean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Geometric mean of a 1D array of doubles, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="geometricMean"></A><H3>geometricMean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A> <B>geometricMean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Geometric mean of a 1D array of floats, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="geometricMean"></A><H3>geometricMean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>geometricMean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;ww[0..*])</PRE>
+<DL>
+<DD>Weighted geometric mean of a 1D array of doubles, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="geometricMean"></A><H3>geometricMean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A> <B>geometricMean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;ww[0..*])</PRE>
+<DL>
+<DD>Weighted geometric mean of a 1D array of floats, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="harmonicMean"></A><H3>harmonicMean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>harmonicMean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Harmonic mean of a 1D array of doubles, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="harmonicMean"></A><H3>harmonicMean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A> <B>harmonicMean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Harmonic mean of a 1D array of floats, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="harmonicMean"></A><H3>harmonicMean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>harmonicMean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;ww[0..*])</PRE>
+<DL>
+<DD>Weighted harmonic mean of a 1D array of doubles, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="harmonicMean"></A><H3>harmonicMean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A> <B>harmonicMean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;ww[0..*])</PRE>
+<DL>
+<DD>Weighted harmonic mean of a 1D array of floats, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="generalisedMean"></A><H3>generalisedMean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>generalisedMean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;m)</PRE>
+<DL>
+<DD>Generalised mean of a 1D array of doubles, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="generalisedMean"></A><H3>generalisedMean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A> <B>generalisedMean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;m)</PRE>
+<DL>
+<DD>Generalised mean of a 1D array of floats, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="interQuartileMean"></A><H3>interQuartileMean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>interQuartileMean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Interquartile mean of a 1D array of doubles, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="interQuartileMean"></A><H3>interQuartileMean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A> <B>interQuartileMean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Interquartile mean of a 1D array of floats, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="rms"></A><H3>rms</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>rms</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Root mean square (rms) of a 1D array of doubles, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="rms"></A><H3>rms</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A> <B>rms</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Root mean square (rms) of a 1D array of floats, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="mean"></A><H3>mean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A> <B>mean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Arithmetic mean of a 1D array of floats, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="mean"></A><H3>mean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>mean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Arithmetic mean of a 1D array of int, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="mean"></A><H3>mean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>mean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Arithmetic mean of a 1D array of long, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="median"></A><H3>median</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>median</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Median of a 1D array of doubles, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="median"></A><H3>median</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A> <B>median</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Median of a 1D array of floats, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="median"></A><H3>median</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>median</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Median of a 1D array of int, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="median"></A><H3>median</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>median</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Median of a 1D array of long, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="standardDeviation"></A><H3>standardDeviation</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>standardDeviation</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Standard deviation of a 1D array of doubles, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="standardDeviation"></A><H3>standardDeviation</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A> <B>standardDeviation</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Standard deviation of a 1D array of floats, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="standardDeviation"></A><H3>standardDeviation</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>standardDeviation</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Standard deviation of a 1D array of int, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="standardDeviation"></A><H3>standardDeviation</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>standardDeviation</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Standard deviation of a 1D array of long, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="standardDeviation"></A><H3>standardDeviation</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>standardDeviation</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;ww[0..*])</PRE>
+<DL>
+<DD>Weighted standard deviation of a 1D array of doubles, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="standardDeviation"></A><H3>standardDeviation</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A> <B>standardDeviation</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;ww[0..*])</PRE>
+<DL>
+<DD>Weighted standard deviation of a 1D array of floats, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="volatilityLogChange"></A><H3>volatilityLogChange</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>volatilityLogChange</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;array[0..*])</PRE>
+<DL>
+<DD>volatility   log  (doubles)
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="volatilityLogChange"></A><H3>volatilityLogChange</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A> <B>volatilityLogChange</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;array[0..*])</PRE>
+<DL>
+<DD>volatility   log  (floats)
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="volatilityPerCentChange"></A><H3>volatilityPerCentChange</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>volatilityPerCentChange</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;array[0..*])</PRE>
+<DL>
+<DD>volatility   percentage (double)
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="volatilityPerCentChange"></A><H3>volatilityPerCentChange</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>volatilityPerCentChange</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;array[0..*])</PRE>
+<DL>
+<DD>volatility   percentage (float)
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="coefficientOfVariation"></A><H3>coefficientOfVariation</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>coefficientOfVariation</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;array[0..*])</PRE>
+<DL>
+<DD>Coefficient of variation of an array of doubles
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="coefficientOfVariation"></A><H3>coefficientOfVariation</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A> <B>coefficientOfVariation</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;array[0..*])</PRE>
+<DL>
+<DD>Coefficient of variation of an array of float
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="subtractMean"></A><H3>subtractMean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*] <B>subtractMean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;array[0..*])</PRE>
+<DL>
+<DD>Subtract mean of an array from data array elements
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="subtractMean"></A><H3>subtractMean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>[0..*] <B>subtractMean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;array[0..*])</PRE>
+<DL>
+<DD>Subtract mean of an array from data array elements
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="variance"></A><H3>variance</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>variance</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Variance of a 1D array of doubles, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="variance"></A><H3>variance</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A> <B>variance</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Variance of a 1D array of floats, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="variance"></A><H3>variance</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>variance</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Variance of a 1D array of int, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="variance"></A><H3>variance</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>variance</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;aa[0..*])</PRE>
+<DL>
+<DD>Variance of a 1D array of ilong, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="variance"></A><H3>variance</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>variance</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;ww[0..*])</PRE>
+<DL>
+<DD>Weighted variance of a 1D array of doubles, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="variance"></A><H3>variance</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A> <B>variance</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;aa[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;ww[0..*])</PRE>
+<DL>
+<DD>Weighted variance of a 1D array of floats, aa
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="covariance"></A><H3>covariance</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>covariance</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;xx[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;yy[0..*])</PRE>
+<DL>
+<DD>Covariance of two 1D arrays of doubles, xx and yy
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="covariance"></A><H3>covariance</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A> <B>covariance</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;xx[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;yy[0..*])</PRE>
+<DL>
+<DD>Covariance of two 1D arrays of floats, xx and yy
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="covariance"></A><H3>covariance</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>covariance</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;xx[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;yy[0..*])</PRE>
+<DL>
+<DD>Covariance of two 1D arrays of ints, xx and yy
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="covariance"></A><H3>covariance</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>covariance</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;xx[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;yy[0..*])</PRE>
+<DL>
+<DD>Covariance of two 1D arrays of ints, xx and yy
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="covariance"></A><H3>covariance</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>covariance</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;xx[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;yy[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;ww[0..*])</PRE>
+<DL>
+<DD>Weighted covariance of two 1D arrays of doubles, xx and yy with weights ww
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="gamma"></A><H3>gamma</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>gamma</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</PRE>
+<DL>
+<DD>Gamma function
+Lanczos approximation (6 terms)
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="getLanczosGamma"></A><H3>getLanczosGamma</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>getLanczosGamma</B>()</PRE>
+<DL>
+<DD>Return the Lanczos constant gamma
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="getLanczosN"></A><H3>getLanczosN</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>getLanczosN</B>()</PRE>
+<DL>
+<DD>Return the Lanczos constant N (number of coeeficients + 1)
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="getLanczosCoeff"></A><H3>getLanczosCoeff</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*] <B>getLanczosCoeff</B>()</PRE>
+<DL>
+<DD>Return the Lanczos coeeficients
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="getFpmin"></A><H3>getFpmin</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>getFpmin</B>()</PRE>
+<DL>
+<DD>Return the nearest smallest representable floating point number to zero with mantissa rounded to 1.0
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="logGamma"></A><H3>logGamma</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>logGamma</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</PRE>
+<DL>
+<DD>log to base e of the Gamma function
+Lanczos approximation (6 terms)
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="incompleteGamma"></A><H3>incompleteGamma</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>incompleteGamma</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;a,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</PRE>
+<DL>
+<DD>Regularised Incomplete Gamma Function P(a,x) = integral from zero to x of (exp(-t)t^(a-1))dt
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="incompleteGammaComplementary"></A><H3>incompleteGammaComplementary</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>incompleteGammaComplementary</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;a,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</PRE>
+<DL>
+<DD>Complementary Incomplete Gamma Function Q(a,x) = 1 - P(a,x) = 1 - integral from zero to x of (exp(-t)t^(a-1))dt
+Also known as the Incomplete Gamma Function
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="incompleteGammaSer"></A><H3>incompleteGammaSer</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>incompleteGammaSer</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;a,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</PRE>
+<DL>
+<DD>Regularised Incomplete Gamma Function P(a,x) = integral from zero to x of (exp(-t)t^(a-1))dt
+Series representation of the function - valid for x < a + 1
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="incompleteGammaFract"></A><H3>incompleteGammaFract</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>incompleteGammaFract</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;a,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</PRE>
+<DL>
+<DD>Regularised Incomplete Gamma Function P(a,x) = integral from zero to x of (exp(-t)t^(a-1))dt
+Continued Fraction representation of the function - valid for x >= a + 1
+This method follows the general procedure used in Numerical Recipes for C,
+The Art of Scientific Computing
+by W H Press, S A Teukolsky, W T Vetterling & B P Flannery
+Cambridge University Press,   http://www.nr.com/
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="setIncGammaMaxIter"></A><H3>setIncGammaMaxIter</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>setIncGammaMaxIter</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;igfiter)</PRE>
+<DL>
+<DD>Reset the maximum number of iterations allowed in the calculation of the incomplete gamma functions
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="getIncGammaMaxIter"></A><H3>getIncGammaMaxIter</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>getIncGammaMaxIter</B>()</PRE>
+<DL>
+<DD>Return the maximum number of iterations allowed in the calculation of the incomplete gamma functions
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="setIncGammaTol"></A><H3>setIncGammaTol</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>setIncGammaTol</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;igfeps)</PRE>
+<DL>
+<DD>Reset the tolerance used in the calculation of the incomplete gamma functions
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="getIncGammaTol"></A><H3>getIncGammaTol</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>getIncGammaTol</B>()</PRE>
+<DL>
+<DD>Return the tolerance used in the calculation of the incomplete gamm functions
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="beta"></A><H3>beta</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>beta</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;z,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;w)</PRE>
+<DL>
+<DD>Beta function
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="incompleteBeta"></A><H3>incompleteBeta</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>incompleteBeta</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;z,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;w,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</PRE>
+<DL>
+<DD>Regularised Incomplete Beta function
+Continued Fraction approximation (see Numerical recipies for details of method)
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="contFract"></A><H3>contFract</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>contFract</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;a,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;b,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</PRE>
+<DL>
+<DD>Incomplete fraction summation used in the method incompleteBeta
+modified Lentz's method
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="erf"></A><H3>erf</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>erf</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</PRE>
+<DL>
+<DD>Error Function
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="erfc"></A><H3>erfc</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>erfc</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</PRE>
+<DL>
+<DD>Complementary Error Function
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="normalProb"></A><H3>normalProb</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>normalProb</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sd,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</PRE>
+<DL>
+<DD>Gaussian (normal) cumulative distribution function
+probability that a variate will assume a value less than the upperlimit
+mean  =  the mean, sd = standard deviation
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="gaussianProb"></A><H3>gaussianProb</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>gaussianProb</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sd,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</PRE>
+<DL>
+<DD>Gaussian (normal) cumulative distribution function
+probability that a variate will assume a value less than the upperlimit
+mean  =  the mean, sd = standard deviation
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="normalProb"></A><H3>normalProb</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>normalProb</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sd,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;lowerlimit,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</PRE>
+<DL>
+<DD>Gaussian (normal) cumulative distribution function
+probability that a variate will assume a value between the lower and  the upper limits
+mean  =  the mean, sd = standard deviation
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="gaussianProb"></A><H3>gaussianProb</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>gaussianProb</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sd,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;lowerlimit,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</PRE>
+<DL>
+<DD>Gaussian (normal) cumulative distribution function
+probability that a variate will assume a value between the lower and  the upper limits
+mean  =  the mean, sd = standard deviation
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="normal"></A><H3>normal</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>normal</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sd,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</PRE>
+<DL>
+<DD>Gaussian (normal) probability
+mean  =  the mean, sd = standard deviation
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="gaussian"></A><H3>gaussian</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>gaussian</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sd,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</PRE>
+<DL>
+<DD>Gaussian (normal) probability
+mean  =  the mean, sd = standard deviation
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="normalRand"></A><H3>normalRand</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*] <B>normalRand</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sd,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n)</PRE>
+<DL>
+<DD>Returns an array of Gaussian (normal) random deviates - clock seed
+mean  =  the mean, sd = standard deviation, length of array
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="gaussianRand"></A><H3>gaussianRand</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*] <B>gaussianRand</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sd,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n)</PRE>
+<DL>
+<DD>Returns an array of Gaussian (normal) random deviates - clock seed
+mean  =  the mean, sd = standard deviation, length of array
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="normalRand"></A><H3>normalRand</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*] <B>normalRand</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sd,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;seed)</PRE>
+<DL>
+<DD>Returns an array of Gaussian (normal) random deviates - user provided seed
+mean  =  the mean, sd = standard deviation, length of array
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="gaussianRand"></A><H3>gaussianRand</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*] <B>gaussianRand</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sd,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;seed)</PRE>
+<DL>
+<DD>Returns an array of Gaussian (normal) random deviates - user provided seed
+mean  =  the mean, sd = standard deviation, length of array
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="logisticProb"></A><H3>logisticProb</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>logisticProb</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;beta,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</PRE>
+<DL>
+<DD>Logistic cumulative distribution function
+probability that a variate will assume a value less than the upperlimit
+mu  =  location parameter, beta = scale parameter
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="logisticProb"></A><H3>logisticProb</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>logisticProb</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;beta,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;lowerlimit,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</PRE>
+<DL>
+<DD>Logistic cumulative distribution function
+probability that a variate will assume a value between the lower and  the upper limits
+mu  =  location parameter, beta = scale parameter
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="logistic"></A><H3>logistic</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>logistic</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;beta,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</PRE>
+<DL>
+<DD>Logistic probability density function
+mu  =  location parameter, beta = scale parameter
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="logisticRand"></A><H3>logisticRand</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*] <B>logisticRand</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;beta,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n)</PRE>
+<DL>
+<DD>Returns an array of logistic distribution random deviates - clock seed
+mu  =  location parameter, beta = scale parameter
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="logisticRand"></A><H3>logisticRand</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*] <B>logisticRand</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;beta,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;seed)</PRE>
+<DL>
+<DD>Returns an array of Gaussian (normal) random deviates - user provided seed
+mean  =  the mean, sd = standard deviation, length of array
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="logisticMean"></A><H3>logisticMean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>logisticMean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu)</PRE>
+<DL>
+<DD>Logistic distribution mean
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="logisticStandDev"></A><H3>logisticStandDev</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>logisticStandDev</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;beta)</PRE>
+<DL>
+<DD>Logistic distribution standard deviation
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="logisticMode"></A><H3>logisticMode</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>logisticMode</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu)</PRE>
+<DL>
+<DD>Logistic distribution mode
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="logisticMedian"></A><H3>logisticMedian</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>logisticMedian</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu)</PRE>
+<DL>
+<DD>Logistic distribution median
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="lorentzianProb"></A><H3>lorentzianProb</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>lorentzianProb</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</PRE>
+<DL>
+<DD>Lorentzian cumulative distribution function
+probability that a variate will assume a value less than the upperlimit
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="lorentzianProb"></A><H3>lorentzianProb</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>lorentzianProb</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;lowerlimit,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</PRE>
+<DL>
+<DD>Lorentzian cumulative distribution function
+probability that a variate will assume a value between the lower and  the upper limits
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="poissonProb"></A><H3>poissonProb</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>poissonProb</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;k,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean)</PRE>
+<DL>
+<DD>Cumulative Poisson Probability Function
+probability that a number of Poisson random events will occur between 0 and k (inclusive)
+k is an integer greater than equal to 1
+mean  = mean of the Poisson distribution
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="poisson"></A><H3>poisson</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>poisson</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;k,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean)</PRE>
+<DL>
+<DD>Poisson Probability Function
+k is an integer greater than or equal to zero
+mean  = mean of the Poisson distribution
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="poissonRand"></A><H3>poissonRand</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*] <B>poissonRand</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n)</PRE>
+<DL>
+<DD>Returns an array of Poisson random deviates - clock seed
+mean  =  the mean,  n = length of array
+follows the ideas of Numerical Recipes
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="poissonRand"></A><H3>poissonRand</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*] <B>poissonRand</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;seed)</PRE>
+<DL>
+<DD>Returns an array of Poisson random deviates - user provided seed
+mean  =  the mean,  n = length of array
+follows the ideas of Numerical Recipes
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="poissonRandCalc"></A><H3>poissonRandCalc</H3>
+<PRE>
+private static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*] <B>poissonRandCalc</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE100DA1290BC39D2C3D045B403DDA434A.html">Random</A>&nbsp;rr,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mean,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n)</PRE>
+<DL>
+<DD>Calculates and returns an array of Poisson random deviates
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="chiSquareProb"></A><H3>chiSquareProb</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>chiSquareProb</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;chiSquare,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;nu)</PRE>
+<DL>
+<DD>Chi-Square Probability Function
+probability that an observed chi-square value for a correct model should be less than chiSquare
+nu  =  the degrees of freedom
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="chiSquare"></A><H3>chiSquare</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>chiSquare</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;observed[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;expected[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;variance[0..*])</PRE>
+<DL>
+<DD>Chi-Square Statistic for Poisson distribution
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="chiSquareFreq"></A><H3>chiSquareFreq</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>chiSquareFreq</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;observedFreq[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;expectedFreq[0..*])</PRE>
+<DL>
+<DD>Chi-Square Statistic for Poisson distribution for frequency data
+and Poisson distribution for each bin
+double arguments
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="chiSquareFreq"></A><H3>chiSquareFreq</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>chiSquareFreq</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;observedFreq[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;expectedFreq[0..*])</PRE>
+<DL>
+<DD>Chi-Square Statistic for Poisson distribution for frequency data
+and Poisson distribution for each bin
+int arguments
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="binomialProb"></A><H3>binomialProb</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>binomialProb</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;p,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;k)</PRE>
+<DL>
+<DD>Returns the binomial cumulative probabilty
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="binomial"></A><H3>binomial</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>binomial</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;p,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;k)</PRE>
+<DL>
+<DD>Returns a binomial mass probabilty function
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="binomialCoeff"></A><H3>binomialCoeff</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>binomialCoeff</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;k)</PRE>
+<DL>
+<DD>Returns a binomial Coefficient as a double
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="binomialRand"></A><H3>binomialRand</H3>
+<PRE>
+public <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*] <B>binomialRand</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;prob,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;nTrials,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n)</PRE>
+<DL>
+<DD>Returns an array of n Binomial pseudorandom deviates from a binomial
+ distribution of nTrial trials each of probablity, prob,
+ after 	bndlev 	Numerical Recipes in C - W.H. Press et al. (Cambridge)
+	            2nd edition 1992 p295.
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="fTestProb"></A><H3>fTestProb</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>fTestProb</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;fValue,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df1,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df2)</PRE>
+<DL>
+<DD>Returns the F-distribution probabilty for degrees of freedom df1, df2
+F ratio provided
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="fTestProb"></A><H3>fTestProb</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>fTestProb</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;var1,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df1,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;var2,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df2)</PRE>
+<DL>
+<DD>Returns the F-distribution probabilty for degrees of freedom df1, df2
+numerator and denominator variances provided
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="fTestValueGivenFprob"></A><H3>fTestValueGivenFprob</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>fTestValueGivenFprob</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;fProb,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df1,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df2)</PRE>
+<DL>
+<DD>Returns the F-test value corresponding to a F-distribution probabilty, fProb,
+  for degrees of freedom df1, df2
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="fTestBisect"></A><H3>fTestBisect</H3>
+<PRE>
+private static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>fTestBisect</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;fProb,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;fTestLow,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;fTestHigh,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df1,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df2,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;endTest)</PRE>
+<DL>
+<DD>Bisection procedure for calculating and F-test value corresponding
+  to a given F-test probability
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="studentT"></A><H3>studentT</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>studentT</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;tValue,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df)</PRE>
+<DL>
+<DD>Returns the Student t probability density function
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="studentTProb"></A><H3>studentTProb</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>studentTProb</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;tValue,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df)</PRE>
+<DL>
+<DD>Returns the Student t cumulative distribution function probability
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="probAtn"></A><H3>probAtn</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>probAtn</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;tValue,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;df)</PRE>
+<DL>
+<DD>Returns the A(t|n) distribution probabilty
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="histogramBins"></A><H3>histogramBins</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*,0..*] <B>histogramBins</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;data[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;binWidth,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;binZero,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;binUpper)</PRE>
+<DL>
+<DD>Distribute data into bins to obtain histogram
+zero bin position and upper limit provided
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="histogramBins"></A><H3>histogramBins</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*,0..*] <B>histogramBins</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;data[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;binWidth,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;binZero)</PRE>
+<DL>
+<DD>Distribute data into bins to obtain histogram
+zero bin position provided
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="histogramBins"></A><H3>histogramBins</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*,0..*] <B>histogramBins</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;data[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;binWidth)</PRE>
+<DL>
+<DD>Distribute data into bins to obtain histogram
+zero bin position calculated
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="factorial"></A><H3>factorial</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A> <B>factorial</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n)</PRE>
+<DL>
+<DD>factorial of n
+argument and return are integer, therefore limited to 0<=n<=12
+see below for long and double arguments
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="factorial"></A><H3>factorial</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A> <B>factorial</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;n)</PRE>
+<DL>
+<DD>factorial of n
+argument and return are long, therefore limited to 0<=n<=20
+see below for double argument
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="factorial"></A><H3>factorial</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>factorial</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;n)</PRE>
+<DL>
+<DD>factorial of n
+Argument is of type double but must be, numerically, an integer
+factorial returned as double but is, numerically, should be an integer
+numerical rounding may makes this an approximation after n = 21
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="logFactorial"></A><H3>logFactorial</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>logFactorial</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n)</PRE>
+<DL>
+<DD>log to base e of the factorial of n
+log[e](factorial) returned as double
+numerical rounding may makes this an approximation
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="logFactorial"></A><H3>logFactorial</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>logFactorial</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;n)</PRE>
+<DL>
+<DD>log to base e of the factorial of n
+Argument is of type double but must be, numerically, an integer
+log[e](factorial) returned as double
+numerical rounding may makes this an approximation
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="corrCoeff"></A><H3>corrCoeff</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>corrCoeff</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;xx[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;yy[0..*])</PRE>
+<DL>
+<DD>Calculate correlation coefficient
+x y data as double
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="corrCoeff"></A><H3>corrCoeff</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A> <B>corrCoeff</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;x[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE7DB5393C6FD27F8E90977CDDF06B3D79.html">float</A>&nbsp;y[0..*])</PRE>
+<DL>
+<DD>Calculate correlation coefficient
+x y data as float
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="corrCoeff"></A><H3>corrCoeff</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>corrCoeff</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;x[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;y[0..*])</PRE>
+<DL>
+<DD>Calculate correlation coefficient
+x y data as int
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="corrCoeff"></A><H3>corrCoeff</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>corrCoeff</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;y[0..*],&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;w[0..*])</PRE>
+<DL>
+<DD>Calculate weighted correlation coefficient
+x y data and weights w as double
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="corrCoeff"></A><H3>corrCoeff</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>corrCoeff</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;element00,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;element01,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;element10,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;element11)</PRE>
+<DL>
+<DD>Calculate correlation coefficient
+Binary data x and y
+Input is the frequency matrix, F, elements, f(i,j)
+f(0,0) - element00 - frequency of x and y both = 1
+f(0,1) - element01 - frequency of x = 0 and y = 1
+f(1,0) - element10 - frequency of x = 1 and y = 0
+f(1,1) - element11 - frequency of x and y both = 0
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="corrCoeff"></A><H3>corrCoeff</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>corrCoeff</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;freqMatrix[0..*,0..*])</PRE>
+<DL>
+<DD>Calculate correlation coefficient
+Binary data x and y
+Input is the frequency matrix, F
+F(0,0) - frequency of x and y both = 1
+F(0,1) - frequency of x = 0 and y = 1
+F(1,0) - frequency of x = 1 and y = 0
+F(1,1) - frequency of x and y both = 0
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="linearCorrCoeff"></A><H3>linearCorrCoeff</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>linearCorrCoeff</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;rCoeff,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;nu)</PRE>
+<DL>
+<DD>Linear correlation coefficient single probablity
+old name calls renamed method
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="corrCoeffPdf"></A><H3>corrCoeffPdf</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>corrCoeffPdf</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;rCoeff,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;nu)</PRE>
+<DL>
+<DD>Linear correlation coefficient single probablity
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="weibullProb"></A><H3>weibullProb</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>weibullProb</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</PRE>
+<DL>
+<DD>Weibull cumulative distribution function
+probability that a variate will assume  a value less than the upperlimit
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="weibullProb"></A><H3>weibullProb</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>weibullProb</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;lowerlimit,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</PRE>
+<DL>
+<DD>Weibull cumulative distribution function
+probability that a variate will assume a value between the lower and  the upper limits
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="weibull"></A><H3>weibull</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>weibull</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</PRE>
+<DL>
+<DD>Weibull probability
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="weibullMean"></A><H3>weibullMean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>weibullMean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma)</PRE>
+<DL>
+<DD>Weibull mean
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="weibullStandDev"></A><H3>weibullStandDev</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>weibullStandDev</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma)</PRE>
+<DL>
+<DD>Weibull standard deviation
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="weibullMode"></A><H3>weibullMode</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>weibullMode</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma)</PRE>
+<DL>
+<DD>Weibull mode
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="weibullMedian"></A><H3>weibullMedian</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>weibullMedian</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma)</PRE>
+<DL>
+<DD>Weibull median
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="weibullRand"></A><H3>weibullRand</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*] <B>weibullRand</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n)</PRE>
+<DL>
+<DD>Returns an array of Weibull (Type III EVD) random deviates - clock seed
+mu  =  location parameter, sigma = cale parameter, gamma = shape parametern = length of array
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="weibullRand"></A><H3>weibullRand</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*] <B>weibullRand</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;seed)</PRE>
+<DL>
+<DD>Returns an array of Weibull (Type III EVD) random deviates - user supplied seed
+mu  =  location parameter, sigma = cale parameter, gamma = shape parametern = length of array
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="frechetProb"></A><H3>frechetProb</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>frechetProb</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</PRE>
+<DL>
+<DD>Frechet cumulative distribution function
+probability that a variate will assume  a value less than the upperlimit
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="frechetProb"></A><H3>frechetProb</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>frechetProb</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;gamma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;lowerlimit,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</PRE>
+<DL>
+<DD>Frechet cumulative distribution function
+probability that a variate will assume a value between the lower and  the upper limits
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="exponentialProb"></A><H3>exponentialProb</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>exponentialProb</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</PRE>
+<DL>
+<DD>Exponential cumulative distribution function
+probability that a variate will assume  a value less than the upperlimit
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="exponentialProb"></A><H3>exponentialProb</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>exponentialProb</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;lowerlimit,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;upperlimit)</PRE>
+<DL>
+<DD>Exponential cumulative distribution function
+probability that a variate will assume a value between the lower and  the upper limits
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="exponential"></A><H3>exponential</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>exponential</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;x)</PRE>
+<DL>
+<DD>Exponential probability
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="exponentialMean"></A><H3>exponentialMean</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>exponentialMean</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma)</PRE>
+<DL>
+<DD>Exponential mean
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="exponentialStandDev"></A><H3>exponentialStandDev</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>exponentialStandDev</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma)</PRE>
+<DL>
+<DD>Exponential standard deviation
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="exponentialMode"></A><H3>exponentialMode</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>exponentialMode</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu)</PRE>
+<DL>
+<DD>Exponential mode
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="exponentialMedian"></A><H3>exponentialMedian</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A> <B>exponentialMedian</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma)</PRE>
+<DL>
+<DD>Exponential median
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="exponentialRand"></A><H3>exponentialRand</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*] <B>exponentialRand</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n)</PRE>
+<DL>
+<DD>Returns an array of Exponential random deviates - clock seed
+mu  =  location parameter, sigma = cale parameter, gamma = shape parametern = length of array
+
+<P>
+</DD></DL>
+<HR>
+<A NAME="exponentialRand"></A><H3>exponentialRand</H3>
+<PRE>
+public static <A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>[0..*] <B>exponentialRand</B>(<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;mu,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE6F38F7029BF031BDBF3340F63C4A515A.html">double</A>&nbsp;sigma,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;n,&nbsp;<A HREF="../../../../../../galagosearch-core-Model/DCE008C08B14C82B13DE4EF31A12C41F284.html">long</A>&nbsp;seed)</PRE>
+<DL>
+<DD>Returns an array of Exponential random deviates - user supplied seed
+mu  =  location parameter, sigma = cale parameter, gamma = shape parametern = length of array
+
+<P>
+</DD></DL>
+
+<HR>
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+</BODY>
+</HTML>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMI xmlns:UML="omg.org/UML/1.4" xmi.version="2.0">
+   <XMI.header>
+      <XMI.metamodel xmi.name="UML" xmi.version="1.4"/>
+		<XMI.documentation>
+			<XMI.exporter>
+				Embarcadero's Describe
+			</XMI.exporter>
+			<XMI.exporterVersion>
+				6.0
+			</XMI.exporterVersion>
+		</XMI.documentation>
+   </XMI.header>
+
+   <XMI.content>
+   <UML:Profile xmi.id="DCE.942AE9A2-7366-CCA5-090E-83079A5168C6" name="Unnamed" isCloned="true" href="./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]" isDirty="false"><UML:Element.ownedElement>
+<UML:Stereotype xmi.id="DCE.37B1FA21-D93B-5584-D29E-C2D93FE91BCC" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.0392B444-E943-A15C-DC82-C7A41A8D5C5E" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.3A927B46-4DED-7D8F-4C0C-5F2C15658D2F" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.7844A79B-A801-BD61-2DD6-ED0BDC516AB6" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.597B9970-33B2-09DA-E0B1-733BD97B2795" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.0BF50C59-9907-7F4F-4E58-3F42B23664C7" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.AEB7554A-A984-064E-F39C-5D41E2F93B24" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.50C301A5-5CD3-E31D-FC5C-9D8A7F3EEAE7" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.F7C6F032-ED77-8914-E169-4054A9A8B5A1" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.FDF238A1-C2AF-108F-AEAA-6F30495A4622" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.BFB5B5A0-6A7B-B18E-BA4C-5AEF6B80CDA8" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.D62F97E2-1C20-6B2B-F1B8-3CD47D20A10E" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.EC040266-CC4A-5F43-DB3A-80B8011278E3" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.E83B000B-FC01-63C2-6DD9-A7DBE037B2B7" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.BE13C417-C278-5858-6541-33DE270FFE48" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.771B1E3C-44D8-56ED-551A-C961D56A67A5" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.5041CA7E-63B7-E996-08D6-1B4E195E9152" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.7CFD809F-303D-2B67-8DBC-FD5CDA96D030" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.3A5B6449-844E-8CB0-40D0-3402CEA4E871" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.D1A816C6-695B-B11F-DC9A-EE40CB921E96" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.402FCD0C-DAA4-EFA8-D15B-A73CE949C2E9" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.E2765165-7588-B35E-6D29-7CCABF7228D7" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.F0C249C1-E859-86C0-F9FA-CA8ED56A4362" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.15C515F0-61C9-EC83-3463-153C632AF7F0" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.63682A6B-1702-AC5D-3ADE-7CCDE28F5A15" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.5F5ED42F-9BCF-3E1D-E159-D9B05D72734E" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.028CF1B0-DE00-00D3-07F9-A4A053438E9D" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.6805A353-FE4A-D10C-3BAA-7F7C0A6C977A" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.F53A1EE2-C6DB-F569-3BCC-7A04DECAC451" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.2A07EDB2-BBAF-AD01-E144-FF05617FA74E" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.6A7CEB67-1442-3644-8FC1-2F51F5A1E604" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.5C7C5B8F-18B0-02AA-C56F-B111CA293CDC" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.AE1B7591-B85F-F92F-F29A-7A7EAAC33D09" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.59ABDE3A-850A-0287-677A-1E1A38F0CA7C" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.49F58960-71C5-1D15-014F-A4EB5CBDBF91" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.A1E5F9C5-7821-F587-264B-71F15474D43B" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.DC4D3F43-5198-82FE-007B-ECDC26DFADE1" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.11D4C21E-F027-D1AF-F8C4-9EEAD925F5AB" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.C96AA555-C0B0-D5F6-E4B1-DD7DB98BAE75" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.38D71C07-D1E0-1D93-7E52-2457691F2E84" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.2B087D7B-21ED-7D3E-50FA-643E4720A8A0" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.E2BAC681-3145-A74C-37C3-98C5616D0D38" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.0BD78877-97EF-285D-1D7A-B5090B3D278A" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.71B0D088-662B-7FFD-68D3-216BC12A3CF1" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.8ACAFB0B-A714-F924-17B0-70BE84407DC1" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.FA145700-01D2-D6A8-2F9B-D2E10655C49A" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.4F1FE942-6C38-5733-F6E9-1B81B6BE83A5" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.21DFCFEB-B1CA-8B24-42A5-003A68A90192" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.0D0978E5-1623-3413-4A24-AB7C1CD82156" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.1D0E3C5A-F32E-CB42-BDFA-15A3B3D60C67" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.6F23B8B1-6D95-B03F-A619-9BDBA6421851" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.E0E0D28A-13F7-524B-3292-EA34AAFF9C6F" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.C5E23DA3-4FFC-CB5D-BFD3-394432785FD4" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.4D2990BA-0461-BAD8-D8A4-161D4309ACC2" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.D5BA7FE4-FD1A-60F6-EBCA-00FFB34FC15F" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.8B1B3738-04B8-B979-EBC4-53B59F34F7A1" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.5FA9FDAF-B9C2-E7D4-C98F-F94D64F0AF75" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.428269E4-71DD-B06B-101C-EA3FE19E1CDA" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.FE2EC740-2733-BCE9-6EC6-A71D061D2E7D" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.B51EFDC1-1F3F-2DC8-A1E3-B7598B960AD1" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.7E98F092-4874-F557-A533-88B51022A069" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.9E7B4CC9-DC7B-E8DE-4AF0-103A3BDFB90F" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.978B5F12-9A0B-A423-BA8C-9238AC213146" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.B88CB3D2-47DD-2141-FB11-4F7CF01A064D" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.D90DB35E-BFCD-E3BC-102F-57A54BB2DF5F" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.E9FC9A0F-D3B0-9833-0DF2-AD89A1AAD25E" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.C2ADEE26-E58B-5BFF-B560-B5B54DE801B9" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.B41EB2A2-2510-70E9-FCFF-4116083D3BE4" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.1D88DF73-12ED-6A16-D0FD-9769F6EBFA1E" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.5AC7F40D-4117-8693-00CC-CC7D24742846" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.8318649A-23D7-297D-C6CE-8796D51059FC" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.CA98162E-48CE-D1A7-6874-9F10BC642B5D" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.5EC236D9-DE98-A7D8-A3FB-595C023D4C37" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.2151DE0E-E8DD-11B2-2C28-549D7EAF39A6" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.690BB528-1B4D-412B-0C74-93E5A8AFFD28" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.6BB3A16C-2DE5-EA52-618D-359749D3EB42" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.28B88FAC-CCA8-4CEB-247A-D98C142FB9E7" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.9E020160-7DC7-770D-6A52-D3FC1F341268" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.E9D21C80-8560-5B10-B409-F13377D428DF" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.121D9593-88B8-70D0-4158-A6A2A2D088AD" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.26E2C589-F403-08CF-B6D3-C1258881DA0B" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.EBC04DDC-7B5F-DF42-0BFB-609771C7FD57" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.00D6915D-20E2-41EE-3961-BFE84DA2BA82" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.CFA2E74C-8366-5C69-7A97-8C7E20A35AC6" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.011ADE80-DA20-19AD-87FD-6F45391A232A" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.258BF29B-4C69-26B1-4A7F-A10285650C3C" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.67E5E927-1459-1132-AFDC-3035FE50DC9D" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.323A820D-2A26-59D9-E150-97BE9FB85D02" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.A6382D06-06EA-CA1E-3515-B0C96937F00F" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.A0437F29-F418-8E89-FD97-71ED9D5D3157" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.5EBB9BF7-303F-FF31-3D97-42568CBB4D9A" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.D7708894-4718-20B1-99E2-B3D0E83D11A5" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.AFBB4AFF-DCA1-F053-F216-7A88010147CC" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.012721C9-4AF1-CB4F-B789-449A95B1B03B" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.B4078B99-2A88-C180-1D62-78FA9C8E67A3" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.154D17CD-5CEA-C68B-BBBD-83E7B0392DB1" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.87663172-C3C1-0B12-FF99-A7A777B33585" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.E09BB684-D22A-1292-44B9-1C44C2401ACD" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.0F692271-886E-75F1-B689-83703755F37B" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.830CA533-8EB6-9443-9C28-57832FB1AF1E" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.A975F30B-897F-2A2A-3E5F-4BABA10CC4BC" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.10BD7CB5-82FF-2AA5-C635-C4ECC58D8AED" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.994B4E86-D6AA-BE6C-A903-74F5C69FFE6A" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.ABED93A1-95FD-CC60-F51E-32E171BE9093" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.F0F2E9B2-C594-2CB4-C5AB-4904A5E31CE9" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.16BC1861-9A9D-4418-4286-1F822F835993" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.67E0C6FD-415C-B104-45D0-D055543FD032" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.37A5A0F4-80A3-0083-373F-6BA390FEC19B" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.C6302105-E2DE-C47A-59AB-5373C277042E" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.FB28E70F-3BF2-3CED-712F-2EC147AF49B2" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.BD21F84F-E823-3F0D-7935-B99D08A0E418" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.C683F20D-2319-1F18-565D-D5E2FE9F3666" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.68EF1FF1-B279-1E9D-A288-A0F6CBFD3D3C" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.B6E4D29A-F8AF-3714-E1DA-BA1544A3D44D" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.79C04AF1-8D0E-4EA6-1C9B-022136566557" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.741A12F5-A8CE-60F4-8564-D4493BC6BC4A" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.F5F75743-77A0-08E5-057D-C541C286DF67" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.00C0BB1A-9BF6-48B0-00F6-CE8BECD2BC13" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.5A6B7F5B-4809-4989-F926-C722DD74807C" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.F4DB3A73-2B6B-89FD-80B1-5F82FCA7FC5F" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.FCAD53EA-E655-2A01-D10D-EAC7F1524386" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.348B0BD3-05EC-1DA5-2647-D3526E286C5F" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.5C2182DB-3C7B-2EF0-C536-5A68D8ECAE9E" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.76FAABBF-A581-2B22-F1CA-B76F70EA34BB" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.F5020FDB-7FBE-865E-11CA-35F9F4C4AB73" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.80821986-7984-3978-8F93-945934FAD7EB" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.4400F7E9-3814-38E5-0E05-743368CD55B0" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.DD94F674-FA9D-73DD-928E-CCB3D812983E" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.20E18EA1-77FF-7F4B-3294-770C1CCB078F" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.A82E605C-D8D6-ADF4-ED1C-5BFC5FF36467" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.AAD0529E-C79D-D057-0B97-9EDD8F19F458" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.CF1833B0-0E3F-98DE-C303-5EBB99C83250" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.9939A224-BB50-4A67-BDF8-102795FEB54B" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.96EC25C5-C938-8BA6-53F6-8B0331F498D0" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.DF4BAC40-47F5-8936-6978-99E93D7FB11B" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.3287C516-FF11-E2DD-0B70-12D12F4A05A3" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.9A72DA62-89AE-88A0-A0FC-AECE141C23BA" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.6E9AA320-10AA-E00D-3F9B-8F0F2DECD20F" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.AA97F5A9-D5B1-BD72-68D9-4250825BA243" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/>
+<UML:Stereotype xmi.id="DCE.B6C97822-E1A8-6B92-5371-D067268A4B0C" name="interface" owner="__uri_./galagosearch-core-Model.etup#//*[@xmi.id=&apos;DCE.942AE9A2-7366-CCA5-090E-83079A5168C6&apos;]"/></UML:Element.ownedElement></UML:Profile></XMI.content>
+</XMI>

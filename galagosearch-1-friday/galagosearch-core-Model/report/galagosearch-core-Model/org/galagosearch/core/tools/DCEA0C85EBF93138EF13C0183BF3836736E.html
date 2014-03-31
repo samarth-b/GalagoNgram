@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Class</TITLE>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-8">
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style"></HEAD>
+<BODY BGCOLOR="white">
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+<HR>
+<H2>
+<FONT SIZE="-1">org::galagosearch::core::tools</FONT>
+<BR>
+Class SearchWebHandler</H2>
+<PRE>
+<A HREF="../../../../../galagosearch-core-Model/org/mortbay/jetty/handler/DCE92665779D9C7455608608A3679DA340F.html" title="Class inorg::galagosearch::core::tools">AbstractHandler</A>
+  <IMG SRC="../../../../../images/inherit.gif" ALT="extended by "><B>org::galagosearch::core::tools::SearchWebHandler</B>
+</PRE>
+<DL>
+<DT><B>All Known Associations: </B><DD><IMG SRC="../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/tools/DCE69AC3FF59EC985BED8B908AB12B42F15.html">Navigable_Aggregation</A>: <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/tools/DCE04BAC67A37433A98885E34E4020BB884.html" title="association in org::galagosearch::core::tools">Search</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>SearchWebHandler</B></DT><DT>extends <A HREF="../../../../../galagosearch-core-Model/org/mortbay/jetty/handler/DCE92665779D9C7455608608A3679DA340F.html" title="Class inorg::galagosearch::core::tools">AbstractHandler</A></DL>
+</PRE>
+
+<P>
+<p>Handles web search requests against a Galago index.  Also handles XML requests for
+ documents, snippets and search results.</p>
+  <p>This class is set up to work with an embedded Jetty instance, but it should be
+ fairly easy to wrap into a Servlet for use with something else (Tomcat, Glassfish, etc.)</p>
+  <p>URLs supported:</p>
+  <table>
+   <tr>
+     <td>/</td>
+     <td>Main Page</td>
+   </tr>
+   <tr>
+     <td>/search</td>
+     <td>HTML Search Results (q, start, n)</td>
+   </tr>
+   <tr>
+     <td>/xmlsearch</td>
+     <td>XML Search Results (q, start, n)</td>
+   </tr>
+   <tr>
+     <td>/snippet</td>
+     <td>XML Snippet Result (identifier, term+)</td>
+   </tr>
+   <tr>
+     <td>/document</td>
+     <td>Document Result (identifier)</td>
+   </tr>
+ </table>
+  @author trevor</P><HR>
+<!-- =========== PROPERTY SUMMARY =========== -->
+<A NAME="property_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Properties</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Alias</B></TD>
+<TD>SearchWebHandler</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Visibility</B></TD>
+<TD>public</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Final</B></TD>
+<TD><IMG src="../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Transient</B></TD>
+<TD><IMG src="../../../../../images/checked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Abstract</B></TD>
+<TD><IMG src="../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Leaf</B></TD>
+<TD><IMG src="../../../../../images/unchecked.png" border=n></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== CONSTRUCTOR SUMMARY =========== -->
+
+<A NAME="constructor_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="#SearchWebHandler">SearchWebHandler</A></B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/tools/DCE04BAC67A37433A98885E34E4020BB884.html">Search</A>&nbsp;search)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== OPERATION SUMMARY =========== -->
+<A NAME="operation_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Operation Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getEscapedString">getEscapedString</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;text)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#handleDocument">handleDocument</A></B>(<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCE217A6ECABB134D4CEEA0C6C638F378EB.html">HttpServletRequest</A>&nbsp;request,&nbsp;<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCEF3945FFAAFA6238B3F15637953F0899E.html">HttpServletResponse</A>&nbsp;response)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#handleSnippet">handleSnippet</A></B>(<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCE217A6ECABB134D4CEEA0C6C638F378EB.html">HttpServletRequest</A>&nbsp;request,&nbsp;<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCEF3945FFAAFA6238B3F15637953F0899E.html">HttpServletResponse</A>&nbsp;response)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#scrub">scrub</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;s)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#retrieveImage">retrieveImage</A></B>(<A HREF="../../../../../galagosearch-core-Model/java/io/DCEBB766EB3E609FB7E68FFBECEE3EF8EA9.html">OutputStream</A>&nbsp;output)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#handleImage">handleImage</A></B>(<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCE217A6ECABB134D4CEEA0C6C638F378EB.html">HttpServletRequest</A>&nbsp;request,&nbsp;<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCEF3945FFAAFA6238B3F15637953F0899E.html">HttpServletResponse</A>&nbsp;response)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#handleSearch">handleSearch</A></B>(<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCE217A6ECABB134D4CEEA0C6C638F378EB.html">HttpServletRequest</A>&nbsp;request,&nbsp;<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCEF3945FFAAFA6238B3F15637953F0899E.html">HttpServletResponse</A>&nbsp;response)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#handleSearchXML">handleSearchXML</A></B>(<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCE217A6ECABB134D4CEEA0C6C638F378EB.html">HttpServletRequest</A>&nbsp;request,&nbsp;<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCEF3945FFAAFA6238B3F15637953F0899E.html">HttpServletResponse</A>&nbsp;response)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#writeStyle">writeStyle</A></B>(<A HREF="../../../../../galagosearch-core-Model/java/io/DCE60E4531110A7F652F9D2B1BF18A8A940.html">PrintWriter</A>&nbsp;writer)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#handleMainPage">handleMainPage</A></B>(<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCE217A6ECABB134D4CEEA0C6C638F378EB.html">HttpServletRequest</A>&nbsp;request,&nbsp;<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCEF3945FFAAFA6238B3F15637953F0899E.html">HttpServletResponse</A>&nbsp;response)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#handle">handle</A></B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;target,&nbsp;<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCE217A6ECABB134D4CEEA0C6C638F378EB.html">HttpServletRequest</A>&nbsp;request,&nbsp;<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCEF3945FFAAFA6238B3F15637953F0899E.html">HttpServletResponse</A>&nbsp;response,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;dispatch)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/tools/DCEC8F326C114F1E3D88D84A54B9180D6EA.html">SearchResult</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#performSearch">performSearch</A></B>(<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCE217A6ECABB134D4CEEA0C6C638F378EB.html">HttpServletRequest</A>&nbsp;request)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== CONSTRUCTOR DETAIL =========== -->
+
+<A NAME="constructor_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="SearchWebHandler"></A><H3>SearchWebHandler</H3>
+<PRE>
+public <B>SearchWebHandler</B>(<A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/tools/DCE04BAC67A37433A98885E34E4020BB884.html">Search</A>&nbsp;search)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+
+<!-- =========== OPERATION DETAIL =========== -->
+
+<A NAME="operationr_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Operation Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="getEscapedString"></A><H3>getEscapedString</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>getEscapedString</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;text)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="handleDocument"></A><H3>handleDocument</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>handleDocument</B>(<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCE217A6ECABB134D4CEEA0C6C638F378EB.html">HttpServletRequest</A>&nbsp;request,&nbsp;<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCEF3945FFAAFA6238B3F15637953F0899E.html">HttpServletResponse</A>&nbsp;response)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="handleSnippet"></A><H3>handleSnippet</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>handleSnippet</B>(<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCE217A6ECABB134D4CEEA0C6C638F378EB.html">HttpServletRequest</A>&nbsp;request,&nbsp;<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCEF3945FFAAFA6238B3F15637953F0899E.html">HttpServletResponse</A>&nbsp;response)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="scrub"></A><H3>scrub</H3>
+<PRE>
+private <A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A> <B>scrub</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;s)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="retrieveImage"></A><H3>retrieveImage</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>retrieveImage</B>(<A HREF="../../../../../galagosearch-core-Model/java/io/DCEBB766EB3E609FB7E68FFBECEE3EF8EA9.html">OutputStream</A>&nbsp;output)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="handleImage"></A><H3>handleImage</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>handleImage</B>(<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCE217A6ECABB134D4CEEA0C6C638F378EB.html">HttpServletRequest</A>&nbsp;request,&nbsp;<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCEF3945FFAAFA6238B3F15637953F0899E.html">HttpServletResponse</A>&nbsp;response)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="handleSearch"></A><H3>handleSearch</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>handleSearch</B>(<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCE217A6ECABB134D4CEEA0C6C638F378EB.html">HttpServletRequest</A>&nbsp;request,&nbsp;<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCEF3945FFAAFA6238B3F15637953F0899E.html">HttpServletResponse</A>&nbsp;response)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="handleSearchXML"></A><H3>handleSearchXML</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>handleSearchXML</B>(<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCE217A6ECABB134D4CEEA0C6C638F378EB.html">HttpServletRequest</A>&nbsp;request,&nbsp;<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCEF3945FFAAFA6238B3F15637953F0899E.html">HttpServletResponse</A>&nbsp;response)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="writeStyle"></A><H3>writeStyle</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>writeStyle</B>(<A HREF="../../../../../galagosearch-core-Model/java/io/DCE60E4531110A7F652F9D2B1BF18A8A940.html">PrintWriter</A>&nbsp;writer)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="handleMainPage"></A><H3>handleMainPage</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>handleMainPage</B>(<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCE217A6ECABB134D4CEEA0C6C638F378EB.html">HttpServletRequest</A>&nbsp;request,&nbsp;<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCEF3945FFAAFA6238B3F15637953F0899E.html">HttpServletResponse</A>&nbsp;response)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="handle"></A><H3>handle</H3>
+<PRE>
+public <A HREF="../../../../../galagosearch-core-Model/DCE6DF1E096843464B6216E45075AEEEA49.html">void</A> <B>handle</B>(<A HREF="../../../../../galagosearch-core-Model/DCEF0CE70E93D9C4C589BB0AF15568BF45D.html">String</A>&nbsp;target,&nbsp;<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCE217A6ECABB134D4CEEA0C6C638F378EB.html">HttpServletRequest</A>&nbsp;request,&nbsp;<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCEF3945FFAAFA6238B3F15637953F0899E.html">HttpServletResponse</A>&nbsp;response,&nbsp;<A HREF="../../../../../galagosearch-core-Model/DCE635C184BBAA2A7DB43E6687829E873D2.html">int</A>&nbsp;dispatch)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="performSearch"></A><H3>performSearch</H3>
+<PRE>
+private <A HREF="../../../../../galagosearch-core-Model/org/galagosearch/core/tools/DCEC8F326C114F1E3D88D84A54B9180D6EA.html">SearchResult</A> <B>performSearch</B>(<A HREF="../../../../../galagosearch-core-Model/javax/servlet/http/DCE217A6ECABB134D4CEEA0C6C638F378EB.html">HttpServletRequest</A>&nbsp;request)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+
+<HR>
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+</BODY>
+</HTML>
