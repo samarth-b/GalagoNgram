@@ -1,0 +1,35 @@
+@inproceedings{Kim,
+ author = {Kim, Jinyoung and Xue, Xiaobing and Croft, W. Bruce},
+ title = {A Probabilistic Retrieval Model for Semistructured Data},
+ booktitle = {Proceedings of the 31th European Conference on IR
+Research on Advances in Information Retrieval},
+ series = {ECIR '09},
+ year = {2009},
+ isbn = {978-3-642-00957-0},
+ location = {Toulouse, France},
+ pages = {228-239},
+ numpages = {12},
+ acmid = {1533749},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+}
+
+
+@article{Zhai,
+ author = {Zhai, ChengXiang},
+ title = {Statistical Language Models for Information Retrieval A
+Critical Review},
+ journal = {Found. Trends Inf. Retr.},
+ volume = {2},
+ issue = {3},
+ month = {March},
+ year = {2008},
+ issn = {1554-0669},
+ pages = {137--213},
+ numpages = {77},
+ url = {http://dl.acm.org/citation.cfm?id=1498838.1498839},
+ doi = {10.1561/1500000008},
+ acmid = {1498839},
+ publisher = {Now Publishers Inc.},
+ address = {Hanover, MA, USA},
+ }

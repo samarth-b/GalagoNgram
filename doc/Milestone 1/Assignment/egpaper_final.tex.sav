@@ -1,0 +1,375 @@
+\documentclass[10pt,onecolumn,letterpaper]{article}
+%\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\usepackage{cvpr}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+
+
+% Include other packages here, before hyperref.
+
+% If you comment hyperref and then uncomment it, you should delete
+% egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
+% run, let it finish, and you should be clear).
+%\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+
+\cvprfinalcopy % *** Uncomment this line for the final submission
+
+\def\cvprPaperID{****} % *** Enter the CVPR Paper ID here
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+% Pages are numbered in submission mode, and unnumbered in camera-ready
+%\ifcvprfinal\pagestyle{empty}\fi
+\setcounter{page}{1}
+\begin{document}
+
+%%%%%%%%% TITLE
+\title{Assignment-2}
+
+\author{Himanshu S. Bhatt and Samarth Bharadwaj\\
+\\
+%Advisors: Dr. Richa Singh and Dr. Mayank Vatsa\\
+%\\
+%IBM Mentors: Dr. Nalini Ratha and Dr. Vivek Tyagi\\
+{\tt\small }
+% For a paper whose authors are all at the same institution,
+% omit the following lines up until the closing ``}''.
+% Additional authors and addresses can be added with ``\and'',
+% just like the second author.
+% To save space, use either the email address or home page, not both
+%\and
+%Second Author\\
+%Institution2\\
+%First line of institution2 address\\
+{\tt\small }
+}
+\maketitle
+%\thispagestyle{empty}
+%%%%%%%%% ABSTRACT
+%\begin{abstract}
+%   The ABSTRACT is to be in fully-justified italicized text, at the top
+%   of the left-hand column, below the author and affiliation
+%   information. Use the word ``Abstract'' as the title, in 12-point
+%   Times, boldface type, centered relative to the column, initially
+%   capitalized. The abstract is to be in 10-point, single-spaced type.
+%   Leave two blank lines after the Abstract, then begin the main text.
+%   Look at previous CVPR abstracts to get a feel for style and length.
+%\end{abstract}
+%%%%%%%%% BODY TEXT
+\textbf{Question-2: Prove the Bayes optimality}
+
+For a given document \emph{d}, if $P(R=1|d) > P(R=0|d)$, we decide that the document is relevant. The probability of error whenever we make a incorrect decision is given as:
+\begin{equation}
+P(error|d) =\left\{ \begin{array}{cc}
+                        P(R=1|d)  & \ \ if \ \  d ~is~ irrelevant \\
+                        P(R=0|d)   & \ \ otherwise
+                        \end{array} \right.
+\end{equation}
+
+\noindent Therefore, for a given document $d$, we can minimize the probability of error by deciding the document to be relevant if if $P(R=1|d) > P(R=0|d)$ and irrelevant otherwise. However, it requires that all probabilities are known correctly. Therefore, we minimize the average probability of error given as:
+\begin{equation}
+P(error)= \sum_d P(error|d) P(d)
+\end{equation}
+
+\noindent If for every document $d$, we ensure that the $P(errors|d)$ is as small as possible, then the overall summation will be small. Thus, is justifies the Bayes deciion rule for minimizing the probability of error.
+
+\begin{equation}
+D ~is ~relevant ~iff, P(R=1|d) > P(R=0|d)
+\end{equation}
+
+\textbf{(a) Zero-one loss function}
+The loss function $\lambda(\alpha_i|R_j)$ is the loss incurred for deciding a document $d$ as $\alpha_i$ when the actual state of the document is $R_j$.
+Therefore, we define conditional risk $R(\alpha_1|R_j)$ as:
+\begin{equation}
+R(\alpha_i|R_j)=\sum_{j=1}^2 \lambda(\alpha_i|R_j) P(R_j|d)
+\end{equation}
+
+For a given document $d$, we can minimize the expected loss by selection the action that minimizes the conditional risk. The fundamental rule is to decide $d$ as relevant if $R(\alpha_1|d)>R(\alpha_2|d)$.
+
+The zero-one loss function is given as:
+\begin{equation}
+\lambda(\alpha_i|R_j) =\left\{ \begin{array}{cc}
+                        0  & \ \ if \ \  i=j \\
+                        1   & \ \ otherwise
+                        \end{array} \right.
+\end{equation}
+
+\noindent This loss function assigns no loss to a correct decision and assigns a unit loss to any error. Therefore, the conditional risk can be rewritten as:
+%
+%\center$R(\alpha_1|d)$=$\lambda(\alpha_1|R=0)P(R=0|d)$
+%
+%\center$R(\alpha_2|d)$=$\lambda(\alpha_1|R=1)P(R=1|d)$
+\begin{equation}
+ R(\alpha_i|d)=  \sum_{j=1}^2 \lambda(\alpha_1|R_j)P(R_j|d)\\
+                 \end{equation}
+\begin{equation} = \sum_{j\neq i} P(R_j|d)\\
+\end{equation}
+
+\begin{equation} = 1-P(R_i|d) \end{equation}
+
+
+\noindent where $P(R_i|d)$ is the conditional probability that $R_i$ is the correct state of the document. Thus, to minimiz the average probability of error, we should maximize the posterior probability $P(R_i|d)$. By minimizing the overall bayes risk best performance is achieved given as:
+
+\begin{equation}
+D ~is ~relevant ~iff, P(R=1|d) > P(R=0|d)
+\end{equation}
+
+
+\noindent\textbf{(b) With cost functions}
+The conditional risk in this case can be written as:
+\begin{equation}R(\alpha_i|d)=\lambda(\alpha_i|R_j)P(R_j|d)+ \end{equation}
+\begin{equation}R(\alpha_1|d)=\lambda(\alpha_1|R_1)P(R_1|d)+ \lambda(\alpha_1|R_2)P(R_2|d) \end{equation}
+\begin{equation}R(\alpha_1|d)=CN ~P(R_1|d)+ CR ~P(R_2|d) \end{equation}
+\noindent $CN$ is the cost associated with retrieving a relevant document and $CR$ is the cost associated with  not retrieving a relevant document
+%\begin{equation}R(\alpha_2|d)$=$\lambda(\alpha_2|R_1)P(R_1|d)$+ $\lambda(\alpha_2|R_2)P(R_2|d)$ \end{equation}
+
+
+
+
+\textbf{Question3)
+\center\textbf{Quiz-2}
+\textbf{Answer-1}
+\begin{itemize}
+\item Stemming Errors: 1) Experiment and experience (Stem-, 2) Organism / organization (Stem-Organ)
+\item Tokenization: 1) Academic year 2011-12 (tokenized string : academic year 2011) , 2) Meeting is scheduled at 8 AM (Tokenized string: meeting scheduled).
+\end{itemize}
+
+
+\textbf{Answer-2}
+
+
+\begin{algorithm}[]
+   \caption{Pseudo code}
+\begin{algorithmic}
+   \STATE {\bfseries Negative(kw)}
+   \STATE{1:} {\bfseries For}$i$= 1 {\bfseries to} N (number of documents)
+   \STATE{2:} {\bfseries Do if} $D_i$==1
+   \STATE{3:} {\bfseries Then}$D_i$=0
+   \STATE{4:} {\bfseries Else if} $D_i$==0
+   \STATE{5:} {\bfseries Then}$D_i$=1
+   \STATE{6:} {\bfseries End if}
+   \STATE{7:} {\bfseries End For}
+   \STATE {\bfseries Output:} Negation.
+  \end{algorithmic}
+\end{algorithm}
+
+
+\textbf{Answer-3}
+The IDF of a term that occurs in all documents is zero. Expression
+\begin{equation}
+IDF_t=log\frac{N}{df_t}
+\end{equation
+\noindent where $N$ is the number of documents in a collection and $df$ is the document frequency of the term $t$ (i.e. the number of documents in which the term occured).
+
+
+\textbf{Answer-4}
+Yes, Tf-IDF weight for a term can exceed 1. More the weight, more discriminative the term is.
+
+\textbf{Answer-5}
+The table show the merged and sorted inverted index which also captures the positional restrictions.
+
+
+%\begin{table}
+%\begin{center}
+%\begin{tabular}{|c|c|}
+%\textbf{Term} & \textbf{Posting list }	 \\\hline
+%To   & $D_1$(1,4,6,9), $D_2$(1,5) \\\hline
+%Do   & $D_1$(1,10), $D_3$(6,8,10), $D_4$(1,2,3)	\\\hline
+%Is   & $D_1$(3,8) \\\hline
+%Be   & $D_1$(5,7), $D_2$(2,6), $D_3$(7,9), $D_4$(9,12)	\\\hline
+%Or   & $D_2$(3) 	\\\hline
+%Not  & $D_2$(4)	\\\hline
+%I & $D_2$(7,10), $D_3$(1,4)\\\hline
+%Am & $D_2$(8,11), $D_3$(5)\\\hline
+%What & $D_2$(9)\\\hline
+%Think & $D_3$(2)\\\hline
+%Therefore & $D_3$(3)\\\hline
+%Da & $D_4$(4,5,6)\\\hline
+%Let & $D_4$(7,10)\\\hline
+%It & $D_4$(8,11)\\\hline
+%\end{tabular}
+%\end{center}
+%\end{table}
+
+
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|c|}
+\textbf{Term} & \textbf{Posting list}	 \\\hline
+Am & $D_2$(8,11), $D_3$(5)\\\hline
+Be   & $D_1$(5,7), $D_2$(2,6), $D_3$(7,9), $D_4$(9,12)	\\\hline
+Da & $D_4$(4,5,6)\\\hline
+Do   & $D_1$(1,10), $D_3$(6,8,10), $D_4$(1,2,3)	\\\hline
+I & $D_2$(7,10), $D_3$(1,4)\\\hline
+Is   & $D_1$(3,8) \\\hline
+It & $D_4$(8,11)\\\hline
+Let & $D_4$(7,10)\\\hline
+Not  & $D_2$(4)	\\\hline
+Or   & $D_2$(3) 	\\\hline
+Think & $D_3$(2)\\\hline
+Therefore & $D_3$(3)\\\hline
+To   & $D_1$(1,4,6,9), $D_2$(1,5) \\\hline
+What & $D_2$(9)\\\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
+
+
+
+\center\textbf{Quiz-3}
+
+\textbf{Answer-1}
+We use harmonic mean in F-measure because it is always less than or equal to the arithmetic mean and the geometric mean. When the values of two numbers differ greatly, the harmonic mean is closer to their minimum than to their arithmetic mean.
+
+\textbf{Answer-2}
+\begin{equation}
+Precision=\frac{True positives}{Trure positives+ False positives}
+\end{equation}
+
+\begin{equation}
+Recall=\frac{True positives}{Trure positives+ False negatives}
+\end{equation}
+
+True positives has to bee maximized for both precision and recall. However, precision can be optimized by reducing the number of false positives whereas, Recall is optimized by reducing the number of false negatives. Since, it is very difficult to simultaneously optimize both false positives and false negatives. Therefore, the claim by Mr. Big Brain is not possible.
+Generally, a system is optimized for reducing the number of false positives (optimizing precision) or false negatives (optimizing recall).
+
+\textbf{Answer-3}
+While using a search engine, it is not possible to find if you have found all relevant documents or not. However based on the query, if the user gets the information what he was looking for in top few retrieved documents. User is quite satisfied.
+
+\textbf{Answer-5}
+The reformulated query can not be the same as the original one because with each iterations (relevance feedback), we change the weights for query term to move it closer to the relevant documents and farther from irrelevant documents.
+
+
+
+
+
+
+
+
+%
+%\noindent The Bayes rule is to decide that document $d$ is relevant ($R_1$ is relevant) if $R(\alpha_1|d)<R(\alpha_2|d)$ \emph{i.e.}
+%
+%\begin{equation}$(\lambda(\alpha_1|R_2)- \lambda(\alpha_2|R_2))P(R_2|d) < (\lambda(\alpha_2|R_1)- \lambda(\alpha_1|R_1))P(R_1|d)$\end{equation}
+%
+%\noindent where $\lambda(\alpha_1|R_1)$ and $\lambda(\alpha_2|R_2)$ are the cost associated with retrieving the relevant documents (
+
+%\section{Introduction}
+%%Machine learning algorithms are developed to address specific tasks and underlying assumption in many algorithms is that the training and test data follow the same distribution. Such algorithms are sensitive to variations in the data distribution and may not generalize well.
+%An important application of face recognition that has gained much attention in recent years is matching low resolution (surveillance quality) face images with high resolution gallery images. Surveillance systems installed at public places, airport gates, security checkpoints and government buildings are designed primarily to cover a large area from a single location. For the sake of wider coverage, low storage and operational costs the resolution of the images captured is kept at a minimum. Generally, face recognition algorithms are trained on high resolution images (gallery) captured in a controlled environment. Therefore, when a low resolution probe (query image) interacts with the system, its performance degrades. One of the main reasons for poor performance is the large difference in data (information content) between the high resolution images and low resolution images. In this research, the problem of matching low resolution face images with high resolution gallery images is studied in a transfer learning settings.
+%
+%A biometric system generally operates under conditions different from what it has been trained on. The conditions under which the system is trained are referred to as source domain where availability of large training data under stable environmental conditions helps the biometric system efficiently learn the task. The conditions under which a biometric system operates are referred to as the target domain where the environmental conditions keeps on changing dynamically, thus, affecting the performance. The operating conditions vary because of the environmental dynamics and the change in data distribution, however, the task in source and target domain remains the same i.e. verification/ identification. In biometrics, these variations are caused due to template aging, improper interactions with the sensor and modifications during capture. The performance of such biometric system degrades because it is not able to make optimal use of knowledge learned during training. Transfer learning attempts to improve the performance of biometric systems by transferring knowledge learned in the source domain and using it to improve the performance/ learning in a related target domain. Leveraging the knowledge from the previously learned task helps a biometric system better learn the target task, thus, making it stable and robust to environmental dynamics and variations in the data distribution.
+%
+%%Transfer learning is a concept from machine learning that is inspired by human cognition.
+%Humans have innate characteristics to efficiently transfer knowledge between tasks in multiple ways. Humans inherently recognize and apply previous experience when encounter a new challenge.
+%%Generally, it is observed that, more related a new task is to the previous learning, more easily and better humans can learn that task. Transfer learning techniques that allows for using previously learned knowledge in related tasks signify progress towards making machine learning as efficient as human learning.
+%In transfer learning, objective of a classifier is to use the knowledge from previously learned task to minimize the error over the test data in target domain.
+%%Transfer learning methods tend to be highly dependent on the machine learning algorithms being used to learn the tasks, and can often simply be considered extensions of those algorithms. Another important aspect of transfer learning is that for a large scale application, it is computationally efficient to fully learn the target task given the transferred knowledge compared to the amount of time required to learn the task from the beginning.
+%%In biometrics, we see that transfer of knowledge can occur at two stages. First is at feature level where features are transferred from source domain to related target domain to update the model in the target domain. Secondly, transfer can occur at match score level, where instead of updating the full model, match score are tuned according to the target domain by dynamically updating the classifiers. Considering the high applicability of transfer learning in biometrics, we present a framework for transferring knowledge in related biometric tasks.
+%The proposed approach allows a face recognition system to leverage its knowledge from the high resolution (source) domain and perform efficient matching in the low resolution (target) domain.
+%
+%
+%%\section{Related Work}
+%%
+%%This research is related to two machine learning topics namely: Transfer learning and Co-training. We review some of the related work in both these areas followed by the review of approaches proposed for matching low resolution face images with high resolution gallery.
+%%
+%%\vspace{6pt}
+%%\textbf{Transfer Learning}: Transfer learning helps improve learning a task in target domain based on the knowledge in source domain. According to different learning types, these methods can be roughly classified into three categories: \emph{inductive}, \emph{transductive}, and \emph{unsupervised} approaches.
+%%%The block diagram in Fig. \ref{fig:block} illustrates these three types of transfer learning paradigms
+%%%\begin{figure*}[t]
+%%%\begin{center}
+%%%\includegraphics[width=0.8\linewidth]{block.eps}
+%%%\end{center}
+%%%   \caption{Block diagram illustrates different types of transfer learning settings.}
+%%%\label{fig:block}
+%%%\end{figure*}
+%%In inductive transfer learning, the source and target domain may or may not be same but the learning task is essentially different. On the other hand, transductive transfer learning can tolerate variations in source and target domains but the learning task is identical. The third type is unsupervised transfer learning where no labeled data is observed in the source and target domains during training. Moreover, transfer learning approaches can also be classified as homogeneous or heterogeneous based on the source and target domain feature representations. In biometrics application, the source and target domain may show variations in terms of feature space (variations in representation of data) or concept-drift (change in data distributions). However, the learning task is essentially the same i.e. verification/ identification. Therefore, transductive transfer learning schemes seem to be the most pertinent in transferring knowledge in biometrics applications. Below we review some of the approaches that have been used in various applications of transfer learning.
+%%
+%%Dai \emph{et al.} \cite{Tradaboost} proposed a boosting algorithm, TrAdaBoost, which assumes that the source and target domain data use exactly the same set of features and labels, but the distributions of the data in the two domains are different. The idea is to use a small number of same-distribution instances to find out useful diff-distribution instances by iteratively adjusting their weights. In each iteration, a base learner is trained on the weighted training data and used to predict the label of each training instance. Wu and Dietterich \cite{SVM-auxillary} integrated the source domain (auxiliary) data in a Support Vector Machine (SVM) framework for improving the classification performance. Their methodology is to minimize a weighted sum of two loss functions, one for original training data (same-distribution data) and the other for auxiliary data (diff-distribution data). Liao \emph{et al.} \cite{Liao} proposed a new active learning method to select the unlabeled data in a target domain to be labeled with the help of the source domain data. While most of the transfer learning approaches deal with transfering knowledge from  source to target domain, Xing \emph{et al.} \cite{Xing-brgidge_refinement} proposed a novel algorithm known as bridged refinement to correct the labels predicted by a shift unaware classifier using the mixture distribution. They use a mixture of training and test data as a bridge to better transfer knowledge from source to the target domain. Recently, Xia \emph{et al.} \cite{kinship-ijcai11} proposed using transfer learning for kinship verification using the face images. They utilized an intermediate distribution close to both the source and target distributions to bridge them and reduce the divergence. Samdani and Yih \cite{Domain-adaptation} proposed an ensemble of feature groups to adapt the variations of different features. They created an ensemble of multiple classifiers where each one is trained on a feature group and final decision is based on all the classifiers in the ensemble. They observed that each feature has varying change in two domains (source and target), therefore, it is more intuitive to learn individual change in distribution and transfer proportionate amount of knowledge within each classifier. Liu \emph{et al.} \cite{Cross-view-CVPR11} proposed an approach for recognizing human actions from different views by using transfer learning. They used high level features that can be shared across views and enable the connection of action models for different views.
+%%
+%%
+%%In literature, there are several approaches that leverage different machine learning paradigms along with transfer learning to improve the learning task. Zhao and Hoi \cite{OTL} integrated online learning with transfer learning and proposed a framework for online transfer learning. Unlike traditional transfer learning methods, they assumed that labeled training instances in target domain are available one at a time in online fashion. The online transfer learning framework reduces the need for having all the labeled training instances a priori. However, it still requires labeled instances for the supervised learning task and obtaining labeled instances may be expensive, time consuming and requires a lot of human effort. Shi \emph{et al.} \cite{Semi-supervised-TL} integrated co-training with transfer learning where the samples are re-weighting in the source domain and are used as labeled training instances to update the model in the target domain. The main idea is to choose some active training samples from the source domain that influence the training error in target domain. Duan \emph{et al.} \cite{DAM} proposed a multi-view transfer learning approach. They used a decision function in the target domain by leveraging the knowledge from a set of pre-computed classifiers independently learnt with the labeled samples from multiple source domains. {Daum\'e III} \emph{et al.} \cite{daume11spectral} proposed to augment the source domain feature space using features from labeled data in target domain. They build on the notion of augmented space and using unlabeled data in target domain to further assist the transfer of information from source to target. These approaches suggests that transfer learning can be seamlessly integrated with different machine learning techniques for improving the learning task at hand.
+%%
+%%\vspace{6pt}
+%%\textbf{Co-training}: is a machine learning paradigm proposed by Blum and Mitchell \cite{Blum:1998:CLU:279943.279962}. It assumes availability of two classifiers trained on separate views (features) that co-train each other by providing pseudo labeled training instances and increasing the training set for each other. Nonetheless, success of a co-training framework is susceptible to various assumptions. Blum and Mitchell \cite{Blum:1998:CLU:279943.279962} showed that two classifiers should have sufficient individual accuracy and should be conditionally independent of each other. Later, Abney \cite{Abney02bootstrapping} showed that weak dependence between the two classifiers can also guarantee successful co-training. Wang and Zhou \cite{icml2010_144} also reported the sufficient and necessary conditions for success of a co-training framework. Co-training has shown encouraging results in several domain adaptation tasks. Tur \cite{Tur:2009:CAC:1582709.1583230} proposed a co-adaptation algorithm which exploits the huge amount of unlabeled data. In their framework, instead of adding pseudo labeled instances to increase the labeled training set, adaptation of existing model is proposed. Co-training has also been explored in computer vision applications. Javed \emph{et al.} \cite{Javed:co-training} proposed a co-training approach to continuously provide pseudo labels to the incoming data for online update of the boosted classifiers initially trained on separate views (features) of the data. Anat \emph{et al.} \cite{Anat:CV} proposed a co-training based approach to train visual detectors using small amount of labeled data and large unlabeled data to seamlessly improve performance over time. Tang \emph{et al.} \cite{Tang:ICCV07} proposed increasing knowledge of the object tracker to continually improve its performance. Online support vector machines are used to simultaneously classify new data and update the classifier in a co-training framework. Co-training has also been explored in face recognition. Balcan \emph{et al.} \cite{balcan_2005} developed a method to address the problem of person identification in low quality web-camera images. They formulated the task of person identification in web-camera images as a graph-based semi-supervised learning problem. Roli \emph{et al.} \cite{Fabioroliadaptivesys} designed a biometric system that uses co-training to address the temporal variations in a face and fingerprint based multimodal system. Liu \emph{et al.} \cite{Liuupdatingeigenspace} proposed to retrain the Eigenspace in a face recognition system using the unlabeled data stream. Recently, Poh \emph{et al.} \cite{Poh_adaptive_sys} performed a study on the goal of semi-supervised learning where they focused on some of the challenges and research directions for designing adaptive biometric systems. Co-training has proved to be highly efficient in several applications as it can progressively improve the performance by leveraging large unlabeled data along with few labeled data.
+%%
+%%\vspace{6pt}
+%%\textbf{Low resolution face recognition}: Most of the approaches for low resolution face recognition use super resolution to enhance the low quality probe image before recognition \cite{Lee:RLF}, \cite{LRF:CLPM}, \cite{LRF:SR2}. Huang and He \cite{SR-coherent} proposed a super-resolution method that uses nonlinear mappings to infer coherent features that favor higher recognition of single LR face image. They proposed to build a coherent subspace between PCA features of HR and LR images mapped using radial basis functions. Baker and Kanade \cite{SR:Baker} proposed an algorithm to a priori learn the spatial distribution of image gradients for frontal facial images. Their approach tries to recognize local features in low resolution images and then enhances their resolution. Chakrabarty \emph{et al.} \cite{SR:Ayan} proposed a learning based method to super-resolve face images with kernel principal component analysis-based prior model. Chang \emph{et al.} \cite{SR:Chang1}, \cite{SR:chang2} used local facial patches in the low and high resolution images to form geometrically similar manifolds. They used training images to estimate the high-resolution embedding to construct a smooth super resolved image. Similarly, using the local facial regions, Liu \emph{et al.} \cite{liu1} proposed a face hallucination method based on local patches using Tensor-Patch based model that utilizes the local distribution structure in sample space. Yang \emph{et al.} \cite{Sparse-representation} proposed a super resolution approach by representing local patches as a sparse linear combination of elements from high resolution images. In addition to these local models, Liu \emph{et al.} \cite{Liu2} integrated a holistic parametric model and a local nonparametric model using two-step statistical modeling for face hallucination. Global linear model learns the relationship between the high resolution and low resolution images, whereas, the high-frequency content residue is modeled using a patch-based non-parametric Markov network.
+%%
+%%Super-resolution approaches are more susceptible to environmental variations and introduce distortions that affect recognition. Moreover, primary objective of super-resolution is to obtain a good visual reconstruction from multiple low resolution faces, and generally these algorithms are not intended for recognition purpose. However, there are some approaches that simultaneously optimize super resolution as well as face recognition. Jia and Gong \cite{Simultaner:SR} combined super-resolution and face recognition by computing a maximum likelihood identity parameter vector in high-resolution tensor space for recognition. Hennings-Yeomans \emph{et al.} \cite{Simultatneous:SR} proposed an approach where face features are included in a super-resolution method as prior information for simultaneous reconstruction of super resolved images as well as recognition. They proposed a framework that uses models from an image formation process, super-resolution priors and face feature extraction methods. The matching algorithm extracts new features based on how well an intermediate super-resolution reconstruction of the probe image fits into the models used in the process.
+%%
+%%Down sampling the gallery images to match them with low resolution query images has also been explored by researchers. However, down sampling face images results in loosing discriminating information useful for face recognition such as texture and other high frequency information. To this end, Lei \emph{et al.} \cite{frequency_descriptor} proposed using magnitude and phase information to build a local frequency descriptor in frequency domain. Li \emph{et al.} \cite{CLPM} used coupled mappings to project face images with different resolutions into a unified feature space to minimize the difference between the low-resolution image and its high-resolution counterpart. Biswas \emph{et al.} \cite{CVPR_LRF} proposed a transformation based approach to approximate the distance between low quality probe and high quality gallery image and makes it comparable to the distance had the probe been captured in the same conditions as the gallery. Arandjelovi´c and Cipola \cite{cipola1} proposed a generative shape-illumination manifold framework for matching low resolution faces. In general, it has been observed that approaches based on local facial regions have achieved significantly better results as compared to the global approaches in matching low resolution probe with high resolution gallery.
+%
+%\section{Problem Formulation}
+%Let $D_L^S$ be a set of labeled instances in source domain, $\{(u_i^S,z_i), (u_i^S,z_i),..., (u_n^S,z_n)\}$. $D_L^T$ be a set of few labeled instances in target domain available a priori , $\{(u_i^T,z_i), (u_i^T,z_i),..., (u_n^T,z_m)\}$. $D_U^T$ be a set of unlabeled instances in target domain available during probe verification, $\{({u'}_i^T), ({u'}_i^T),..., ({u'}_r^T)\}$. $n$ and $m$ are the number of training instances in source and target domain respectively. $r$ is the number of unlabeled instances (probes). Every instance $u_i$ or ${u'}_i$ has two views $\{x_{i,1}, x_{i,2}\}$; here $x_{i,1}$ and  $x_{i,2}$ represent the input vector obtained from two views and label $z_i \in \{-1, +1\}$ represents genuine and impostor classes. Source classifier $C_j^S$ is trained on the labeled training data in $D_L^S$ on $j_{th}$ view, $j=2$. $C_j^T$ is the target domain classifier initially trained on few labeled instances in $D_L^T$ on the $j^{th}$ view. An ensemble prediction function $E_j$ is learned for each view that is the mixture of both the source domain $C_j^S$ and the target domain $C_j^T$ classifiers. For unlabeled instances, ensemble function $E_1$ and $E_2$ predict labels on the two separate views, $E_1(x_{i,1}) \rightarrow y_{i,1}$ and $E_2(x_{i,2}) \rightarrow y_{i,2}$. Here $x_{i,1}$, $x_{i,2}$ are the two views of the $i^{th}$ instance $u'_i$, $y_{i,1}$ and $y_{i,2}$ are the corresponding predicted labels. Target domain classifiers $C_j^T$ are updated (re-trained) for an instance if one ensemble function $E_j$ confidently predicts the label of the instance while the other ensemble function is unsure of its prediction.
+%
+%\section{Proposed Approach}
+%In face recognition, generally, labeled training data is available in high resolution (HR) domain. In low resolution (LR) domain, a priori labeled training data is insufficient to efficiently train a classifier, however, a large number of unlabeled instances (probes) are available sequentially (in online manner) during the system's operation. Although, transfer learning has been actively explored, most of the research in transfer learning works in an offline/batch learning fashion which assumes labeled training data in the target domain is given a priori. In this research, we perform online transfer learning from the incremental data available sequentially. A few labeled and large unlabeled instances are available in LR domain that can be used to transfer the knowledge. Therefore, the problem of online transfer learning is posed as a semi-supervised learning task. The proposed approach continuously improves the performance of a face recognition system by leveraging large number of unlabeled instances to transfer the knowledge from the HR domain to LR domain. This research proposes an \emph{online co-transfer learning} framework that seamlessly combines two machine learning paradigms namely: Online transfer learning and Co-training.
+%\begin{figure*}[t]
+%\begin{center}
+%\includegraphics[width=0.9\linewidth]{block_revised.eps}
+%\end{center}
+%   \caption{Block diagram for the proposed framework.}
+%\label{fig:block_proposed}
+%\end{figure*}
+%Specifically, an ensemble based learning approach is proposed where two ensembles are build on separate views (features) of face images. Each ensemble is a mixture of two classifiers, first classifier ($C^S_j$) is trained on sufficient labeled instances in the HR domain and the second classifier ($C^T$) is initially trained on a small labeled training data in the LR domain. The two classifiers ($C^S_j$) and ($C^T_j$) are combined in an ensemble ($E_j$) that seamlessly allows for transfer of knowledge from HR to LR domain. The classifier ($C^T_j$) in the LR domain requires regular re-training/updates to learn the variations in data distribution as well as to capture the knowledge transferred from HR domain. Co-training is used to provide pseudo labels to the unlabeled instances (probes) available sequentially in LR domain. It assumes availability of two ensemble functions ($E_1$ and $E_2$) trained on separate views where the ensemble function for each view has sufficient (better than random) performance. These ensemble functions collaborate to provide pseudo labeled training instances (in LR) to update each other in online fashion. Fig. \ref{fig:block_proposed} represents the block diagram of the proposed approach.
+%
+%\subsection{Feature Extractors}
+%Two feature extractors, 1) Local Phase Quantization (LPQ), and 2) Scale Invariant Feature Transform (SIFT) are used to represent face images across different resolutions.  These feature extractors are resilient to scale changes and can be effectively used for matching face images with varying resolutions. These two feature extractors provide two views required for co-training the two ensembles. Both these features extractors are used to encode discriminating information from local facial regions. The distance between local facial regions across different resolutions is then passed to the SVM classifiers in each ensemble. It is our assertion that minimizing the distance within local regions is more beneficial as compared to minimizing the holistic distance across face image when matching images with different resolutions.
+%
+%%\subsection{Database}
+%%In order to evaluate the proposed transfer learning framework, existing publically available low resolution face image/video databases will be used. In this research, experiments are performed primarily on:
+%%\begin{itemize}
+%%\item The Video Challenge Problem in the Multiple Biometric Grand Challenge (MBGC v.2).
+%%\item The SCface database where images are taken in uncontrolled indoor environment using five video surveillance cameras of various qualities. Available online at http://www.scface.org
+%%\item The authors will prepare a database with videos at multiple resolution captured in indoor environment.
+%%\end{itemize}
+%%
+%
+%
+%%%A SVM based classifier is trained on the labeled training in HR domain. The number of labeled instances in LR domain are not sufficient to effectively train a classifier, therefore, a SVM classifier is initially trained on these instances. The proposed approach learns an ensemble function that is a mixture of both these SVM classifiers, thus, transfers the knowledge from HR domain. To combine the two classifiers $C^S$ and $C^T$, two weight parameters $\omega_S$ and $\omega_T$ are learned. For an instance $x_i$, the class label is predicted by the following ensemble function:
+%%%
+%%%\section{Online Transfer Learning}
+%%%\section{Face Representation}
+%
+%\section{Experimental Evaluation}
+%The experimental protocol is designed such that the ensembles are first trained on ample high resolution labeled training data and a few low resolution training data. Transfer learning is used to seamlessly transfer the knowledge of the classifiers within each ensemble from high resolution domain to low resolution domain. Transfer of knowledge is facilitated by the pseudo labels provided by the two ensembles using co-training. To update the low resolution classifiers, a joint transfer-and-test strategy is used which allows for continuous transfer and testing.
+%
+%\subsection{Database and Experimental protocol}
+%Two databases, 1) FRGC v2, and 2) CMU Multi-pie are used for evaluating the efficacy of the proposed framework. $135$ subjects form FRGC v2 with single image in gallery and probe are selected for training the classifiers for high resolution and low resolution face image matching in an ensemble. The size for high resolution gallery image is 64x64. Low resolution images are obtained by down sampling the images to required resolution using bi cubic interpolation. In each ensemble, the classifier for high resolution is trained on $135$ high resolution probe-gallery pairs and the classifier for matching low resolution probe with high resolution gallery is trained on images pertaining to $50$ subjects (from the $135$ subjects). The experiment resembles real world applications where ample high resolution pairs are available, however, only a few low resolution probes and the corresponding high resolution gallery images are available for training the classifiers.
+%\begin{figure}[ht]
+%\begin{center}
+%\centerline{\includegraphics[width=0.7\columnwidth]{images.eps}}
+%\caption{Gallery and probe images at varying resolutions from the CMU Multi-pie database.}
+%\label{fig:multi-pie-images}
+%\end{center}
+%\end{figure}
+%Finally, performance is evaluated on $337$ subjects from the CMU multi-pie database. The performance is evaluated on a separate database than the database used for training to closely replicate the real world situation. CMU multi-pie comprises of images of different individual captured in four different sessions with varying pose, expression, and illumination variations. In our experiments, subjects with frontal pose and neutral expression are selected. Single image per subject with a given illumination is used in gallery and single image with different illumination is used as probe. Experiments are performed for four different resolution of probe images as shown in Fig. \ref{fig:multi-pie-images} (32x32, 24x24, 16x16, and 12x12).
+%
+%\subsection{Results}
+%Fig. \ref{fig:CMC-1} show the rank-$1$ identification accuracy of the proposed framework on different resolutions of probe images from the CMU Multi-pie database.
+%\begin{figure}[ht]
+%\begin{center}
+%\centerline{\includegraphics[width=0.5\columnwidth]{res_multi-pie.eps}}
+%\caption{Rank-$1$ identification accuracy for different probe resolutions on the CMU Multi-pie database. Gallery resolution is fixed at $64\times64$.}
+%\label{fig:CMC-1}
+%\end{center}
+%\end{figure}
+%
+%%{\small
+%%\bibliographystyle{ieee}
+%%\bibliography{himanshu_bib}
+%%}
+
+\end{document}

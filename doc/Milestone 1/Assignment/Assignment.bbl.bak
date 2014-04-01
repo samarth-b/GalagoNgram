@@ -1,0 +1,40 @@
+\begin{thebibliography}{1}\itemsep=-1pt
+
+\bibitem{Site3}
+galagosearch.
+\newblock Galago query language.
+\newblock \url{http://code.google.com/p/galagosearch/wiki/GalagoQueryLanguage}.
+
+\bibitem{Kim}
+J.~Kim, X.~Xue, and W.~B. Croft.
+\newblock A probabilistic retrieval model for semistructured data.
+\newblock In {\em Proceedings of the 31th European Conference on IR Research on
+  Advances in Information Retrieval}, ECIR '09, pages 228--239, Berlin,
+  Heidelberg, 2009. Springer-Verlag.
+
+\bibitem{Site1}
+J.~Y. Kim.
+\newblock How would you search for your favorite movie?
+\newblock
+  \url{http://lifidea.wordpress.com/2009/08/25/how-would-you-search-for-your-f%
+avorite-movie/}.
+
+\bibitem{Ponte}
+J.~M. Ponte and W.~B. Croft.
+\newblock A language modeling approach to information retrieval.
+\newblock In {\em Proceedings of the 21st annual international ACM SIGIR
+  conference on Research and development in information retrieval}, SIGIR '98,
+  pages 275--281, New York, NY, USA, 1998. ACM.
+
+\bibitem{Site2}
+T.~L. Project.
+\newblock Indri query language quick reference.
+\newblock \url{http://lemurproject.org/lemur/IndriQueryLanguage.php}.
+
+\bibitem{Zhai}
+C.~Zhai.
+\newblock Statistical language models for information retrieval a critical
+  review.
+\newblock {\em Found. Trends Inf. Retr.}, 2:137--213, March 2008.
+
+\end{thebibliography}

@@ -1,0 +1,173 @@
+\documentclass[correspondence, onecolumn, 11pt]{IEEEtran}
+
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{multirow}
+\usepackage{listings}
+
+\title{{Structured Document Retrieval and Ranking System using N-gram Language Models}}
+\author{{Himanshu S. Bhatt and Samarth Bharadwaj}}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+ Galago is a free open-source information retrieval engine designed for academic evaluation purposes. The primary focus of this document is to discuss plan of action to implement n-gram language model based document retrieval model. The architecture of Galago is discussed in brief focusing on its robust query language and several operations. Next, language models are discussed based on the review article by Ponte and Croft. 
+ Structured documents such as HTML, XML documents contain fields that are usually identified by tags. In order to optimally query these documents either the query must be structured (such as XPath). We propose to implement Probabilistic Retrieval Model for structured documents (PRM-S), a probabilistic language model that is able convert unstructured query to structured query. Further, n-gram language model is used to relax the independence assumption of the PRM.
+\end{abstract}
+
+
+\section{Introduction to Galago}
+
+Galago is an open-source toolkit for development of information retrieval engine. It is based on query language from Indri and Lemur developments. This query language framework provides several advantages such as flexibility, multiple document representations, efficient implementation and formal grounding. Information on Galago and related information is obtained from Galago docs, Galago source wiki, Lemur docs and developed and research blogs.
+
+\textbf{Query language:}
+Query languages enable a syntactical representation of a query towards a database or a retrieval system. Galago's query language is based on Indri and Inquery query languages of the Lemur project. However, unlike other search engines, Galago's query language extensively embedded into retrieval model allowing for greater flexibility. For example, scores of retrieval of the query \emph{hello world} are
+
+\begin{lstlisting}
+combined as #combine( #text:dog() #text:cat() )
+\end{lstlisting}
+
+The Galago query language is based on sequential operators, in its simple form can capture several ranking operations. Unlike other existing systems, the query language itself directly provides handles to request information such as inverted index count of a term etc. Such information that is usually available in the indexing module. The query is presented as a graphical model, with nodes containing various tags and meta-parameters such as smoothing parameters etc.
+Query operations of Galago query language provide information of the following categories:
+
+
+
+\begin{itemize}
+\item Index operators:  \#counts and \#extents
+    They are processed directly from the indexes.
+\item Proximity operators:  \#inside, \#ordered and \#unordered
+\item Provide proximity information
+\item Scoring operators: \#feature:dirichlet
+\item The runQuery method requires scores provided by these operators.
+\item Score combination operators: \#combine and \#weight
+\item Combine scores from different scoring operations.
+\item Other operators
+\item It is possible to implement new operators by implementing StructuredIterator interface.
+\item We now briefly discuss the various operators of Galago, focusing primarily on those which are deemed relevant to this project.
+\item \#extents
+\item This operator provides the context/fields of the term as per the posting list.
+\item \#count
+\item This operator provides the document count of a given term obtained from the posting list
+\item \#prior
+\item Provides the document prior in the posting list. In the case that the prior is zero, minScore is assigned. (minScore = ln( 0.0000000001 ))
+\item \#lengths
+\item Provides document lengths
+\item \#feature
+\item Provides smoothed log probabilities of a document
+\end{itemize}
+\end{document}
+
+
+\noindent\textbf{Report:}
+Language modeling based retrieval system is based on the query likelihood scoring method proposed by Ponte and Croft. For each document in the collection, a language model is estimated and the documents are ranked based on the likelihood of the query according to the estimated language model. In a language model, the query is assumed to be a sample of words drawn according to a model estimated based on a document.
+
+In query likelihood model, a language model Md is constructed from each document $d$. The ranking of documents is given by $P(d|q)$, where the probability of a document is interpreted as the likelihood that it is relevant to the query. Using Bayes rule:
+\begin{equation}
+p(d|q)=p(q|d) p(d)/p(q)
+\end{equation}
+\vspace{16pt}
+
+The Language Modeling approach attempts to model the query generation process and the documents are ranked by the probability that a query would be observed as a random sample from the document model. The documents are ranked using a multi-nomial uni-gram language model where the documents are the classes and each document is treated in the estimation as a separate "language". Using this:
+\begin{equation}
+P(q|M_d)=K_q \prod_{t}P(t|M_d)^{tf_{t,d}}
+\end{equation}
+\noindent Where, $K_q$ is the multi-nomial coefficient for the query $q$, given as:
+
+\begin{equation}
+K_q=L_d!/ (tf_{t1,d}! tf_{t2,d}!\cdot tf_{tM,d}!)
+\end{equation}
+
+The retrieval of documents based on language models can now be described as :
+\begin{enumerate}
+\item Estimating the language model $M_d$ for each document in the collection.
+\item Estimate $P(q|M_{di})$, the probability of generating the query according to each of these document models
+\item Rank the documents according to these probabilities
+
+\end{enumerate}
+The language model assumes that the user has a prototype document in mind and generates a query based on distinguishable words that are likely to appear in the document.
+
+\noindent\textbf{Estimating the query generation probability:} Using the uni-gram assumption (each query term is independent for each other), the probability of producing the query given the language model $M_d$ of document $d$ using maximum likelihood estimation (MLE):
+\begin{equation}
+\hat{P}(q|M_d)= \prod_{t} \hat{P}_{mle}(t|M_d)=\prod_{t\in q} \frac{tf_{t,d}}{L_d}
+\end{equation}
+
+\noindent Where, $M_d$ is the language model of document $d$, $tf_{t,d}$ is the term frequency of term $t$ in document $d$, and $L_d$ is the number of tokens in document $d$.
+
+
+\noindent\textbf{Variants of the Basic Language Modeling Approach:}
+If for some words that do not appear in the document, $P(t|M_d)$ is estimated to be zero. This means that documents will only give a query non-zero probability if all of the query terms appear in the document.  Therefore, to smooth probabilities in the document language models, we need to discount non-zero probabilities and give some probability mass to unseen words.
+
+The basic language modeling approach (i.e., the query likelihood scoring method) can be instantiated in different ways by varying:
+\begin{itemize}
+\item $Q_D$ (e.g., multiple Bernoulli or multi-nomial).
+\item Estimation methods of $Q_D$ (e.g., different smoothing methods.
+\item The document prior $p(D)$.
+\end{itemize}
+
+The original proposed language model proposed by Ponte and Croft used the multiple Bernoulli models that ignore query term frequencies.  The multi-nomial model captures the term frequency in documents (as well as the query). In multiple Bernoulli model, the presence/absence of a term is assumed to be independent of that of other terms, whereas in multi-nomial model, every word occurrence is assumed to be independent, including the multiple occurrences of the same term.
+Estimation of $Q_D$ is critical for the success of language models, and a particularly important issue is how to smooth the maximum likelihood estimate which assigns zero probability to unseen words. Different smoothing techniques have been proposed in literature.
+
+\textbf{Dirichlet prior smoothing:} works well especially for keyword queries as it adjusts the amount of smoothing according to the length of a document. The Dirichlet prior smoothing method can be derived by using Bayesian estimation:
+
+\begin{equation}
+p(w|D)= \frac{c(w|D)+ \mu p(w|C)}{|D|+\mu},
+\end{equation}
+\noindent where $p(w|C)$ is a background (collection) language model and $\mu$ is a smoothing parameter.
+
+\textbf{Linear Interpolation smoothing:} Uses a mixture between a document-specific multi-nomial distribution and a multi-nomial distribution estimated from the entire collection:
+\begin{equation}
+\hat{P}(t|d)=\lambda \hat{P}_{mle}(t|M_d)+(1-\lambda)\hat{P}_{mle}(t|M_c)
+\end{equation}
+\noindent where 0 < l < 1 and $M_c$ is a language model built from the entire document collection. This mixes the probability from the document with the general collection frequency of the word.
+
+\section{Types of language models}
+To find the probabilities over sequences of terms, we can use the chain rule to decompose the probability of a sequence of events into the probability of each successive event conditioned on earlier events:
+\begin{equation}
+P(t_1 t_2 t_3 t_4)=P(t_1) P(t_2|t_1) P(t3|t_1 t_2) P(t_4|t_1 t_2 t_3)
+\end{equation}
+
+\textbf{Uni-gram models:} The simplest form of language model simply throws away all conditioning context, and estimates each term independently. Such a model is called a uni-gram language model:
+\begin{equation}
+P_{uni}(t_1 t_2t_3t_4)=P(t_1) P(t_2)P(t_3)P(t_4)
+\end{equation}
+
+\textbf{Bi-gram models:} In a bi-gram language model, the generation of a current word would be dependent on the previous word generated, thus it can potentially capture the dependency of adjacent words (e.g., phrases). Specifically, the query likelihood would be
+\begin{equation}
+P_{bi}(t_1 t_2t_3t_4)=P(t_1) P(t_2|t_1)P(t_3|t2)P(t_4|t_3)
+\end{equation}
+
+\begin{equation}
+P(Q|D)=p(q_1|D)\prod_{1=2}^{m}p(q_i|q_{i-1},D)
+\end{equation}
+\noindent Where, $p(q_i|q_{i-1},D)$ is the conditional probability of generating $q_i$ after we have just generated $q_i-1$.
+Such n-gram models capture dependency based on word positions. With increasing n, complexity of the models increases that makes it difficult to obtain accurate estimation of the model.
+
+\section{Structured Document Retrieval and Combining Representations}
+Information retrieval systems generally work on bag of words representation of the documents and ignore the structural information of the document. A document may have intra-document structures (e.g., title vs. body) and inter-document structures (e.g., hyperlinks and topical relations), which can be used to improve the performance of the retrieval system.
+
+In this project, we will divide each document is composed of several fields/context (such as title and body). The field structure of documents allows each field to have weights depending on the field and query-term. Each document d in the collection is composed of fields $(f_1, f_2, \cdot f_n)$. The project will assign different weights to different parts of the document. The query generation process consists of two steps:
+\begin{itemize}
+\item A part $f_i$ is selected from the structured document D according to a selection probability $p(f_i|D)$. It can be interpreted as the weight assigned to $D_i$ and can be set based on prior knowledge or estimated using training data.
+\item A query is generated using the selected part $f_i$. Thus, the query likelihood is given by:
+
+\begin{equation}
+   p(Q|D)=\prod_{1=1}^{m} p(q_i|D)\\
+   = \prod_{i=1}^m \sum_{j=1}^k p(q_i|D_j)p(f_j|D)
+\end{equation}
+
+\end{itemize}
+
+
+\section{\textbf{Approach}}
+\begin{enumerate}
+\item Inverted Index: We will use galago to implement the inverted index with the position listing. Using the inverted index, we can estimate the probability of a query term occurring in the document as well as the whole collection.
+
+\item To incorporate n-gram language models:  we will estimate the conditional probabilities for sequence of events conditioned on earlier events. This will form the basis for extending the model beyond the uni-gram model (where each term is independent of each other). We will analyze the affect of different smoothing techniques such as Dirichlet smoothing and linear interpolation.
+
+\item Algorithm: We will implement the query likelihood model for semi-structured documents using n-gram language models. For each document, a language model will be constructed for different fields and will be combined with different weights.
+
+\item Evaluation: We will use user feedback to annotate the top ten retrieved results as relevant or irrelevant. Further we will evaluate the performance of our retrieval system in terms of precision. We will also check our system for keyword queries as well as verbose queries.
+
+\end{enumerate}

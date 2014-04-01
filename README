@@ -2,26 +2,6 @@
 Galago is distributed under the BSD license.  See the LICENSE file for details.
 For more information about Galago, check out the docs directory.
 
-If you have downloaded the source, see BUILD for information on how to build and
-run the code.  If you downloaded the binary version, use these commands to get started:
-        Unix: ./bin/galago help
-        Windows: .\bin\galago.bat help
-
-The main Java projects are:
-	galagosearch-core:  The Galago structured search engine code
-	galagosearch-tupleflow:  TupleFlow, Galago's distributed computation framework
-	galagosearch-tupleflow-typebuilder:  TypeBuilder, a code generator for producing
-             serializable, hashable and comparable types that TupleFlow can use
-
-Code that's not yet distributed, but might be eventually:
-	Java:
-        galagosearch-binned:  Classes and code used for building binned indexes.
-        galagosearch-tupleflow-gridengine:  Code that plugs TupleFlow into Grid Engine.
-
-	C++:
-	galago: A command-line retrieval system for binned indexes
-	galagod: A FastCGI application for binned indexes
-
 Galago makes use of some great open-source code:
 	Porter2 Stemmer (Martin Fowler, snowball.tartarus.org)
 	Flanagan Math libraries (http://www.ee.ucl.ac.uk/~mflanaga/java/)
@@ -36,3 +16,6 @@ Websites and other contact information:
 	http://galagosearch.googlecode.com (Source repository, Issue tracking)
 	http://groups.google.com/group/galagosearch-users (Mailing List)
 
+EDIT: This was a course project to convert the vector model of Galago to Ngram model
+By using the commands you can access it. 
+Check DOC folder for details

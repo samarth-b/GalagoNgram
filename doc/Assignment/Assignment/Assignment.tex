@@ -1,0 +1,258 @@
+\documentclass[10pt,onecolumn,letterpaper]{article}
+%\documentclass[10pt,twocolumn,letterpaper]{article}
+
+%\ifCLASSINFOpdf
+%\else
+%\fi
+
+\usepackage{times}
+%\usepackage{epsfig}
+\usepackage{graphicx}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{multirow}
+
+%\usepackage{algorithm}
+%\usepackage{algorithmic}
+%
+%% Include other packages here, before hyperref.
+%
+%% If you comment hyperref and then uncomment it, you should delete
+%% egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
+%% run, let it finish, and you should be clear).
+%%\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+%
+%%\cvprfinalcopy % *** Uncomment this line for the final submission
+%%
+%%\def\cvprPaperID{****} % *** Enter the CVPR Paper ID here
+%%\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+%
+%% Pages are numbered in submission mode, and unnumbered in camera-ready
+%%\ifcvprfinal\pagestyle{empty}\fi
+%%\setcounter{page}{1}
+\begin{document}
+\title{Assignment-2\\
+\small{Himanshu S. Bhatt and Samarth Bharadwaj}}
+\maketitle
+\noindent\textbf{Question-2: Prove the Bayes optimality}
+
+For a given document \emph{d}, if $P(R=1|d) > P(R=0|d)$, we decide that the document is relevant. The probability of error whenever we make a incorrect decision is given as:
+\begin{equation}
+P(error|d) =\left\{ \begin{array}{cc}
+                        P(R=1|d)  & \ \ if \ \  d ~is~ irrelevant \\
+                        P(R=0|d)   & \ \ otherwise
+                        \end{array} \right.
+\end{equation}
+
+\noindent Therefore, for a given document $d$, we can minimize the probability of error by deciding the document to be relevant if $P(R=1|d) > P(R=0|d)$ and irrelevant otherwise. However, it requires that all probabilities are known correctly. Therefore, we minimize the average probability of error given as:
+\begin{equation}
+P(error)= \sum_d P(error|d) P(d)
+\end{equation}
+
+\noindent If for every document $d$, we ensure that the $P(errors|d)$ is as small as possible, then the overall summation will be small. Thus, is justifies the Bayes decision rule for minimizing the probability of error.
+
+\begin{equation}
+D ~is ~relevant ~iff, P(R=1|d) > P(R=0|d)
+\end{equation}
+
+\vspace{12pt}
+\textbf{(a) Zero-one loss function}
+The loss function $\lambda(\alpha_i|R_j)$ is the loss incurred for deciding a document $d$ as $\alpha_i$ when the actual state of the document is $R_j$.
+Therefore, we define conditional risk $R(\alpha_1|R_j)$ as:
+\begin{equation}
+R(\alpha_i|R_j)=\sum_{j=1}^2 \lambda(\alpha_i|R_j) P(R_j|d)
+\end{equation}
+
+For a given document $d$, we can minimize the expected loss by selection the action that minimizes the conditional risk. The fundamental rule is to decide $d$ as relevant if $R(\alpha_1|d)>R(\alpha_2|d)$.
+
+The zero-one loss function is given as:
+\begin{equation}
+\lambda(\alpha_i|R_j) =\left\{ \begin{array}{cc}
+                        0  & \ \ if \ \  i=j \\
+                        1   & \ \ otherwise
+                        \end{array} \right.
+\end{equation}
+
+\noindent This loss function assigns no loss to a correct decision and assigns a unit loss to any error. Therefore, the conditional risk can be rewritten as:
+%
+%\center$R(\alpha_1|d)$=$\lambda(\alpha_1|R=0)P(R=0|d)$
+%
+%\center$R(\alpha_2|d)$=$\lambda(\alpha_1|R=1)P(R=1|d)$
+\begin{equation}
+ R(\alpha_i|d)=  \sum_{j=1}^2 \lambda(\alpha_1|R_j)P(R_j|d)\\
+                 \end{equation}
+\begin{equation} = \sum_{j\neq i} P(R_j|d)\\
+\end{equation}
+
+\begin{equation} = 1-P(R_i|d) \end{equation}
+
+
+\noindent where $P(R_i|d)$ is the conditional probability that $R_i$ is the correct state of the document. Thus, to minimize the average probability of error, we should maximize the posterior probability $P(R_i|d)$. By minimizing the overall Bayes risk best performance is achieved given as:
+
+\begin{equation}
+d ~is ~relevant ~iff, P(R=1|d) > P(R=0|d)
+\end{equation}
+
+\vspace{12pt}
+\noindent\textbf{(b) With cost functions}
+The conditional risk in this case can be written as:
+\begin{equation}R(\alpha_i|d)=\sum_{j=1}^2\lambda(\alpha_i|R_j)P(R_j|d) \end{equation}
+\begin{equation}R(\alpha_1|d)=\lambda(\alpha_1|R_1)P(R_1|d)+ \lambda(\alpha_1|R_2)P(R_2|d) \end{equation}
+\begin{equation}R(\alpha_1|d)=CN ~P(R_1|d)+ CR ~P(R_2|d) \end{equation}
+\noindent $CN$ is the cost associated with retrieving a relevant document and $CR$ is the cost associated with not retrieving a relevant document. $R_1$ represents that the document is relevant and $R_2$ represents that the document is irrelevant.  Thus, to minimize the average probability of error, the overall Bayes risk is minimized to achieve the best performance:
+
+\begin{equation}
+d ~is ~relevant ~iff, CN ~P(R_1|d)+ CR ~P(R_2|d) < CN ~P(R_1|d')+ CR ~P(R_2|d')
+\end{equation}
+\noindent where d' is the set of documents not yet retrieved.
+%\begin{equation}R(\alpha_2|d)$=$\lambda(\alpha_2|R_1)P(R_1|d)$+ $\lambda(\alpha_2|R_2)P(R_2|d)$ \end{equation}
+
+
+
+\vspace{12pt}
+\noindent\textbf{Question3}
+
+\vspace{12pt}
+\noindent\textbf{Quiz-2}
+
+\vspace{12pt}
+
+\noindent\textbf{Answer-1}
+\begin{itemize}
+\item Stemming Errors: 1) University and universal (Stem-Universe), 2) Organism / organization (Stem-Organ)
+\item Tokenization: 1) Academic year 2011-12 (tokenized string : academic year 2011) , 2) Meeting is scheduled at 8 AM (Tokenized string: meeting scheduled).
+\end{itemize}
+
+\vspace{12pt}
+
+\noindent\textbf{Answer-2} The pseudo code for negation is given below. For a negation operation on a keyword, all documents in which the keyword is present are retrieved.
+
+\begin{algorithm}[]
+   \caption{Pseudo code}
+\begin{algorithmic}
+   \STATE {\bfseries Negative(kw)} kw is the given keyword.
+   \STATE{1:} {\bfseries For}$i$= 1 {\bfseries to} N (number of documents)
+   \STATE{2:} {\bfseries Do if} $D_i$==1
+   \STATE{3:} {\bfseries Then}$D_i$=0
+   \STATE{4:} {\bfseries Else if} $D_i$==0
+   \STATE{5:} {\bfseries Then}$D_i$=1
+   \STATE{6:} {\bfseries End if}
+   \STATE{7:} {\bfseries End For}
+   \STATE {\bfseries Output:} Negation.
+  \end{algorithmic}
+\end{algorithm}
+
+\vspace{12pt}
+
+\noindent\textbf{Answer-3}
+The IDF of a term that occurs in all documents is zero. Expression
+\begin{equation}
+IDF_t=log\frac{N}{df_t}
+\end{equation}
+\noindent where $N$ is the number of documents in a collection and $df$ is the document frequency of the term $t$ (i.e. the number of documents in which the term occurred).
+
+\vspace{12pt}
+
+\noindent\textbf{Answer-4}
+Yes, Tf-IDF weight for a term can exceed 1. Higher weight represents more discriminative terms.
+
+
+\vspace{12pt}
+\noindent\textbf{Answer-5}
+Table \ref{table:tb1} gives the inverted index that can support positional restrictions. The final sorted and merged sorted index is presented.
+
+
+%\begin{table}
+%\begin{center}
+%\begin{tabular}{|c|c|}
+%\textbf{Term} & \textbf{Posting list }	 \\\hline
+%To   & $D_1$(1,4,6,9), $D_2$(1,5) \\\hline
+%Do   & $D_1$(1,10), $D_3$(6,8,10), $D_4$(1,2,3)	\\\hline
+%Is   & $D_1$(3,8) \\\hline
+%Be   & $D_1$(5,7), $D_2$(2,6), $D_3$(7,9), $D_4$(9,12)	\\\hline
+%Or   & $D_2$(3) 	\\\hline
+%Not  & $D_2$(4)	\\\hline
+%I & $D_2$(7,10), $D_3$(1,4)\\\hline
+%Am & $D_2$(8,11), $D_3$(5)\\\hline
+%What & $D_2$(9)\\\hline
+%Think & $D_3$(2)\\\hline
+%Therefore & $D_3$(3)\\\hline
+%Da & $D_4$(4,5,6)\\\hline
+%Let & $D_4$(7,10)\\\hline
+%It & $D_4$(8,11)\\\hline
+%\end{tabular}
+%\end{center}
+%\end{table}
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Term} & \textbf{Posting list}	 \\\hline
+Am & $D_2$(8,11), $D_3$(5)\\\hline
+Be   & $D_1$(5,7), $D_2$(2,6), $D_3$(7,9), $D_4$(9,12)	\\\hline
+Da & $D_4$(4,5,6)\\\hline
+Do   & $D_1$(1,10), $D_3$(6,8,10), $D_4$(1,2,3)	\\\hline
+I & $D_2$(7,10), $D_3$(1,4)\\\hline
+Is   & $D_1$(3,8) \\\hline
+It & $D_4$(8,11)\\\hline
+Let & $D_4$(7,10)\\\hline
+Not  & $D_2$(4)	\\\hline
+Or   & $D_2$(3) 	\\\hline
+Think & $D_3$(2)\\\hline
+Therefore & $D_3$(3)\\\hline
+To   & $D_1$(1,4,6,9), $D_2$(1,5) \\\hline
+What & $D_2$(9)\\\hline
+\end{tabular}
+\end{center}
+\caption{\label{table:tb1}Sorted and merged inverted index.}
+\end{table}
+
+\noindent Often, the co-occurrence of two  terms of a phrase is determined with a proximity threshold $k$. In which case the complexity of search becomes $t\times k$. Where $t$ is the number of terms. 
+
+\vspace{12pt}
+
+\noindent\textbf{Quiz-3}
+
+\vspace{12pt}
+
+\noindent\textbf{Answer-1}
+We use harmonic mean in F-measure because it is always less than or equal to the arithmetic mean and the geometric mean. When the values of two numbers differ greatly, the harmonic mean is closer to their minimum than to their arithmetic mean.
+
+\vspace{12pt}
+
+\noindent\textbf{Answer-2}
+\begin{equation}
+Precision=\frac{True positives}{Trure positives+ False positives}
+\end{equation}
+
+\begin{equation}
+Recall=\frac{True positives}{Trure positives+ False negatives}
+\end{equation}
+
+True positives has to bee maximized for both precision and recall. However, precision can be optimized by reducing the number of false positives whereas, Recall is optimized by reducing the number of false negatives. Since, it is very difficult to simultaneously optimize both false positives and false negatives. Therefore, the claim by Mr. Big Brain is not possible.
+Generally, a system is optimized for reducing the number of false positives (optimizing precision) or false negatives (optimizing recall).
+
+\vspace{12pt}
+
+\noindent\textbf{Answer-3}
+While using a search engine, it is not possible to find if you have found all relevant documents or not. However based on the query, if the user gets the information what he was looking for in top few retrieved documents. User is quite satisfied.
+
+\vspace{12pt}
+
+\noindent\textbf{Answer-4}
+Assumption, we assume that the document is relevant when both the users marked it as relevant. Therefore, total number of relevant documents is four.
+
+Given the retrieval order $S_{q}=\{4,5,6,7,8\}$, the mean precision is calculated as:
+$MAP=(1+0.5+0.33+0.25+0.2)/4=0.57$
+
+The optimal retrieval order can be $S_q=\{3,4,11,12,5\}$. The mean average precision for this sequence of retrieved documents is calculated as:
+$MAP=(1+1+1+1+0.8)/4=1.2$
+
+\vspace{12pt}
+
+\noindent\textbf{Answer-5}
+The reformulated query is not the same as the original one because with each iterations (relevance feedback), we change the weights for query term to move it closer to the relevant documents and farther from irrelevant documents. However, when the input query is itself the optimal query, in such conditions reformulated query may remain same.
+\end{document}
